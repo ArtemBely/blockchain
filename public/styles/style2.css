@@ -1,0 +1,123 @@
+.possibilities{grid-area:possibilities}
+.technologies{grid-area:technologies}
+.why{grid-area:why}
+.community{grid-area:community}
+.title_2{grid-area:title_2}
+.subtitle_2{grid-area:subtitle_2}
+.title_3{grid-area:title_3}
+.subtitle_3{grid-area:subtitle_3}
+.collaboration_img{grid-area:collaboration_img}
+
+.collaboration{
+	margin-top:-200px;
+	background-image: url('../images/Mask Group.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 1200px;
+	display: grid;
+	grid-template-columns: 12% repeat(3, 1fr);
+	grid-template-areas:
+		". possibilities ."
+		". technologies ."
+		". why ."
+		". community collaboration_img"
+		". title_2 ."
+		". subtitle_2 ."
+		". title_3 ."
+		". subtitle_3 ."
+}
+
+.possibilities{
+	width: 978px;
+	height: 69px;
+	margin-top:100px;
+	grid-column: 2/4;
+	font-family: 'Mont-SemiBold';
+	font-weight: 800;
+	font-size:45px;
+	line-height:69px;
+	color:#FFFFFF;
+	position:relative;
+	margin-bottom:0;
+}
+
+.technologies{
+	margin-top:-25px;
+	width: 939px;
+	height: 200px;
+	font-family: 'Mont-Light';
+	font-weight: 300;
+	grid-column: 2/4;
+	font-size:45px;
+	line-height:69px;
+	color:#FFFFFF;
+}
+
+.why{
+	font-family: 'Mont-SemiBold';
+	font-weight: 800;
+	font-size:18px;
+	line-height:25px;
+	color:#FFFFFF;
+}
+
+.community{
+	margin-top:-50px;
+	font-family: 'Inter-Regular';
+	font-weight: normal;
+	font-size:18px;
+	line-height:25px;
+	color:#FFFFFF;
+	width: 497px;
+	height: 200px;
+}
+
+.title_2{
+	font-family: 'Mont-SemiBold';
+	font-weight: 800;
+	font-size:18px;
+	line-height:25px;
+	color:#FFFFFF;
+}
+
+.subtitle_2{
+	margin-top:-50px;
+	font-family: 'Inter-Regular';
+	font-weight: normal;
+	font-size:18px;
+	line-height:25px;
+	color:#FFFFFF;
+	width: 512px;
+	height: 25px;
+}
+
+.title_3{
+	font-family: 'Mont-SemiBold';
+	font-weight: 800;
+	font-size:18px;
+	line-height:25px;
+	color:#FFFFFF;
+}
+
+.subtitle_3{
+	margin-top:-50px;
+	font-family: 'Inter-Regular';
+	font-weight: normal;
+	font-size:18px;
+	line-height:25px;
+	color:#FFFFFF;
+	width: 501px;
+	height: 100px;
+}
+
+.collaboration_img{
+	position:relative;
+	grid-row:3/7;
+	width:150px;
+	height:150px;
+	justify-self:center;
+	align-self:center;
+	mix-blend-mode: lighten;
+}
