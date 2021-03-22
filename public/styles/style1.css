@@ -1,4 +1,243 @@
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.eot');
+    src: url('../../fonts/Mont-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Mont-Regular.woff') format('woff'),
+    url('../../fonts/Mont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont-Light';
+    src: url('../../fonts/Mont-Light.eot');
+    src: url('../../fonts/Mont-Light.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Mont-Light.woff') format('woff'),
+    url('../../fonts/Mont-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont-SemiBold';
+    src: url('../../fonts/Mont-SemiBold.eot');
+    src: url('../../fonts/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Mont-SemiBold.woff') format('woff'),
+    url('../../fonts/Mont-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont-Heavy';
+    src: url('../../fonts/Mont-Heavy.eot');
+    src: url('../../fonts/Mont-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Mont-Heavy.woff') format('woff'),
+    url('../../fonts/Mont-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../../fonts/Inter-Regular.eot');
+    src: url('../../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Inter-Regular.woff') format('woff'),
+    url('../../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter-ExtraLightBETA';
+    src: url('../../fonts/Inter-ExtraLightBETA.eot');
+    src: url('../../fonts/Inter-ExtraLightBETA.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Inter-ExtraLightBETA.woff') format('woff'),
+    url('../../fonts/Inter-ExtraLightBETA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
-  background-color: pink;
-  color: white;
+  font-family: 'Mont-Regular';
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+#global {
+  font-family: 'Mont-SemiBold';
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: left;
+  width: 210px;
+  position: relative;
+  top: 5px;
+}
+.nav_header {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  position: relative;
+  top: 40px;
+  text-align: center;
+  left: -50px;
+  font-family: 'Inter-ExtraLightBETA';
+  z-index: 10;
+}
+#conference {
+  text-align: center;
+}
+.wrap_header {
+  position: relative;
+  left: -54px;
+  display: grid;
+  grid-template-columns: repeat(2, 20%) 5% 20% repeat(5, 7%);
+}
+.wrap_circle {
+  text-align: right;
+}
+#circle2 {
+  position: relative;
+  right: 52px;
+}
+.main_screen {
+  position: relative;
+  height: 920px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% repeat(2, 1fr);
+}
+.main_wrap {
+  background-image: url('../images/Rectangle 2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1100px;
+}
+#block_net {
+  position: relative;
+  left: -70px;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 60px;
+  font-family: 'Mont-Heavy';
+  top: 200px;
+  width: 600px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#reality {
+  position: relative;
+  width: 500px;
+  left: -70px;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 49px;
+  line-height: 54px;
+  font-family: 'Inter-Regular';
+  text-shadow: 5px 5px 10px rgb(0 0 0 / 50%);
+  letter-spacing: 1px;
+}
+#join_for {
+  position: relative;
+  left: -70px;
+  top: -115px;
+  color: #ffffff;
+  width: 166px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+  59.99deg
+  , rgba(107, 54, 239, 0) -41.24%, #1EC0F4 88.17%);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  text-decoration: none;
+  font-family: 'Inter-Regular';
+}
+#explore {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  width: 105px;
+  position: relative;
+  top: -298px;
+  left: 150px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 23px;
+  border-bottom: 2px solid;
+  font-family: 'Inter-Regular';
+}
+.watch_vr {
+  width: 260%;
+  height: 1092.43px;
+  left: -345px;
+  top: -98px;
+  background: radial-gradient(84.88% 107.91% at 96.87% 12.13%, #FFFFFF 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(0px);
+  border-radius: 500px;
+  position: relative;
+}
+.blockchain_network {
+  display: grid;
+  align-items: center;
+  position: relative;
+  left: -54px;
+}
+.watch_inside {
+  position: absolute;
+  width: 482.68px;
+  height: 482.68px;
+  left: 330px;
+  top: 258.66px;
+  background: radial-gradient(107.91% 107.91% at 123.14% 12.13%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
+  backdrop-filter: blur(20.8428px);
+  border-radius: 548.496px;
+}
+#mobile {
+  position: relative;
+  top: 142px;
+  left: 20px;
+}
+#oculus {
+  position: relative;
+  top: 127px;
+  left: -40px;
+  width: 290px;
+  z-index: 1;
+}
+#macbook {
+  position: relative;
+  top: -178px;
+  left: 180px;
+}
+#play1 {
+  position: relative;
+  top: -320px;
+  z-index: 2;
+  left: -130px;
+}
+.vr {
+  position: absolute;
+  width: 250px;
+  color: #fafafa;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31px;
+  top: 400px;
+  left: 170px;
+  font-family: 'Inter-Regular';
+}
+.fone {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background: linear-gradient(
+  180deg
+  , #000000 7.29%, rgba(0, 0, 0, 0) 100%);
+  transform: rotate(
+  -180deg
+  );
+  top: -200px;
 }
