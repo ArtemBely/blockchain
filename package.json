@@ -71,8 +71,16 @@
     "serialize-javascript": "^5.0.1",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
-    "webpack": "^5.27.0",
+    "webpack": "^5.27.1",
     "webpack-cli": "^4.5.0",
     "webpack-node-externals": "^2.5.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemBely/blockchain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArtemBely/blockchain/issues"
+  },
+  "homepage": "https://github.com/ArtemBely/blockchain#readme"
 }
