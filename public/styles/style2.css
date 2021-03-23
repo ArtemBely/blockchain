@@ -15,7 +15,7 @@
 	background-size: cover;
 	position: absolute;
 	width: 100%;
-	height: 1750px;
+	height: 1400px;
 	display: grid;
 	overflow: hidden;
 	grid-template-columns: 20% repeat(3, 1fr);
@@ -142,25 +142,7 @@
 	mix-blend-mode: lighten;
 	z-index: 1000;
 	left: 300px;
-	top: -400px;
+	top: -260px;
 }
 
-#table_1{
-	position: absolute;
-	left: 220px;
-	width: 1456.07px;
-	height: 720px;
-	top: 2750px;
-	left:120px;
-	
-}
 
-.table_glass{
-	position: absolute;
-	left: 200px;
-	width: 1290px;
-	height: 524.22px;
-	top: 3000px;
-	background: linear-gradient(180deg, #FFFFFF 13.15%, rgba(255, 255, 255, 0) 140.31%);
-	transform: rotate(-180deg);
-}
