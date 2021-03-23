@@ -47,7 +47,7 @@
 }
 
 .technologies{
-	margin-top:-25px;
+	margin-top:-95px;
 	width: 939px;
 	height: 200px;
 	font-family: 'Mont-Light';
@@ -61,6 +61,8 @@
 }
 
 .why{
+	width: 41px;
+	height: 25px;
 	font-family: 'Mont-SemiBold';
 	font-weight: 800;
 	font-size:18px;
@@ -72,7 +74,9 @@
 }
 
 .community{
-	margin-top:-170px;
+	width: 497.5px;
+	height: 200px;
+	margin-top:-210px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
@@ -85,6 +89,8 @@
 }
 
 .title_2{
+	width: 87px;
+	height: 25px;
 	font-family: 'Mont-SemiBold';
 	font-weight: 800;
 	font-size:18px;
@@ -92,11 +98,13 @@
 	color:#FFFFFF;
 	position: relative;
 	left: -115px;
-	top: -20px;
+	top: -100px;
 }
 
 .subtitle_2{
-	margin-top:-98px;
+	width: 512.17px;
+	height: 25px;
+	margin-top:-210px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
@@ -109,6 +117,8 @@
 }
 
 .title_3{
+	width: 88px;
+	height: 25px;
 	font-family: 'Mont-SemiBold';
 	font-weight: 800;
 	font-size:18px;
@@ -116,11 +126,13 @@
 	color:#FFFFFF;
 	position: relative;
 	left: -115px;
-	top: -100px;
+	top: -260px;
 }
 
 .subtitle_3{
-	margin-top:-180px;
+	width: 501.35px;
+	height: 100px;
+	margin-top:-370px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
@@ -145,4 +157,73 @@
 	top: -260px;
 }
 
+#table_1{
+	position: absolute;
+	width: 1456.07px;
+	height: 720px;
+	top: 2335px;
+	left:120px;
+	
+}
+
+.table_glass{
+	position: absolute;
+	left: 200px;
+	width: 1290px;
+	height: 450px;
+	top: 2650px;
+	background: linear-gradient(180deg, #FFFFFF 13.15%, rgba(255, 255, 255, 0) 140.31%);
+	transform: rotate(-180deg);
+}
+
+#full_database{
+	display: flex;
+	position: absolute;
+	width: 260px;
+	height: 63px;
+	left: 570px;
+	top:3170px;
+	background: linear-gradient(62.18deg, #6B36EF -22.93%, #1EC0F4 88.82%);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	text-decoration: none;
+	font-family: 'Inter-Regular';
+	color: #FFFFFF;
+	align-items: center;
+	justify-content: center;
+}
+
+#register{
+	display: flex;
+	top:3170px;
+	position: absolute;
+	width: 237px;
+	height: 63px;
+	left: 885px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	text-decoration: none;
+	font-family: 'Inter-Regular';
+	color: #000000;
+	align-items: center;
+	justify-content: center;
+}
+
+.table_text{
+	position: absolute;
+	text-align: center;
+	width: 402px;
+	height: 51px;
+	left: 645px;
+	top:3260px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 17px;
+	font-family: 'Inter-Regular';
+	color: #808080;
+}
 
