@@ -2,8 +2,7 @@ import React from 'react';
 
 function Fone() {
     return (
-      <div className='fone'>
-      </div>
+      <div className='fone'></div>
     )
 }
 

@@ -108,7 +108,8 @@ body {
   background-image: url('../images/Rectangle 2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1100px;
+  /*height: 1100px;*/
+  overflow: hidden;
 }
 #block_net {
   position: relative;
@@ -241,5 +242,3 @@ body {
   );
   top: -200px;
 }
-
-

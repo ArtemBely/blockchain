@@ -108,7 +108,8 @@ body {
   background-image: url(/902c3503b3a6c54eaa4dc97af24cd441.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1100px;
+  /*height: 1100px;*/
+  overflow: hidden;
 }
 #block_net {
   position: relative;
@@ -242,8 +243,6 @@ body {
   top: -200px;
 }
 
-
-
 .possibilities{grid-area:possibilities}
 .technologies{grid-area:technologies}
 .why{grid-area:why}
@@ -255,15 +254,16 @@ body {
 .collaboration_img{grid-area:collaboration_img}
 
 .collaboration{
-	margin-top:-200px;
+	margin-top:-202px;
 	background-image: url(/d5ed54eb8656035a23e6368b1be459fa.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
 	width: 100%;
-	height: 1200px;
+	height: 1300px;
 	display: grid;
-	grid-template-columns: 12% repeat(3, 1fr);
+	overflow: hidden;
+	grid-template-columns: 20% repeat(3, 1fr);
 	grid-template-areas:
 		". possibilities ."
 		". technologies ."
@@ -287,6 +287,8 @@ body {
 	color:#FFFFFF;
 	position:relative;
 	margin-bottom:0;
+	position: relative;
+	left: -115px;
 }
 
 .technologies{
@@ -299,6 +301,8 @@ body {
 	font-size:45px;
 	line-height:69px;
 	color:#FFFFFF;
+	position: relative;
+	left: -115px;
 }
 
 .why{
@@ -307,10 +311,13 @@ body {
 	font-size:18px;
 	line-height:25px;
 	color:#FFFFFF;
+	position: relative;
+	top: -40px;
+	left: -115px;
 }
 
 .community{
-	margin-top:-50px;
+	margin-top:-110px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
@@ -318,6 +325,8 @@ body {
 	color:#FFFFFF;
 	width: 497px;
 	height: 200px;
+	position: relative;
+	left: -115px;
 }
 
 .title_2{
@@ -326,10 +335,13 @@ body {
 	font-size:18px;
 	line-height:25px;
 	color:#FFFFFF;
+	position: relative;
+	left: -115px;
+	top: -20px;
 }
 
 .subtitle_2{
-	margin-top:-50px;
+	margin-top:-98px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
@@ -337,6 +349,8 @@ body {
 	color:#FFFFFF;
 	width: 512px;
 	height: 25px;
+	position: relative;
+	left: -115px;
 }
 
 .title_3{
@@ -345,10 +359,13 @@ body {
 	font-size:18px;
 	line-height:25px;
 	color:#FFFFFF;
+	position: relative;
+	left: -115px;
+	top: -100px;
 }
 
 .subtitle_3{
-	margin-top:-50px;
+	margin-top:-180px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
@@ -356,15 +373,20 @@ body {
 	color:#FFFFFF;
 	width: 501px;
 	height: 100px;
+	position: relative;
+	left: -115px;
 }
 
-.collaboration_img{
-	position:relative;
+#container{
+	position:absolute;
 	grid-row:3/7;
-	width:150px;
-	height:150px;
+	width:550px;
+	height:550px;
 	justify-self:center;
 	align-self:center;
 	mix-blend-mode: lighten;
+	z-index: 1000;
+	left: 300px;
+	top: -260px;
 }
 
