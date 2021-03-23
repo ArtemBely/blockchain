@@ -52,12 +52,13 @@ app.get('*', (req, res, next) => {
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                       <script src='/bundle.js' defer></script>
                         <script>window.__INITIAL_DATA__= ${serialize(data)}</script>
-                            <title>COLLAB</title>
+                            <title>Blockchain</title>
                           </head>
                         <body>
                        <div id="app">
                      ${markup}
                   </div>
+                  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
                 </body>
             </html>`;
 

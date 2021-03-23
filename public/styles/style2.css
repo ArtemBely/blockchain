@@ -9,15 +9,16 @@
 .collaboration_img{grid-area:collaboration_img}
 
 .collaboration{
-	margin-top:-200px;
+	margin-top:-202px;
 	background-image: url('../images/Mask Group.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
 	width: 100%;
-	height: 1200px;
+	height: 1300px;
 	display: grid;
-	grid-template-columns: 12% repeat(3, 1fr);
+	overflow: hidden;
+	grid-template-columns: 20% repeat(3, 1fr);
 	grid-template-areas:
 		". possibilities ."
 		". technologies ."
@@ -41,6 +42,8 @@
 	color:#FFFFFF;
 	position:relative;
 	margin-bottom:0;
+	position: relative;
+	left: -115px;
 }
 
 .technologies{
@@ -53,6 +56,8 @@
 	font-size:45px;
 	line-height:69px;
 	color:#FFFFFF;
+	position: relative;
+	left: -115px;
 }
 
 .why{
@@ -61,10 +66,13 @@
 	font-size:18px;
 	line-height:25px;
 	color:#FFFFFF;
+	position: relative;
+	top: -40px;
+	left: -115px;
 }
 
 .community{
-	margin-top:-50px;
+	margin-top:-110px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
@@ -72,6 +80,8 @@
 	color:#FFFFFF;
 	width: 497px;
 	height: 200px;
+	position: relative;
+	left: -115px;
 }
 
 .title_2{
@@ -80,10 +90,13 @@
 	font-size:18px;
 	line-height:25px;
 	color:#FFFFFF;
+	position: relative;
+	left: -115px;
+	top: -20px;
 }
 
 .subtitle_2{
-	margin-top:-50px;
+	margin-top:-98px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
@@ -91,6 +104,8 @@
 	color:#FFFFFF;
 	width: 512px;
 	height: 25px;
+	position: relative;
+	left: -115px;
 }
 
 .title_3{
@@ -99,10 +114,13 @@
 	font-size:18px;
 	line-height:25px;
 	color:#FFFFFF;
+	position: relative;
+	left: -115px;
+	top: -100px;
 }
 
 .subtitle_3{
-	margin-top:-50px;
+	margin-top:-180px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
@@ -110,14 +128,19 @@
 	color:#FFFFFF;
 	width: 501px;
 	height: 100px;
+	position: relative;
+	left: -115px;
 }
 
-.collaboration_img{
-	position:relative;
+#container{
+	position:absolute;
 	grid-row:3/7;
-	width:150px;
-	height:150px;
+	width:550px;
+	height:550px;
 	justify-self:center;
 	align-self:center;
 	mix-blend-mode: lighten;
+	z-index: 1000;
+	left: 300px;
+	top: -260px;
 }
