@@ -47,7 +47,7 @@
 }
 
 .technologies{
-	margin-top:-50px;
+	margin-top:-25px;
 	width: 939px;
 	height: 200px;
 	font-family: 'Mont-Light';
@@ -72,7 +72,7 @@
 }
 
 .community{
-	margin-top:-110px;
+	margin-top:-170px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
@@ -116,11 +116,11 @@
 	color:#FFFFFF;
 	position: relative;
 	left: -115px;
-	top: -150px;
+	top: -100px;
 }
 
 .subtitle_3{
-	margin-top:-200px;
+	margin-top:-180px;
 	font-family: 'Inter-Regular';
 	font-weight: normal;
 	font-size:18px;
