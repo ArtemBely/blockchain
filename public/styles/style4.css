@@ -1,4 +1,99 @@
-.brands {
-  position: relative;
-  top: 1800px;
+.brands{
+	top: 1800px;
+	position: relative;
+	width:100%;
+	justify-content:center;
+	display: grid;
+	grid-template-columns:20% repeat(3, 1fr);
+	grid-gap: 40px;
+	left:-140px;
 }
+.info_brands{
+	grid-column: 2/3;
+	display: grid;
+	height: 226px;
+	grid-template-columns: 75% 25%;
+	grid-template-rows: 30px 1fr;
+	left:-115px;
+}
+.VR_Stand{
+	font-family: 'Inter-SemiBold';
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	position: relative;
+	top: -20px;
+	justify-self: start;
+}
+.brands_text{
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
+	font-family: 'Inter-Regular';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	position: relative;
+}
+.seeAll_2{
+	text-align: end;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
+	grid-column: 2 / 3;
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 1;
+	grid-row: 1 / 2;
+	position: relative;
+	top: -6px;
+	background: -webkit-linear-gradient(#6B36EF, #1EC0F4);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	border-bottom: 1px solid;
+	width: 80px;
+	position: relative;
+	left: 55px;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to left, #1EC0F4, #6B36EF);
+	font-family: 'Inter-Regular';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+}
+.reserve{
+	font-family: 'Inter-SemiBold';
+	text-decoration: none;
+	position: relative;
+	display: flex;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+  	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+	background: linear-gradient(62.18deg, #6B36EF -22.93%, #1EC0F4 88.82%);
+	width: 160px;
+	height: 59px;
+	float:left;
+	margin-right:14px;
+}
+.discover_more{
+	font-family: 'Inter-Regular';
+	text-decoration: none;
+	position: relative;
+	display: flex;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+  	align-items: center;
+	justify-content: center;
+	color: #1B1C1D;
+	border: 0.94px solid #000000;
+	box-sizing: border-box;
+	width: 184px;
+	height: 59px;
+}
+
+#img_stand{
+	width: 382px;
+	height: 315px;
+}
+
