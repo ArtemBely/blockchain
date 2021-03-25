@@ -9,7 +9,7 @@ class Collaboration extends React.Component {
 
     //this.container = React.createRef();
   }
-  componentDidMount() {
+  /*componentDidMount() {
     window.launchApp = function() {
 
         /// ---------------------------
@@ -255,7 +255,7 @@ class Collaboration extends React.Component {
     });
   }
 
-
+*/
   render() {
     return(
       <div className='collaboration'>
