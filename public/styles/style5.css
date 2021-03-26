@@ -1,4 +1,52 @@
 .footer {
   position: relative;
-  top: 2300px;
+  top: 2400px;
+  display: grid;
+  grid-template-columns: 12.5% repeat(3, 1fr);
+}
+.wrap_spheres {
+  grid-column: 2 / 3;
+}
+.global_bn {
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 23px;
+  font-family: 'Mont-Heavy';
+  position: relative;
+  top: -74px;
+  left: 75px;
+  width: 220px;
+}
+#sphere1 {
+  position: relative;
+  left: 10px;
+}
+#sphere2 {
+  position: relative;
+  left: -46px;
+  top: -1px;
+}
+.each_footer {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: black;
+}
+.wrap_linkes_footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 14px;
+  font-family: 'Inter-Regular';
+}
+.wrap_contacts {
+  display: grid;
+}
+#email {
+  position: relative;
+  top: -52px;
+}
+#second_foot {
+  position: relative;
+  top: 60px;
+  height: 10px;
 }
