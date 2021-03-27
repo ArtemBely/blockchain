@@ -934,8 +934,101 @@ bottom
 	top: -10px;
 }
 
-.footer {
-  position: relative;
-  top: 2300px;
+#footer_container{
+  position: absolute;
+  top:2300px;
+  display: flex;
+  margin:0 auto;
 }
 
+.footer_logo{grid-area:footer_logo}
+.footer_link1{grid-area:footer_link1}
+.footer_link2{grid-area:footer_link2}
+.footer_link3{grid-area:footer_link3}
+.footer_link4{grid-area:footer_link4}
+.footer_link5{grid-area:footer_link5}
+.footer_link6{grid-area:footer_link6}
+.footer_link7{grid-area:footer_link7}
+.footer_link8{grid-area:footer_link8}
+.footer_link9{grid-area:footer_link9}
+.footer_link10{grid-area:footer_link10}
+.footer_link11{grid-area:footer_link11}
+.footer_link12{grid-area:footer_link12}
+
+
+.footer{
+	margin:0 auto;
+	position: absolute;
+  top:2300px;
+  display: grid;
+  grid-template-columns:27% 9% 10% 9% 27% 18%;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+	"footer_logo . footer_link1 footer_link6 . footer_link11"
+	". . footer_link2 footer_link7 . footer_link12"
+	". . footer_link3 footer_link8 . . "
+	". . footer_link4 footer_link9 . ."
+	". . footer_link5 footer_link10 . ."
+}
+.footer_global{
+	font-family: 'Mont-SemiBold';
+  color: #000000;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: left;
+  width: 210px;
+  position: relative;
+  top: 5px;
+}
+.footer_link1 .footer_link2 .footer_link3 .footer_link4 .footer_link5
+.footer_link6 .footer_link7 .footer_link8 .footer_link9 .footer_link10{
+	font-family: 'Inter-Regular';
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.footer_link1 .footer_link7{
+	font-family: 'Inter-Regular';
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.footer_link2 .footer_link8{
+	font-family: 'Inter-Regular';
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.footer_link3 .footer_link9{
+	font-family: 'Inter-Regular';
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.footer_link4 .footer_link10{
+	font-family: 'Inter-Regular';
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.footer_link5 .footer_link11{
+	font-family: 'Inter-Regular';
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.footer_link6 .footer_link12{
+	font-family: 'Inter-Regular';
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
