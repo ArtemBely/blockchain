@@ -1,0 +1,18 @@
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .nav_header {
+    font-size: 16px;
+    top: 35px;
+  }
+  #global {
+    font-size: 18px;
+    left: -65px;
+    line-height: 19px;
+  }
+  .wrap_header {
+    grid-gap: 18px;
+  }
+  .wrap_circle {
+    position: relative;
+    left: -40px;
+  }
+}
