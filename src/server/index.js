@@ -48,7 +48,7 @@ app.get('*', (req, res, next) => {
             <html>
                 <head>
                   <title>collab</title>
-                  <link rel="stylesheet" type="text/css" href="../main.css">
+                   <link rel="stylesheet" type="text/css" href="../main.css">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                       <script src='/bundle.js' defer></script>
                         <script>window.__INITIAL_DATA__= ${serialize(data)}</script>
@@ -58,8 +58,8 @@ app.get('*', (req, res, next) => {
                        <div id="app">
                      ${markup}
                   </div>
-                  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-                </body>
+                <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+              </body>
             </html>`;
 
         return res.send(html);

@@ -1,0 +1,93 @@
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .nav_header {
+    font-size: 16px;
+    top: 35px;
+  }
+  #global {
+    font-size: 18px;
+    left: -65px;
+    line-height: 19px;
+  }
+  .wrap_header {
+    grid-gap: 18px;
+  }
+  .wrap_circle {
+    position: relative;
+    left: -40px;
+  }
+  #block_net{
+	font-size: 40px;
+	line-height: 44px;
+	left:-110px;
+	top:50px;
+  }
+  .main_screen{
+	  height:650px;
+  }
+  #reality {
+	font-size: 30px;
+	line-height: 33px;
+	left:-110px;
+	top:-200px;
+	font-family: 'Inter-ExtraLightBETA';
+	font-weight: 400;
+  }
+  #explore {
+	font-size: 18px;
+	line-height: 25px;
+	top:-617px;
+	left:80px;
+  }
+  #join_for {
+	width: 143px;
+	height: 43px;
+	font-size: 18px;
+	line-height: 25px;
+	left:-110px;
+	top:-400px;
+	font-family: 'Inter-ExtraLightBETA';
+	font-weight: 400;
+  }
+  .watch_vr {
+	top:-150px;
+	left:-200px;
+	
+  }
+  .watch_inside{
+	width: 354px;
+    height: 354px;
+	top:250px;
+	left:70px;
+  }
+   #macbook {
+	width: 221.39px;
+	height: 238.97px;
+	top:-100px;
+	left:150px;
+ }
+	#oculus {
+	width: 212.74px;
+	height: 144.19px;
+	top:110px;
+	left:-30px;
+ }
+	#mobile {
+	width: 95.81px;
+	height: 120.92px;
+	top:110px;
+	left:10px;
+ }
+	.vr {
+	font-size: 16px;
+	line-height: 22px;
+	top:290px;
+	left:120px;
+	color: #FFFFFF;
+ }
+ #play1 {
+	 top:-200px;
+	 width:44px;
+	 height:51px;
+	 left:-60px;
+ }
+}
