@@ -85,9 +85,74 @@
 	color: #FFFFFF;
  }
  #play1 {
-	 top:-200px;
-	 width:44px;
-	 height:51px;
-	 left:-60px;
+	top:-200px;
+	width:44px;
+	height:51px;
+	left:-60px;
+ }
+ .collaboration{
+	height:1200px;
+ }
+ .possibilities{
+	font-size: 30px;
+	line-height: 45px;
+	left: -165px;
+ }
+ .technologies{
+	font-size: 30px;
+	line-height: 45px;
+	left: -165px;
+ }
+ .why{
+	left: -165px;
+	top:-150px;
+ }
+ .community{
+	left: -165px;
+	margin-top:-255px;
+ }
+ .title_2{
+	left: -165px;
+	top:-120px;
+ }
+ .subtitle_2{
+	left: -165px;
+	margin-top:-225px;
+ }
+ .title_3{
+	left: -165px;
+	top:-270px;
+ }
+ .subtitle_3{
+	left: -165px;
+	margin-top:-375px;
+ }
+ .table1{
+	top:700px;
+	grid-template-columns: 5% 90% 5%;
+ }
+ #table_1 {
+	max-width:100%;
+ }
+ .table_glass{
+	top:350px;
+	left:50px;
+	width:1100px;
+	height:250px;
+ }
+ #full_database {
+	left:280px;
+	top:63px;
+ }
+ #register {
+	left:600px;
+	top:0px;
+ }
+ .table_text {
+	left:370px;
+	top:20px;
+ }
+ .wrap_people {
+	top:830px;
  }
 }
