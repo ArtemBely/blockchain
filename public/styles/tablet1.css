@@ -51,7 +51,7 @@
   .watch_vr {
 	top:-150px;
 	left:-200px;
-	
+
   }
   .watch_inside{
 	width: 354px;
@@ -135,24 +135,109 @@
 	max-width:100%;
  }
  .table_glass{
-	top:350px;
-	left:50px;
-	width:1100px;
-	height:250px;
+   width: 100%;
+   left: 0;
  }
  #full_database {
-	left:280px;
+	left:28%;
 	top:63px;
  }
  #register {
-	left:600px;
+	left:55%;
 	top:0px;
  }
  .table_text {
-	left:370px;
+	left:34%;
 	top:20px;
  }
  .wrap_people {
 	top:830px;
+ }
+ .our_people {
+   position: relative;
+   top: -40px;
+   font-size: 26px;
+   line-height: 42px;
+   width: 141px;
+ }
+ .each_person {
+   grid-column: 1 / 2;
+   left: 20%;
+   position: relative;
+   top: -67px;
+   width: 200px;
+ }
+ .people {
+   grid-template-columns: repeat(4, 1fr);
+ }
+ .info_people {
+   grid-column: 1 / 2;
+   position: relative;
+   left: 26%;
+ }
+ .descr_of_person {
+   font-size: 18px;
+ }
+ .wide {
+   top: 1550px;
+ }
+ #wide1 {
+   width: 92%;
+   left: 1%;
+   position: relative;
+   min-height: 260px;
+ }
+ .reg_bottom1 {
+   width: 182px;
+   top: 43px;
+   left: 24%;
+ }
+ .dates1 {
+   grid-column: 1 / 2;
+   position: relative;
+   left: 29px;
+   top: -69px;
+   font-family: 'Inter-Regular';
+   grid-row: 3 / 4;
+   display: block;
+ }
+ .water {
+   height: 178px;
+   width: 84%;
+   left: 9%;
+   top: 21px;
+   grid-template-rows: repeat(3, 1fr);
+ }
+ .vr_gl {
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+ }
+ .VR_stand {
+  font-size: 30px;
+  line-height: 42px;
+ }
+ .brands {
+   top: 1700px;
+   grid-template-columns: repeat(2, 1fr);
+ }
+ .info_brands {
+   grid-column: 1 / 2;
+ }
+ .brands_text, .VR_Stand {
+   padding-left: 70px;
+ }
+ .VR_Stand {
+    font-size: 30px;
+    line-height: 42px;
+    position: relative;
+    top: -41px;
+    width: 471px;
+ }
+ .stand_one {
+   grid-column: 1 / 2;
+   top: -98px;
+ }
+ .stand_two {
+   top: -110px;
  }
 }
