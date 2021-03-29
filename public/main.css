@@ -1232,3 +1232,40 @@ bottom
  }
 }
 
+@media (min-width: 1100px) and (max-width: 1500px) {
+	.wrap_logos {
+		top:1700px;
+		left:-100px;
+	}
+	.participating1{
+		font-size: 30px;
+		line-height: 42px;
+		width:358px;
+	}
+	
+	.seeAll_3 {
+		top:35px;
+		left:-110px;
+	}
+	.explain2 {
+		grid-column: 1 / 9;
+	}
+	.footer{
+		left:-110px;
+		top:2300px;
+	}
+	.wrap_contacts {
+		justify-items:center;
+	}
+	#email {
+		left:-15px;
+	}
+	.wrap_linkes_footer {
+		grid-gap: 20px;
+		grid-column-gap:70px;
+	}
+	.wrap_spheres {
+		margin-top:0px;
+	}
+	
+}
