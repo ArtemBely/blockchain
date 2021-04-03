@@ -131,6 +131,12 @@ bottom
   font-size: 18px;
   line-height: 25px;
 }
+.descr_of_person{
+	font-family: 'Inter-Regular';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+}
 .grad_each {
   position: absolute;
   width: 190px;
