@@ -1,10 +1,14 @@
 .footer {
   position: relative;
   top: 2400px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 12.5% (1fr)[3];
   grid-template-columns: 12.5% repeat(3, 1fr);
 }
 .wrap_spheres {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2 / 3;
 }
 .global_bn {
@@ -33,12 +37,15 @@
   color: black;
 }
 .wrap_linkes_footer {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 14px 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 14px;
   font-family: 'Inter-Regular';
 }
 .wrap_contacts {
+  display: -ms-grid;
   display: grid;
 }
 #email {
@@ -50,4 +57,3 @@
   top: 60px;
   height: 10px;
 }
-

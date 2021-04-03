@@ -8,30 +8,40 @@
 		line-height: 42px;
 		width:358px;
 	}
-	
+
 	.seeAll_3 {
 		top:35px;
 		left:-110px;
 	}
 	.explain2 {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 8;
 		grid-column: 1 / 9;
+	}
+	#img_stand, #img_stand2 {
+		width: 500px;
+	}
+	.square_projects1 {
+		width: 430px;
+	}
+	.square_projects2 {
+		width: 420px;
 	}
 	.footer{
 		left:-110px;
 		top:2300px;
 	}
 	.wrap_contacts {
-		justify-items:center;
-	}
-	#email {
-		left:-15px;
+		justify-items:end;
 	}
 	.wrap_linkes_footer {
+		position: relative;
+    left: 70px;
 		grid-gap: 20px;
 		grid-column-gap:70px;
 	}
 	.wrap_spheres {
 		margin-top:0px;
 	}
-	
+
 }

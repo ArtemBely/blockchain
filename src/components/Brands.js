@@ -22,7 +22,7 @@ function Brands() {
 		</div>
 
 		<div className='stand_two'>
-			<p id='img_stand'><img src={stand1} /></p>
+			<p id='img_stand'><img src={stand1} id='img_stand2'/></p>
 		</div>
     </div>
     )

@@ -16,10 +16,12 @@
 	position: absolute;
 	width: 100%;
 	height: 1400px;
+	display: -ms-grid;
 	display: grid;
 	overflow: hidden;
+	-ms-grid-columns: 20% (1fr)[3];
 	grid-template-columns: 20% repeat(3, 1fr);
-	grid-template-areas:
+	    grid-template-areas:
 		". possibilities ."
 		". technologies ."
 		". why ."
@@ -34,6 +36,8 @@
 	width: 978px;
 	height: 69px;
 	margin-top:100px;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 2;
 	grid-column: 2/4;
 	font-family: 'Mont-SemiBold';
 	font-weight: 800;
@@ -52,6 +56,8 @@
 	height: 200px;
 	font-family: 'Mont-Light';
 	font-weight: 300;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 2;
 	grid-column: 2/4;
 	font-size:45px;
 	line-height:69px;
@@ -146,36 +152,59 @@
 
 #container{
 	position:absolute;
+	-ms-grid-row:3;
+	-ms-grid-row-span:4;
 	grid-row:3/7;
 	width:550px;
 	height:550px;
-	justify-self:center;
-	align-self:center;
+	-ms-grid-column-align:center;
+	    justify-self:center;
+	-ms-grid-row-align:center;
+	    align-self:center;
 	mix-blend-mode: lighten;
 	z-index: 1000;
 	left: 300px;
-	top: -260px;
+	top: -300px;
 }
 
 .table1 {
 	position: relative;
   width: 100%;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   top: 1000px;
 }
 #table_1 {
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
 	grid-column: 2 / 3;
 }
 .table_glass {
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
 	grid-column: 2 / 3;
 	left: 78px;
 	width: 1290px;
 	height: 450px;
+	background: -webkit-gradient(
+	linear
+	, left top, left bottom
+	, color-stop(13.15%, #FFFFFF), color-stop(140.31%, rgba(255, 255, 255, 0)));
+	background: -o-linear-gradient(
+	top
+	, #FFFFFF 13.15%, rgba(255, 255, 255, 0) 140.31%);
 	background: linear-gradient(
 	180deg
 	, #FFFFFF 13.15%, rgba(255, 255, 255, 0) 140.31%);
-	transform: rotate(
+	-webkit-transform: rotate(
+	-180deg
+	);
+	    -ms-transform: rotate(
+	-180deg
+	);
+	        transform: rotate(
 	-180deg
 	);
 	position: absolute;
@@ -183,12 +212,19 @@
 }
 #full_database {
 	position: relative;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
 	grid-column: 2 / 3;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 260px;
 	height: 63px;
 	left: 420px;
 	top: 91px;
+	background: -o-linear-gradient(
+	27.82deg
+	, #6B36EF -22.93%, #1EC0F4 88.82%);
 	background: linear-gradient(
 	62.18deg
 	, #6B36EF -22.93%, #1EC0F4 88.82%);
@@ -198,32 +234,47 @@
 	text-decoration: none;
 	font-family: 'Inter-Regular';
 	color: #FFFFFF;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 #register {
 	position: relative;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
 	grid-column: 2 / 3;
 	position: relative;
 	grid-column: 2 / 3;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	top: 28px;
 	width: 237px;
 	height: 63px;
 	left: 765px;
 	border: 1px solid #000000;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 25px;
 	text-decoration: none;
 	font-family: 'Inter-Regular';
 	color: #000000;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .table_text {
 	position: relative;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
 	grid-column: 2 / 3;
 	text-align: center;
 	width: 402px;

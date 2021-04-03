@@ -14,7 +14,7 @@ class MainScreen extends React.Component{
              <p id='block_net'>Global Blockchain <br/>Network</p>
              <p id='reality'>New business reality <br/>from virtual to real</p>
              <NavLink to='/join' id='join_for'>Join for us</NavLink>
-             <NavLink to='/explore' id='explore'>Explore</NavLink>
+             <NavLink to='/explore' id='explore'>Explore →</NavLink>
           </div>
           <div className='watch_vr'>
               <p className='watch_inside'>

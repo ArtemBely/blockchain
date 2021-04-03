@@ -96,7 +96,9 @@ body {
 .wrap_header {
   position: relative;
   left: -54px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (20%)[2] 5% 20% (7%)[5];
   grid-template-columns: repeat(2, 20%) 5% 20% repeat(5, 7%);
 }
 .wrap_circle {
@@ -110,7 +112,9 @@ body {
   position: relative;
   height: 920px;
   width: 100%;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 20% (1fr)[2];
   grid-template-columns: 20% repeat(2, 1fr);
 }
 .main_wrap {
@@ -151,9 +155,18 @@ body {
   color: #ffffff;
   width: 166px;
   height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -o-linear-gradient(
+  30.01deg
+  , rgba(107, 54, 239, 0) -41.24%, #1EC0F4 88.17%);
   background: linear-gradient(
   59.99deg
   , rgba(107, 54, 239, 0) -41.24%, #1EC0F4 88.17%);
@@ -173,8 +186,12 @@ body {
   top: -298px;
   left: 150px;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 23px;
   border-bottom: 2px solid;
   font-family: 'Inter-Regular';
@@ -184,14 +201,19 @@ body {
   height: 1092.43px;
   left: -345px;
   top: -98px;
+  background: -o-radial-gradient(96.87% 12.13%, 84.88% 107.91%, #FFFFFF 0%, rgba(255, 255, 255, 0.05) 100%);
   background: radial-gradient(84.88% 107.91% at 96.87% 12.13%, #FFFFFF 0%, rgba(255, 255, 255, 0.05) 100%);
-  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
   border-radius: 500px;
   position: relative;
 }
 .blockchain_network {
+  display: -ms-grid;
   display: grid;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   left: -54px;
 }
@@ -201,8 +223,10 @@ body {
   height: 482.68px;
   left: 330px;
   top: 258.66px;
+  background: -o-radial-gradient(123.14% 12.13%, 107.91% 107.91%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
   background: radial-gradient(107.91% 107.91% at 123.14% 12.13%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
-  backdrop-filter: blur(20.8428px);
+  -webkit-backdrop-filter: blur(20.8428px);
+          backdrop-filter: blur(20.8428px);
   border-radius: 548.496px;
 }
 #mobile {
@@ -243,10 +267,23 @@ body {
   position: relative;
   width: 100%;
   height: 320px;
+  background: -webkit-gradient(
+  linear
+  , left top, left bottom
+  , color-stop(7.29%, #000000), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(
+  top
+  , #000000 7.29%, rgba(0, 0, 0, 0) 100%);
   background: linear-gradient(
   180deg
   , #000000 7.29%, rgba(0, 0, 0, 0) 100%);
-  transform: rotate(
+  -webkit-transform: rotate(
+  -180deg
+  );
+      -ms-transform: rotate(
+  -180deg
+  );
+          transform: rotate(
   -180deg
   );
   top: -200px;

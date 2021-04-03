@@ -15,6 +15,9 @@
     position: relative;
     left: -40px;
   }
+  #container {
+    top: -360px;
+  }
   #block_net{
 	font-size: 40px;
 	line-height: 44px;
@@ -55,7 +58,7 @@
   }
   .watch_inside{
 	width: 354px;
-    height: 354px;
+  height: 354px;
 	top:250px;
 	left:70px;
   }
@@ -129,6 +132,7 @@
  }
  .table1{
 	top:700px;
+	-ms-grid-columns: 5% 90% 5%;
 	grid-template-columns: 5% 90% 5%;
  }
  #table_1 {
@@ -158,9 +162,11 @@
    top: -40px;
    font-size: 26px;
    line-height: 42px;
-   width: 141px;
+   width: 152px;
  }
  .each_person {
+   -ms-grid-column: 1;
+   -ms-grid-column-span: 1;
    grid-column: 1 / 2;
    left: 20%;
    position: relative;
@@ -168,9 +174,12 @@
    width: 200px;
  }
  .people {
+   -ms-grid-columns: (1fr)[4];
    grid-template-columns: repeat(4, 1fr);
  }
  .info_people {
+   -ms-grid-column: 1;
+   -ms-grid-column-span: 1;
    grid-column: 1 / 2;
    position: relative;
    left: 26%;
@@ -189,15 +198,19 @@
  }
  .reg_bottom1 {
    width: 182px;
-   top: 43px;
+   top: 59px;
    left: 24%;
  }
  .dates1 {
+   -ms-grid-column: 1;
+   -ms-grid-column-span: 1;
    grid-column: 1 / 2;
    position: relative;
    left: 29px;
    top: -69px;
    font-family: 'Inter-Regular';
+   -ms-grid-row: 3;
+   -ms-grid-row-span: 1;
    grid-row: 3 / 4;
    display: block;
  }
@@ -206,10 +219,15 @@
    width: 84%;
    left: 9%;
    top: 21px;
+   -ms-grid-rows: (1fr)[3];
    grid-template-rows: repeat(3, 1fr);
  }
  .vr_gl {
+   -ms-grid-column: 1;
+   -ms-grid-column-span: 1;
    grid-column: 1 / 2;
+   -ms-grid-row: 1;
+   -ms-grid-row-span: 1;
    grid-row: 1 / 2;
  }
  .VR_stand {
@@ -218,9 +236,12 @@
  }
  .brands {
    top: 1700px;
+   -ms-grid-columns: (1fr)[2];
    grid-template-columns: repeat(2, 1fr);
  }
  .info_brands {
+   -ms-grid-column: 1;
+   -ms-grid-column-span: 1;
    grid-column: 1 / 2;
  }
  .brands_text, .VR_Stand {
@@ -234,6 +255,8 @@
     width: 471px;
  }
  .stand_one {
+   -ms-grid-column: 1;
+   -ms-grid-column-span: 1;
    grid-column: 1 / 2;
    top: -98px;
  }
