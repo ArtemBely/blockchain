@@ -1,7 +1,6 @@
 @media (min-width: 1100px) and (max-width: 1500px) {
 	.wrap_logos {
-		top:1700px;
-		left:-100px;
+		top:1500px;
 	}
 	.participating1{
 		font-size: 30px;
@@ -11,7 +10,13 @@
 
 	.seeAll_3 {
 		top:35px;
-		left:-110px;
+		left:-255px;
+	}
+	.wrap_vacancies {
+		top: 80px;
+	}
+	.block_v, .we_wish {
+		margin: 10px 0px;
 	}
 	.explain2 {
 		-ms-grid-column: 1;
@@ -19,29 +24,77 @@
 		grid-column: 1 / 9;
 	}
 	#img_stand, #img_stand2 {
-		width: 500px;
+		width: 526px;
 	}
-	.square_projects1 {
-		width: 430px;
+	.square_projects1, .square_projects11 {
+		width: 457px;
 	}
-	.square_projects2 {
-		width: 420px;
+	.square_projects2, .square_projects22 {
+		width: 438px;
 	}
 	.footer{
-		left:-110px;
 		top:2300px;
+		width: 990px;
+		grid-template-columns: 14.5% repeat(2, 1fr) 28%;
+	}
+	.reserve, .discover_more, .reserve2 {
+		top: -47px !important;
+	}
+	.discover_more2 {
+		left: 86px !important;
+		top: -45px !important;
 	}
 	.wrap_contacts {
 		justify-items:end;
+		top: -33px;
+		left: -19px;
 	}
 	.wrap_linkes_footer {
 		position: relative;
-    left: 70px;
-		grid-gap: 20px;
-		grid-column-gap:70px;
+		left: 182px;
+	  grid-gap: 26px;
+		grid-column-gap: 76px;
+		top: -15px;
+		width: 400px;
 	}
 	.wrap_spheres {
 		margin-top:0px;
 	}
-
+	.wrap_brands {
+		top: -93px;
+		z-index: -1;
+	}
+	.brands_text {
+		width: 486px;
+	}
+	.seeAll_2 {
+		left: 240px;
+	}
+	.stand_one {
+		left: 90px;
+		top: -70px;
+	}
+	 .stand_two {
+		 left: -77px;
+		 top: -70px;
+	 }
+	 .logos {
+		 width: 990px;
+		 grid-template-columns: repeat(6, 1fr);
+	 }
+	 .join2 {
+		 width: 528px;
+		 top: -33px;
+	 }
+	 #stick7, #stick8, #stick9, #stick10 {
+		 display: none;
+	 }
+	 .wrap_footer {
+		 top: -200px;
+		 z-index: -1;
+	 }
+	 #anchor_link {
+		 left: 122px;
+		 top: -36px;
+	 }
 }

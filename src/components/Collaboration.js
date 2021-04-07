@@ -90,7 +90,7 @@ class Collaboration extends React.Component {
         this.createCube = function() {
             var geometry = new THREE.BoxGeometry(this.cubeSize, this.cubeSize, this.cubeSize);
             var material = new THREE.MeshPhongMaterial({
-                color: '#1c1c1c',
+                color: '#2e2e2e',
                 side: THREE.DoubleSide,
                 opacity: .6,
                 transparent: true
@@ -255,24 +255,21 @@ class Collaboration extends React.Component {
     });
   }
 
-
   render() {
     return(
-      <div className='collaboration'>
-          <h1 className='possibilities'>Immerse yourself in a world of possibilities</h1>
-      <h2 className='technologies'>We use the latest technologies to create <br/> the most comfortable platform <br/> for finding business partners</h2>
-      <h3 className='why'>Why</h3>
-      <h4 className='community'>We believe in collaboration, transparency, and the power of information. Thus we united multiple national associations and prominent community members. We created the most thorough database of companies involved in the blockchain field. We added The VR Expo and conference. Bonus for participants of the Global Blockchain Network is an HR section where you can find a professional to scale up your team.</h4>
-      <h3 className='title_2'>What is it</h3>
-      <h4 className='subtitle_2'>What Easiest way to know «Who is Who in the Blockchain».</h4>
-      <h3 className='title_3'>For whom</h3>
-      <h4 className='subtitle_3'>Whether you are new to blockchain or already a prominent community member, you will find here partners, technologies, and implementation cases for any use. The Network is for everyone fascinated by technology.</h4>
-
-            <div id='container'>
+          <div className='collaboration'>
+            <div className='collab_inside'>
+              <h1 className='possibilities'>Immerse yourself in a world of possibilities</h1>
+                <h2 className='technologies'>We use the latest technologies to create <br/> the most comfortable platform <br/> for finding business partners</h2>
+                  <h3 className='why'>Why</h3>
+                  <h4 className='community'>We believe in collaboration, transparency, and the power of information. Thus we united multiple national associations and prominent community members. We created the most thorough database of companies involved in the blockchain field. We added The VR Expo and conference. Bonus for participants of the Global Blockchain Network is an HR section where you can find a professional to scale up your team.</h4>
+                  <h3 className='title_2'>What is it</h3>
+                  <h4 className='subtitle_2'>What Easiest way to know «Who is Who in the Blockchain».</h4>
+                  <h3 className='title_3'>For whom</h3>
+                <h4 className='subtitle_3'>Whether you are new to blockchain or already a prominent community member, you will find here partners, technologies, and implementation cases for any use. The Network is for everyone fascinated by technology.</h4>
+              <div id='container'></div>
             </div>
-      </div>
-
-
+          </div>
     )
   }
 }
