@@ -24,13 +24,17 @@
 		grid-column: 1 / 9;
 	}
 	#img_stand, #img_stand2 {
-		width: 526px;
+		width: 570px;
 	}
 	.square_projects1, .square_projects11 {
-		width: 457px;
+		width: 496px;
+		height: 442px;
+		top: 21px;
 	}
 	.square_projects2, .square_projects22 {
-		width: 438px;
+		width: 468px;
+		height: 336px;
+		top: 45px;
 	}
 	.footer{
 		top:2300px;
@@ -40,9 +44,21 @@
 	.reserve, .discover_more, .reserve2 {
 		top: -47px !important;
 	}
+	.reserve, .reserve2 {
+		height: 63px;
+		width: 171px;
+		font-size: 18px;
+		left: 81px;
+	}
+	.discover_more, .discover_more2 {
+		width: 197px;
+		height: 63px;
+		left: -290px;
+		font-size: 18px;
+	}
 	.discover_more2 {
-		left: 86px !important;
-		top: -45px !important;
+		left: 94px !important;
+		top: -47px !important;
 	}
 	.wrap_contacts {
 		justify-items:end;
@@ -71,11 +87,11 @@
 		left: 240px;
 	}
 	.stand_one {
-		left: 90px;
+		left: 128px;
 		top: -70px;
 	}
 	 .stand_two {
-		 left: -77px;
+		 left: -121px;
 		 top: -70px;
 	 }
 	 .logos {
