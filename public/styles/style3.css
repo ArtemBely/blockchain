@@ -59,7 +59,7 @@
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0px 10px;
 }
 .each_person:hover {
   background: -webkit-gradient(
@@ -83,6 +83,10 @@ bottom
   -webkit-filter: blur(24px);
           filter: blur(24px);
 }
+.each_person:hover #img_person {
+  border-radius: 12px;
+}
+
 .description_people, .seeAll {
   font-family: 'Inter-LightBETA';
   font-weight: 400;

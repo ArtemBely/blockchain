@@ -125,13 +125,13 @@ body {
   left: 90px;
 }
 #blog {
-  left: 61px;
+  left: 71px;
 }
 #header_about {
-  left: 59px;
+  left: 62px;
 }
 #partners {
-  left: 41px;
+  left: 43px;
 }
 #database {
   left: -30px;
@@ -141,7 +141,7 @@ body {
 }
 #conference {
   text-align: center;
-  left: 20px;
+  left: 18px;
 }
 .wrap_header {
   position: relative;
@@ -517,7 +517,7 @@ body {
 	    align-self:center;
 	mix-blend-mode: lighten;
 	z-index: 1000;
-	left: 300px;
+	left: 145px;
 	top: -300px;
 }
 
@@ -716,7 +716,7 @@ body {
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0px 10px;
 }
 .each_person:hover {
   background: -webkit-gradient(
@@ -740,6 +740,10 @@ bottom
   -webkit-filter: blur(24px);
           filter: blur(24px);
 }
+.each_person:hover #img_person {
+  border-radius: 12px;
+}
+
 .description_people, .seeAll {
   font-family: 'Inter-LightBETA';
   font-weight: 400;
@@ -1890,6 +1894,11 @@ bottom
  }
 }
 
+@media (min-width: 1485px) and (max-width: 1800px) {
+	#container {
+		left: 220px;
+	}
+}
 @media (min-width: 1100px) and (max-width: 1500px) {
 	.wrap_logos {
 		top:1500px;

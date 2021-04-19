@@ -1,3 +1,8 @@
+@media (min-width: 1485px) and (max-width: 1800px) {
+	#container {
+		left: 220px;
+	}
+}
 @media (min-width: 1100px) and (max-width: 1500px) {
 	.wrap_logos {
 		top:1500px;
