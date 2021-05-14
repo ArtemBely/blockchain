@@ -44,6 +44,15 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'Inter-Medium';
+    src: url('../../fonts/Inter-Medium.eot');
+    src: url('../../fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Inter-Medium.woff') format('woff'),
+    url('../../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Inter-ExtraLightBETA';
     src: url('../../fonts/Inter-ExtraLightBETA.eot');
     src: url('../../fonts/Inter-ExtraLightBETA.eot?#iefix') format('embedded-opentype'),
@@ -61,6 +70,27 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Inter-LightBETA';
+    src: url('../../fonts/Inter-LightBETA.eot');
+    src: url('../../fonts/Inter-LightBETA.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Inter-LightBETA.woff') format('woff'),
+    url('../../fonts/Inter-LightBETA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont-DEMOExtraLight';
+    src: url('../../fonts/Mont-DEMOExtraLight.eot');
+    src: url('../../fonts/Mont-DEMOExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Mont-DEMOExtraLight.woff') format('woff'),
+    url('../../fonts/Mont-DEMOExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Mont-Regular';
   padding: 0;
@@ -68,7 +98,7 @@ body {
   overflow-x: hidden;
 }
 #global {
-  font-family: 'Mont-SemiBold';
+  font-family: 'Mont-Heavy';
   color: #ffffff;
   font-weight: 900;
   font-size: 20px;
@@ -76,7 +106,8 @@ body {
   text-align: left;
   width: 210px;
   position: relative;
-  top: 5px;
+  top: 1px;
+  left: -193px;
 }
 .nav_header {
   font-weight: 400;
@@ -86,32 +117,61 @@ body {
   position: relative;
   top: 40px;
   text-align: center;
-  left: -50px;
-  font-family: 'Inter-ExtraLightBETA';
+  font-family: 'Inter-LightBETA';
   z-index: 10;
+  height: 30px;
+}
+#cont {
+  left: 90px;
+}
+#blog {
+  left: 71px;
+}
+#header_about {
+  left: 62px;
+}
+#partners {
+  left: 43px;
+}
+#database {
+  left: -30px;
+}
+#header_contacts {
+  left: 90px;
 }
 #conference {
   text-align: center;
+  left: 18px;
 }
 .wrap_header {
   position: relative;
-  left: -54px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (20%)[2] 5% 20% (7%)[5];
   grid-template-columns: repeat(2, 20%) 5% 20% repeat(5, 7%);
+  width: 1290px;
 }
-.wrap_circle {
-  text-align: right;
+.wrap_mainHeader {
+  display: flex;
+  justify-content: center;
 }
+
 #circle2 {
   position: relative;
   right: 52px;
 }
+.wrap_mainScreen {
+  display: flex;
+  justify-content: center;
+}
 .main_screen {
   position: relative;
   height: 920px;
-  width: 100%;
+  width: 1290px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 20% repeat(2, 1fr);
+  -ms-grid-columns: 1px (1fr)[2];
+  grid-template-columns: 1px repeat(2, 1fr);
 }
 .main_wrap {
   background-image: url('../images/Rectangle 2.jpg');
@@ -136,6 +196,7 @@ body {
   position: relative;
   width: 500px;
   left: -70px;
+  top: -42px;
   font-weight: 400;
   color: #ffffff;
   font-size: 49px;
@@ -147,13 +208,22 @@ body {
 #join_for {
   position: relative;
   left: -70px;
-  top: -115px;
+  top: -212px;
   color: #ffffff;
   width: 166px;
   height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -o-linear-gradient(
+  30.01deg
+  , rgba(107, 54, 239, 0) -41.24%, #1EC0F4 88.17%);
   background: linear-gradient(
   59.99deg
   , rgba(107, 54, 239, 0) -41.24%, #1EC0F4 88.17%);
@@ -161,7 +231,7 @@ body {
   font-size: 22px;
   line-height: 31px;
   text-decoration: none;
-  font-family: 'Inter-Regular';
+  font-family: 'Inter-LightBETA';
 }
 #explore {
   color: #ffffff;
@@ -170,39 +240,51 @@ body {
   line-height: 31px;
   width: 105px;
   position: relative;
-  top: -298px;
+  top: -392px;
   left: 150px;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 23px;
   border-bottom: 2px solid;
-  font-family: 'Inter-Regular';
+  font-family: 'Inter-LightBETA';
 }
 .watch_vr {
   width: 260%;
   height: 1092.43px;
-  left: -345px;
+  left: 0px;
   top: -98px;
+  background: -o-radial-gradient(96.87% 12.13%, 84.88% 107.91%, #FFFFFF 0%, rgba(255, 255, 255, 0.05) 100%);
   background: radial-gradient(84.88% 107.91% at 96.87% 12.13%, #FFFFFF 0%, rgba(255, 255, 255, 0.05) 100%);
-  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
   border-radius: 500px;
   position: relative;
 }
 .blockchain_network {
+  display: -ms-grid;
   display: grid;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  left: -54px;
+  left: 66px;
+  top: -75px;
 }
 .watch_inside {
   position: absolute;
   width: 482.68px;
   height: 482.68px;
-  left: 330px;
-  top: 258.66px;
+  left: 111px;
+  top: 235px;
+  background: -o-radial-gradient(123.14% 12.13%, 107.91% 107.91%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
   background: radial-gradient(107.91% 107.91% at 123.14% 12.13%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
-  backdrop-filter: blur(20.8428px);
+  -webkit-backdrop-filter: blur(20.8428px);
+          backdrop-filter: blur(20.8428px);
   border-radius: 548.496px;
 }
 #mobile {
@@ -243,11 +325,24 @@ body {
   position: relative;
   width: 100%;
   height: 320px;
+  background: -webkit-gradient(
+  linear
+  , left top, left bottom
+  , color-stop(7.29%, #000000), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(
+  top
+  , #000000 7.29%, rgba(0, 0, 0, 0) 100%);
   background: linear-gradient(
   180deg
   , #000000 7.29%, rgba(0, 0, 0, 0) 100%);
-  transform: rotate(
+  -webkit-transform: rotate(
   -180deg
   );
-  top: -200px;
+      -ms-transform: rotate(
+  -180deg
+  );
+          transform: rotate(
+  -180deg
+  );
+  top: -281px;
 }

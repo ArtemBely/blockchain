@@ -9,7 +9,7 @@ class Collaboration extends React.Component {
 
     //this.container = React.createRef();
   }
-  /*componentDidMount() {
+  componentDidMount() {
     window.launchApp = function() {
 
         /// ---------------------------
@@ -90,9 +90,9 @@ class Collaboration extends React.Component {
         this.createCube = function() {
             var geometry = new THREE.BoxGeometry(this.cubeSize, this.cubeSize, this.cubeSize);
             var material = new THREE.MeshPhongMaterial({
-                color: 0x11111f,
+                color: '#2e2e2e',
                 side: THREE.DoubleSide,
-                opacity: .5,
+                opacity: .6,
                 transparent: true
             });
             var cube = new THREE.Mesh(geometry, material);
@@ -105,11 +105,11 @@ class Collaboration extends React.Component {
 
             this.lights = [];
             var colors = [
-              '54BE68',
-              '2CB060',
-              '1AA261',
-              '0C8D64',
-              '037868'
+              '0101DF',
+              '00BFFF',
+              '08088A',
+              '0101DF',
+              '0000FF'
             ];
 
             for (var i = 0; i < 5; i++) {
@@ -148,10 +148,10 @@ class Collaboration extends React.Component {
             var blockNumber = Math.floor(Math.random() * Math.floor(1000));
             bitmap.width = 256;
             bitmap.height = 256;
-            g.font = '30px Arial';
+            g.font = '28px Arial';
             g.fillStyle = 'white';
-            g.fillText('Global Blockchain' + blockNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.4);
-            g.fillText('Network' + transactionsNumber.toString(), this.cubeSize * 0.1, this.cubeSize * 0.55);
+            g.fillText('Global Blockchain' + '', this.cubeSize * 0.1, this.cubeSize * 0.4);
+            g.fillText('Network' + '', this.cubeSize * 0.1, this.cubeSize * 0.55);
 
             var geometry = new THREE.PlaneGeometry(this.cubeSize * 0.9, this.cubeSize * 0.9);
             var texture = new THREE.CanvasTexture(bitmap);
@@ -255,24 +255,21 @@ class Collaboration extends React.Component {
     });
   }
 
-*/
   render() {
     return(
-      <div className='collaboration'>
-          <h1 className='possibilities'>Immerse yourself in a world of possibilities</h1>
-      <h2 className='technologies'>We use the latest technologies to create <br/> the most comfortable platform <br/> for finding business partners</h2>
-      <h3 className='why'>Why</h3>
-      <h4 className='community'>We believe in collaboration, transparency, and the power of information. Thus we united multiple national associations and prominent community members. We created the most thorough database of companies involved in the blockchain field. We added The VR Expo and conference. Bonus for participants of the Global Blockchain Network is an HR section where you can find a professional to scale up your team.</h4>
-      <h3 className='title_2'>What is it</h3>
-      <h4 className='subtitle_2'>What Easiest way to know «Who is Who in the Blockchain».</h4>
-      <h3 className='title_3'>For whom</h3>
-      <h4 className='subtitle_3'>Whether you are new to blockchain or already a prominent community member, you will find here partners, technologies, and implementation cases for any use. The Network is for everyone fascinated by technology.</h4>
-
-            <div id='container'>
+          <div className='collaboration'>
+            <div className='collab_inside'>
+              <h1 className='possibilities'>Immerse yourself in a world of possibilities</h1>
+                <h2 className='technologies'>We use the latest technologies to create <br/> the most comfortable platform <br/> for finding business partners</h2>
+                  <h3 className='why'>Why</h3>
+                  <h4 className='community'>We believe in collaboration, transparency, and the power of information. Thus we united multiple national associations and prominent community members. We created the most thorough database of companies involved in the blockchain field. We added The VR Expo and conference. Bonus for participants of the Global Blockchain Network is an HR section where you can find a professional to scale up your team.</h4>
+                  <h3 className='title_2'>What is it</h3>
+                  <h4 className='subtitle_2'>What Easiest way to know «Who is Who in the Blockchain».</h4>
+                  <h3 className='title_3'>For whom</h3>
+                <h4 className='subtitle_3'>Whether you are new to blockchain or already a prominent community member, you will find here partners, technologies, and implementation cases for any use. The Network is for everyone fascinated by technology.</h4>
+              <div id='container'></div>
             </div>
-      </div>
-
-
+          </div>
     )
   }
 }
