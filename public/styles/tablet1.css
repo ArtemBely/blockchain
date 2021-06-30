@@ -205,9 +205,9 @@
  }
  .people {
    width: 990px;
-   -ms-grid-columns: (1fr)[3];
+   -ms-grid-columns: (1fr);
    grid-template-columns: repeat(3, 1fr);
-   -ms-grid-rows: (1fr)[3];
+   -ms-grid-rows: (1fr);
    grid-template-rows: repeat(3, 1fr);
  }
  .info_people {
@@ -269,7 +269,7 @@
    height: 178px;
    width: 851px;
    top: 21px;
-   -ms-grid-rows: (1fr)[3];
+   -ms-grid-rows: (1fr);
    grid-template-rows: repeat(3, 1fr);
  }
  .vr_gl {
@@ -288,7 +288,7 @@
  .brands {
    top: 1700px;
    width: 990px;
-   -ms-grid-columns: (1fr)[2];
+   -ms-grid-columns: (1fr);
    grid-template-columns: repeat(2, 1fr);
  }
  .info_brands {
