@@ -253,6 +253,12 @@
 .stand_two:hover .discover_more2 {
 	opacity: 1;
 }
+.reserve3, .discover_more3 {
+	opacity: 0;
+}
+#table_mobile {
+	display: none;
+}
 .wrap_logos {
 	position: relative;
   top: 980px;

@@ -3,13 +3,15 @@ import { NavLink } from 'react-router-dom';
 import table from '../../public/images/Group 167.png';
 import table2 from '../../public/images/Group 181.png';
 import table3 from '../../public/images/Rectangle 177.png';
+import tableMobile from '../../public/images/Group 238.png';
 
 function Table1() {
     return (
       <div className='table1'>
-        <img src={table} id='table_1'/>
-          <img src={table2} id='table_2'/>
-            <img src={table3} id='table_3'/>
+        <img src={tableMobile} id='table_mobile' />
+          <img src={table} id='table_1'/>
+            <img src={table2} id='table_2'/>
+             <img src={table3} id='table_3'/>
 		         <div className='table_glass'></div>
              <NavLink to='#' id='full_database'>Full database</NavLink>
             <NavLink to='#' id='register'>Register a company</NavLink>

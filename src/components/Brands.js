@@ -18,16 +18,24 @@ function Brands() {
         			<img src={stand1} id='img_stand' />
               <p className='square_projects1'></p>
               <p className='square_projects2'></p>
-        			<NavLink to='#' className='reserve'>Reserve</NavLink>
-        			<NavLink to='#' className='discover_more'>Discover more</NavLink>
+        			<NavLink to='#' className='reserve' id='res_one'>Reserve</NavLink>
+        			<NavLink to='#' className='discover_more' id='dis_one'>Discover more</NavLink>
         		</div>
+
+            <div className='stand_between'>
+              <img src={stand1} id='img_standBetween' />
+              <p className='square_projects3'></p>
+              <p className='square_projects33'></p>
+              <NavLink to='#' className='reserve3'>Reserve</NavLink>
+              <NavLink to='#' className='discover_more3'>Discover more</NavLink>
+            </div>
 
         		<div className='stand_two'>
         		  <img src={stand1} id='img_stand2'/>
               <p className='square_projects11'></p>
               <p className='square_projects22'></p>
-              <NavLink to='#' className='reserve2'>Reserve</NavLink>
-              <NavLink to='#' className='discover_more2'>Discover more</NavLink>
+              <NavLink to='#' className='reserve2 specRes'>Reserve</NavLink>
+              <NavLink to='#' className='discover_more2 specDis'>Discover more</NavLink>
         		</div>
             </div>
         </div>
