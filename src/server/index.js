@@ -30,9 +30,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(validator());
 app.use(cookieParser());
 
-app.get('/', (req, res) => {
-  res.send('HELLO WORLD');
-});
 app.get('*', (req, res, next) => {
   const activeRouter = Routes.find((route) => matchPath(req.url, route)) || {};
   const promise = activeRouter.fetchInitialData ?
