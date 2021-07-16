@@ -9,9 +9,21 @@ import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import serialize from 'serialize-javascript';
 import validator from 'express-validator';
+import fs from 'fs';
+import path from 'path';
+import http from 'http';
+import https from 'https';
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+var privateKey = fs.readFileSync(path.resolve('src/server/ssl/gbn.rocks.key'));
+var certificate = fs.readFileSync(path.resolve('src/server/ssl/gbn.rocks.pem'));
+
+var credentials = {
+  key: privateKey,
+  cert: certificate
+}
 
 app.use(function(req, res, next) {
   res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
@@ -84,4 +96,8 @@ app.use((req, res, next) => {  //<-- заменить если появится 
      next (err);
 });
 
-app.listen(3000, () => {console.log('connected!')});
+var httpServer = http.createServer(app);
+var httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(8080, () => {console.log('connected on http!')});
+httpsServer.listen(443, () => {console.log('connected on https!')});
