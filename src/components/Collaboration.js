@@ -9,6 +9,7 @@ class Collaboration extends React.Component {
 
     this.container = React.createRef();
   }
+
   componentDidMount() {
     window.launchApp = function() {
 

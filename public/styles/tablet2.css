@@ -1,6 +1,6 @@
 @media (min-width: 1485px) and (max-width: 1800px) {
 	#container {
-		left: 220px;
+		top: -700px;
 	}
 }
 @media (min-width: 1000px) and (max-width: 1500px) {

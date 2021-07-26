@@ -158,7 +158,10 @@ body {
   display: flex;
   justify-content: center;
 }
-
+#img_person {
+  z-index: 1000;
+  position: relative;
+}
 #circle2 {
   position: relative;
   right: 52px;
@@ -520,8 +523,8 @@ body {
 	    align-self:center;
 	mix-blend-mode: lighten;
 	z-index: 1000;
-	left: 145px;
-	top: -300px;
+	left: -345px;
+	top: -558px;
 }
 
 .table1 {
@@ -720,28 +723,33 @@ body {
   grid-column: 4 / 5;
   border-radius: 10px;
   padding: 0px 10px;
+  position: relative;
 }
 .each_person:hover {
-  background: -webkit-gradient(
+  /*background: -webkit-gradient(
 linear
 , left bottom, left top
-, from(rgba(255, 255, 255, 0.43)), to(rgba(0, 209, 255, 0.2)));
+, from(rgba(255, 255, 255, 0.23)), to(rgba(0, 209, 255, 0.2)));
   background: -o-linear-gradient(
 bottom
-, rgba(255, 255, 255, 0.43) 0%, rgba(0, 209, 255, 0.2) 100%);
+, rgba(255, 255, 255, 0.23) 0%, rgba(0, 209, 255, 0.2) 100%);
   background: linear-gradient(
 360deg
-, rgba(255, 255, 255, 0.43) 0%, rgba(0, 209, 255, 0.2) 100%);
+, rgba(255, 255, 255, 0.23) 0%, rgba(0, 209, 255, 0.2) 100%);
     -webkit-backdrop-filter: blur(43px);
-            backdrop-filter: blur(43px);
+            backdrop-filter: blur(43px);*/
             cursor: pointer;
+            background-image: url(/f5918f72a3191c84eec31326a05aea2d.png);
+            background-repeat: no-repeat;
 }
+
 .each_person:hover .grad_each {
-  background: -o-linear-gradient(225.99deg, rgba(112, 0, 255, 0.33) -23.44%, rgba(0, 87, 255, 0.33) 106.41%);
-  background: linear-gradient(224.01deg, rgba(112, 0, 255, 0.33) -23.44%, rgba(0, 87, 255, 0.33) 106.41%);
-  background-blend-mode: multiply;
-  -webkit-filter: blur(24px);
-          filter: blur(24px);
+          background: -o-linear-gradient(225.99deg, rgba(112, 0, 255, 0.33) -23.44%, rgba(0, 87, 255, 0.33) 106.41%);
+          background: linear-gradient(224.01deg, rgba(112, 0, 255, 0.33) -23.44%, rgba(0, 87, 255, 0.33) 106.41%);
+          background-blend-mode: multiply;
+          -webkit-filter: blur(24px);
+                  filter: blur(24px);
+
 }
 .each_person:hover #img_person {
   border-radius: 12px;
@@ -815,9 +823,8 @@ bottom
   position: absolute;
   width: 190px;
   height: 190px;
-  top: 6px;
+  top: 0px;
   left: 25px;
-  z-index: -1;
 }
 .wide {
   position: relative;
@@ -1603,8 +1610,8 @@ bottom
     top: 1px;
   }
   #container {
-    top: -360px;
-    left: 150px;
+    top: -598px;
+    left: -104px;
   }
   #block_net{
 	font-size: 40px;
@@ -1641,7 +1648,7 @@ bottom
 	font-weight: 400;
   }
   .watch_vr {
-	top:-150px;
+	top:-232px;
 	left:-69px;
   }
   .collab_inside {
@@ -1911,7 +1918,7 @@ bottom
 
 @media (min-width: 1485px) and (max-width: 1800px) {
 	#container {
-		left: 220px;
+		top: 700px;
 	}
 }
 @media (min-width: 1000px) and (max-width: 1500px) {
@@ -2524,11 +2531,11 @@ bottom
       top:400px;
     }
     .people {
-      grid-template-rows: 133px 350px 350px;
+      grid-template-rows: 133px 1fr 1fr;
       grid-template-columns: repeat(3, 230px);
       width: 721px;
       top: 0px;
-      height: 900px;
+      height: 931px;
       margin-left: -8px;
       grid-row-gap: 30px;
       grid-column-gap: 20px;
@@ -2610,8 +2617,9 @@ bottom
       height: 229px;
     }
     .each_person {
-      width: 229px;
-      padding: 0;
+      width: 251px;
+      padding: 0px 10px;
+      background-size: 92%;
     }
     .grad_each {
       width: 230px;
@@ -2921,6 +2929,7 @@ bottom
       left:142px;
       text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
       z-index: 10;
+      width: 77px;
     }
     #join_for {
       width: 122px;
@@ -3175,11 +3184,11 @@ bottom
       top:0px;
     }
     .people {
-      grid-template-rows: 160px 304px 304px;
+      grid-template-rows: 160px 1fr 1fr;
       grid-template-columns: repeat(2, 130px);
       width: 320px;
       top: 0px;
-      height: 900px;
+      height: 877px;
       margin-left: 40px;
       grid-row-gap: 20px;
       grid-column-gap: 20px;
@@ -3248,7 +3257,6 @@ bottom
       font-size: 16px;
       line-height: 22px;
       height: 100px;
-      overflow-y: scroll;
     }
     #img_person{
       width: 130px;
@@ -3275,7 +3283,7 @@ bottom
       line-height: 22px;
     }
     .wide{
-      top: 910px;
+      top: 976px;
     }
     .water {
       height: 170px;
@@ -3334,7 +3342,7 @@ bottom
       border-radius: 20px;
     }
     .wrap_brands{
-      top: 1010px;
+      top: 1102px;
     }
     .brands {
       width: 320px;
@@ -3451,7 +3459,7 @@ bottom
       left: 0 !important;
     }
     .wrap_logos{
-      top: 1080px;
+      top: 1180px;
     }
     .logos{
       width: 320px;
@@ -3521,7 +3529,7 @@ bottom
       width: 279px;
     }
     .wrap_footer{
-      top: 1560px;
+      top: 1669px;
     }
     .footer{
       width: 257px;

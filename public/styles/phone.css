@@ -63,6 +63,7 @@
       left:142px;
       text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
       z-index: 10;
+      width: 77px;
     }
     #join_for {
       width: 122px;
@@ -317,11 +318,11 @@
       top:0px;
     }
     .people {
-      grid-template-rows: 160px 304px 304px;
+      grid-template-rows: 160px 1fr 1fr;
       grid-template-columns: repeat(2, 130px);
       width: 320px;
       top: 0px;
-      height: 900px;
+      height: 877px;
       margin-left: 40px;
       grid-row-gap: 20px;
       grid-column-gap: 20px;
@@ -390,7 +391,6 @@
       font-size: 16px;
       line-height: 22px;
       height: 100px;
-      overflow-y: scroll;
     }
     #img_person{
       width: 130px;
@@ -417,7 +417,7 @@
       line-height: 22px;
     }
     .wide{
-      top: 910px;
+      top: 976px;
     }
     .water {
       height: 170px;
@@ -476,7 +476,7 @@
       border-radius: 20px;
     }
     .wrap_brands{
-      top: 1010px;
+      top: 1102px;
     }
     .brands {
       width: 320px;
@@ -593,7 +593,7 @@
       left: 0 !important;
     }
     .wrap_logos{
-      top: 1080px;
+      top: 1180px;
     }
     .logos{
       width: 320px;
@@ -663,7 +663,7 @@
       width: 279px;
     }
     .wrap_footer{
-      top: 1560px;
+      top: 1669px;
     }
     .footer{
       width: 257px;

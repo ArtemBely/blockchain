@@ -158,7 +158,10 @@ body {
   display: flex;
   justify-content: center;
 }
-
+#img_person {
+  z-index: 1000;
+  position: relative;
+}
 #circle2 {
   position: relative;
   right: 52px;
