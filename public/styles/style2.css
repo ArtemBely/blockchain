@@ -168,8 +168,8 @@
 	    align-self:center;
 	mix-blend-mode: lighten;
 	z-index: 1000;
-	left: -345px;
-	top: -558px;
+	left: 54px !important;
+	top: -327px !important;
 }
 
 .table1 {

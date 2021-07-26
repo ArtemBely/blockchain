@@ -523,8 +523,8 @@ body {
 	    align-self:center;
 	mix-blend-mode: lighten;
 	z-index: 1000;
-	left: -345px;
-	top: -558px;
+	left: 54px !important;
+	top: -327px !important;
 }
 
 .table1 {
@@ -1610,8 +1610,8 @@ bottom
     top: 1px;
   }
   #container {
-    top: -598px;
-    left: -104px;
+    top: -355px !important;
+    left: 45px !important;
   }
   #block_net{
 	font-size: 40px;
@@ -1918,7 +1918,7 @@ bottom
 
 @media (min-width: 1485px) and (max-width: 1800px) {
 	#container {
-		top: 700px;
+		top: -700px;
 	}
 }
 @media (min-width: 1000px) and (max-width: 1500px) {
@@ -2043,6 +2043,16 @@ bottom
       -moz-transform: scale(0.68, 0.68); /* Moz-browsers */
       zoom: 0.68; /* Other non-webkit browsers */
       zoom: 68%; /* Webkit browsers */
+  }
+  #container {
+    left: 281px !important;
+    top: -255px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  #container {
+    left: 200px !important;
+    top: -285px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 1000px) {
@@ -2466,8 +2476,6 @@ bottom
       align-self: center;
       mix-blend-mode: lighten;
       z-index: 1000;
-      left: 200px;
-      top: -285px;
     }
     #table_1 {
       display: none;

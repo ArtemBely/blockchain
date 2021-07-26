@@ -23,8 +23,8 @@
     top: 1px;
   }
   #container {
-    top: -598px;
-    left: -104px;
+    top: -355px !important;
+    left: 45px !important;
   }
   #block_net{
 	font-size: 40px;
