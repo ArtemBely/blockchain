@@ -180,7 +180,7 @@ body {
   grid-template-columns: 1px repeat(2, 1fr);
 }
 .main_wrap {
-  background-image: url(/902c3503b3a6c54eaa4dc97af24cd441.jpg);
+  background-image: url("/images/Rectangle 2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 1100px;
@@ -366,7 +366,7 @@ body {
 .collaboration {
 	position: relative;
 	margin-top:-300px;
-	background-image: url(/d5ed54eb8656035a23e6368b1be459fa.png);
+	background-image: url("/images/Mask Group.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 1400px;
@@ -739,7 +739,7 @@ bottom
     -webkit-backdrop-filter: blur(43px);
             backdrop-filter: blur(43px);*/
             cursor: pointer;
-            background-image: url(/f5918f72a3191c84eec31326a05aea2d.png);
+            background-image: url("/images/Rectangle 177 — копия.png");
             background-repeat: no-repeat;
 }
 
@@ -1693,7 +1693,7 @@ bottom
  }
  .collaboration{
 	height:1300px;
-  background-image: url(/5c333f38a5d727ef64cb9ac423829753.png)
+  background-image: url("/images/Без имени-1.png")
  }
  .possibilities{
 	font-size: 30px;
@@ -3033,7 +3033,7 @@ bottom
     }
     .collaboration{
 	    height:1500px;
-      background-image: url(/7451fac5de8683adf97db5e00b36a8f1.png);
+      background-image: url("/images/Без имени-1 — копия.png");
     }
     .fone {
       top: -269px;

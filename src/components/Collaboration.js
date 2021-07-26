@@ -10,7 +10,10 @@ class Collaboration extends React.Component {
     this.container = React.createRef();
   }
 
+
   componentDidMount() {
+
+
     window.launchApp = function() {
 
         /// ---------------------------
@@ -254,6 +257,7 @@ class Collaboration extends React.Component {
     document.addEventListener("DOMContentLoaded", function() {
         this.app = new launchApp();
     });
+    
   }
 
   render() {
