@@ -1585,7 +1585,7 @@ bottom
   width: 30px;
 }
 
-@media (min-width: 1000px) and (max-width: 1485px) {
+@media (min-width: 1000px) and (max-width: 1500px) {
   .nav_header {
     font-size: 16px;
     top: 35px;
