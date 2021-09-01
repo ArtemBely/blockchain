@@ -9,6 +9,7 @@ import Wide from './Wide';
 import Brands from './Brands';
 import Logos from './Logos';
 import Footer from './Footer';
+import Database from './Database';
 
 class Main extends React.Component{
   render() {
@@ -24,6 +25,7 @@ class Main extends React.Component{
           <Brands />
           <Logos />
           <Footer />
+          <Database />
       </div>
     )
   }
