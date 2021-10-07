@@ -1,0 +1,218 @@
+.wrap_database {
+  width: 100%;
+  height: 1510px;
+  background: #131A43;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+.glDb {
+  font-family: 'Inter-SemiBold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 41px;
+  line-height: 150%;
+  width: 368px;
+}
+.comDb {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 41px;
+  line-height: 140%;
+  position: relative;
+  top: -39px;
+  width: 432px;
+}
+.wrapDB {
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  grid-row: 2 / 3;
+  width: 100%;
+  top: 200px;
+  color: white;
+}
+.dB {
+  position: relative;
+  top: -30px;
+  width: 1290px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.addDb {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 166px;
+  height: 41px;
+  background: linear-gradient(62.18deg, rgba(107, 54, 239, 0) -22.93%, #1EC0F4 88.82%);
+  font-size: 18px;
+  line-height: 140%;
+  font-family: 'Inter-Regular';
+  cursor: pointer;
+  top: -47px;
+}
+.moreDb {
+  font-size: 18px;
+  line-height: 140%;
+  color: white;
+  position: relative;
+  left: 213px;
+  top: -97px;
+}
+.wrapTable {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 600px;
+}
+.tableMain {
+  position: relative;
+  border-radius: 18.9915px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(0, 209, 255, 0) 100%);
+  backdrop-filter: blur(43px);
+  width: 1454px;
+  height: 850px;
+}
+#wrap_data_footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+.wrap_data_header {
+  position: relative;
+  top: 16px;
+}
+.wrap_vac {
+  position: relative;
+  top: -4px;
+  background: #131A43;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+.wrap_hr_header {
+  background: #131A43;
+}
+.industry_vac {
+  width: 1290px;
+  height: 400px;
+  position: relative;
+  top: 89px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#block_hr {
+  font-family: 'Inter-SemiBold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 41px;
+  line-height: 150%;
+  color: white;
+}
+#for_hr {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 41px;
+  line-height: 140%;
+  color: white;
+  position: relative;
+  top: -40px;
+}
+#job_hr {
+  font-family: 'Inter-Regular';
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px 30px 17px;
+  position: absolute;
+  width: 630px;
+  left: 0px;
+  top: 243px;
+  color: white;
+  background: linear-gradient(62.18deg, rgba(107, 54, 239, 0) -22.93%, #1EC0F4 88.82%);
+  border: none;
+}
+#job_hr::placeholder {
+  color: white;
+  font-size: 18px;
+}
+#loope {
+  position: relative;
+  left: 645px;
+  top: -42px;
+  cursor: pointer;
+}
+.all_vac {
+  display: inline-block;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 9px 20px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #1EC0F4, #6B36EF);
+  color: white;
+  font-size: 20px;
+  font-family: 'Inter-Regular';
+  margin-left: 22px;
+  margin-bottom: 3px;
+}
+.right_ind {
+  position: relative;
+  left: 75px;
+  top: 20px;
+}
+.wrap_hrHelp {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hrHelp {
+  width: 1290px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 18px;
+  border: 3px solid #D0000F;
+}
+#sp1 {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 41px;
+  line-height: 150%;
+  color: #D0000F;
+}
+#sp2 {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 140%;
+  color: white;
+  position: relative;
+  left: -281px;
+}
+#sp3 {
+  width: 126px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 140%;
+  color: white;
+  background: #D0000F;
+}

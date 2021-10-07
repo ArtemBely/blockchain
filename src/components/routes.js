@@ -1,5 +1,9 @@
 import Main from './Main';
 import Database from './Database';
+import Profile from './Profile';
+import Hr from './Hr';
+import { getCompanies } from './fetchData';
+import { getVacancies } from './fetchData';
 
 const routes = [
   {
@@ -8,9 +12,21 @@ const routes = [
     component: Main
   },
   {
-    path: '/database',
+    path: ['/database', '/database/sendRequest/'],
     exact: true,
-    component: Database
+    component: Database,
+    fetchInitialData: () => getCompanies()
+  },
+  {
+    path: '/hr',
+    exact: true,
+    component: Hr,
+    fetchInitialData: () => getVacancies()
+  },
+  {
+    path: '/profile',
+    exact: true,
+    component: Profile
   }
 ]
 

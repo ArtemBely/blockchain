@@ -106,11 +106,27 @@ body {
   text-align: left;
   width: 210px;
   position: relative;
-  top: 1px;
+  top: 6px;
+  left: -193px;
+}
+#global_black {
+  font-family: 'Mont-Heavy';
+  color: #000000;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: left;
+  width: 210px;
+  position: relative;
+  top: 6px;
   left: -193px;
 }
 .stand_between {
   display: none;
+}
+.wrap_circle {
+  position: relative;
+  top: 5px;
 }
 .nav_header {
   font-weight: 400;
@@ -124,27 +140,42 @@ body {
   z-index: 10;
   height: 30px;
 }
+.nav_header_black {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  position: relative;
+  top: 40px;
+  text-align: center;
+  font-family: 'Inter-LightBETA';
+  z-index: 10;
+  height: 30px;
+}
 #cont {
   left: 90px;
 }
 #blog {
-  left: 71px;
+  left: 57px;
 }
 #header_about {
-  left: 62px;
+  left: -50px;
+  width: 164px;
 }
 #partners {
-  left: 43px;
+  left: -75px;
 }
 #database {
   left: -30px;
 }
 #header_contacts {
   left: 90px;
+  width: 100px;
 }
 #conference {
   text-align: center;
-  left: 18px;
+  left: 69px;
+  width: 82px;
 }
 .wrap_header {
   position: relative;

@@ -4,20 +4,30 @@ import App from '../components/App';
 import Main from '../components/Main';
 import Routes from '../components/routes';
 import express from 'express';
+import mongoose from 'mongoose';
+import session from 'express-session';
 import { renderToString } from 'react-dom/server';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import serialize from 'serialize-javascript';
 import validator from 'express-validator';
+import cors from 'cors'; // --> установить на сервер
+import passport from 'passport';
+import flash from 'connect-flash';
 import fs from 'fs';
 import path from 'path';
 import http from 'http';
 import https from 'https';
 
 import databaseRouter from './routes/database';
+import hrRouter from './routes/hr';
+import profRouter from './routes/profile';
+import signRouter from './routes/signin';
+import apiRouter from './routes/api';
 
 const app = express();
 const port = process.env.PORT || 5000;
+const CONNECTION_URI = process.env.MONGODB_URI;
 
 var privateKey = fs.readFileSync(path.resolve('src/server/ssl/gbn.rocks.key'));
 var certificate = fs.readFileSync(path.resolve('src/server/ssl/gbn.rocks.pem'));
@@ -26,6 +36,19 @@ var credentials = {
   key: privateKey,
   cert: certificate
 }
+
+require('dotenv/config');
+mongoose.connect(
+      CONNECTION_URI || process.env.CONNECT,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true
+    },
+    () => {
+      console.log('Connection with database gbn completed');
+    }
+);
 
 app.use(function(req, res, next) {
   res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
@@ -43,8 +66,25 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.urlencoded({ extended: false }));
 app.use(validator());
 app.use(cookieParser());
+app.use(session({
+  secret: 'mysecret',
+  resave: false,
+  saveUnitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
+
+app.use(cors({
+  methods:['GET','POST'],
+  credentials: true
+}));
 
 app.use('/database', databaseRouter);
+app.use('/hr', hrRouter);
+app.use('/profile', profRouter);
+app.use('/signin', signRouter);
+app.use('/api', apiRouter);
 
 app.get('*', (req, res, next) => {
   const activeRouter = Routes.find((route) => matchPath(req.url, route)) || {};
@@ -64,7 +104,7 @@ app.get('*', (req, res, next) => {
             <html>
                 <head>
                   <title>collab</title>
-                   <link rel="stylesheet" type="text/css" href="../main.css">
+                   <link rel="stylesheet" type="text/css" href="main.css">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                       <script src='/bundle.js' defer></script>
                         <script>window.__INITIAL_DATA__= ${serialize(data)}</script>
