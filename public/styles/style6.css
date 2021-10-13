@@ -76,7 +76,8 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(0, 209, 255, 0) 100%);
   backdrop-filter: blur(43px);
   width: 1454px;
-  height: 850px;
+  height: auto;
+  max-height: 850px;
 }
 #wrap_data_footer {
   position: absolute;
