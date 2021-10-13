@@ -1,0 +1,66 @@
+.wrap_sponsors {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: -122px;
+}
+.sponsors {
+  width: 1290px;
+}
+.ourSponsors {
+  font-family: 'Inter-SemiBold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.talkedAbout {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #000000;
+  width: 392px;
+  position: relative;
+  top: -12px;
+}
+.sponsorsPhotos {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 26px;
+}
+.wrap_allSponsors {
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 20% 20%;
+  display: grid;
+  height: 360px;
+}
+.sponsorsLogos {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  top: -8px;
+}
+.becomeSponsor {
+  width: 520px;
+  height: 63px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  color: white;
+  background: linear-gradient(to left, #1EC0F4, #6B36EF);
+  left: 388px;
+  top: -20px;
+  cursor: pointer;
+}

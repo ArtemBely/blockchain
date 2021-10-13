@@ -1,4 +1,5 @@
 import React from 'react';
+import Offer from './Offer';
 import loope from '../../public/images/Ellipse 40.svg';
 import { getVacancies } from './fetchData';
 
@@ -35,6 +36,7 @@ class Vacancies extends React.Component {
                        <span id='sp1'>HR HELP</span> <span id='sp2'>Take your time and get results</span> <span id='sp3'>Help me</span>
                    </div>
                </div>
+               <Offer />
             </div>
         </div>
       )

@@ -833,10 +833,10 @@ bottom
 .our_people {
   font-family: 'Inter-SemiBold';
   font-weight: 700;
-  font-size: 18px;
+  font-size: 34px;
   line-height: 25px;
   position: relative;
-  top: -20px;
+  top: -39px;
 }
 .name_of_person {
   font-family: 'Inter-SemiBold';
@@ -1535,6 +1535,7 @@ bottom
   line-height: 18px;
   color: black;
   font-family: 'Inter-Regular';
+  text-decoration: underline;
 }
 .wrap_linkes_footer {
   display: -ms-grid;
@@ -1555,7 +1556,15 @@ bottom
 }
 #email {
   position: relative;
-  top: -52px;
+  top: -4px;
+}
+#mrCnt {
+  position: relative;
+  top: -9px;
+}
+#mapSite {
+  position: relative;
+  top: -14px;
 }
 #second_foot {
   position: relative;
@@ -1611,7 +1620,7 @@ bottom
   position: relative;
   grid-column: 5 / 6;
   left: 142px;
-  top: -27px;
+  top: 22px;
   cursor: pointer;
   width: 30px;
 }
@@ -1707,12 +1716,14 @@ bottom
   position: relative;
   top: 16px;
 }
+.wrap_hr {
+  background: #131A43;
+}
 .wrap_vac {
   position: relative;
   top: -4px;
   background: #131A43;
   width: 100%;
-  height: 1000px;
   display: flex;
   justify-content: center;
 }
@@ -2104,11 +2115,31 @@ bottom
   align-items: flex-start;
   padding: 10px 15px 11px;
 }
+.inside_vacs {
+  display: grid;
+  grid-gap: 23px;
+}
+.loc1 {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+.requir1 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+}
+.sal1 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
 .wrap_eachVac {
+  width: 1290px;
   position: relative;
+  top: 70px;
   display: grid;
   grid-template-columns: 100% 1%;
   cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 #manage_title {
     font-family: 'Inter-Regular';
@@ -2170,19 +2201,255 @@ bottom
 .inside_table {
   width: 100%;
   height: 100%;
+  display: table;
 }
 .commComp {
-  width: 1290px;
+  width: 1224px;
   height: 70px;
   background: white;
   position: relative;
   display: grid;
   grid-template-columns: 25% repeat(4, 12.5%) 25%;
+  left: 80px;
+  top: 91px;
+  margin-bottom: 10px;
+  padding: 0px 33px;
+  align-items: center;
+}
+.commComp:nth-child(1) {
+  border-radius: 20px 20px 0px 0px !important;
 }
 .commVacs {
+      position: relative;
+      background: white;
+      width: 630px;
+      height: 150px;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 10% 20% 70%;
+}
+.dir1 {
+      grid-column: 1 / 4;
+}
+.requir {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+}
+.loc11 {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+}
+.searchCompany {
+    position: relative;
+    right: 10px;
+    top: 5px;
+}
+.searchingType {
+  color: white;
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+}
+.arrowDown {
   position: relative;
-  background: antiquewhite;
-  border: 1px solid red;
+  left: 10px;
+  top: 2px;
+}
+.searchingBlock {
+  position: absolute;
+  width: 1290px;
+  left: 80px;
+  top: 36px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+#findComp {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+#findComp:focus {
+  border: none
+}
+.wrap_searchPositions {
+    position: revert;
+    display: flex;
+    justify-content: center;
+}
+.searchPositions {
+  width: 580px;
+  height: 639px;
+  background: linear-gradient(
+  180deg, rgba(255, 255, 255, 0.22) 0%, rgba(0, 209, 255, 0) 100%);
+  backdrop-filter: blur(43px);
+  border-radius: 18.9915px;
+}
+.searchVacs {
+  width: 488px;
+  height: 50px;
+  margin: 11px 0px;
+  left: 24px;
+  top: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #6B36EF00, #1EC0F4);
+  background: transparent;
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 140%;
+  color: white;
+  cursor: pointer;
+  padding-left: 21px;
+}
+.searchVacs::placeholder {
+  color: white;
+}
+#searchForm {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: 1fr;
+}
+.searchVacsCheck {
+  width: 20px;
+  height: 20px;
+}
+#req_but2 {
+  position: relative;
+  top: -110px;
+  left: 32px;
+  background: linear-gradient(
+  62.18deg, rgba(107, 54, 239, 0) -22.93%, #1EC0F4 88.82%);
+  cursor: pointer;
+  color: white;
+  width: 126px;
+  height: 50px;
+  border: none;
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 140%;
+}
+.lblsFor {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 140%;
+  color: white;
+  position: relative;
+  width: 400px;
+  height: 31px;
+}
+#resFil {
+    font-family: 'Inter-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 140%;
+    text-decoration-line: underline;
+    color: white;
+    width: 147px;
+    height: 31px;
+    cursor: pointer;
+    position: relative;
+    top: -173px;
+    left: 213px;
+}
+#applFor {
+  position: relative;
+  top: 44px;
+  left: 27px;
+}
+#applFor2 {
+  left: 64px;
+  top: -35px;
+}
+#receiveList {
+  position: relative;
+  top: -59px;
+  left: 27px;
+}
+#receiveList2 {
+  position: relative;
+  top: -138px;
+  left: 63px;
+}
+
+.wrap_sponsors {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: -122px;
+}
+.sponsors {
+  width: 1290px;
+}
+.ourSponsors {
+  font-family: 'Inter-SemiBold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.talkedAbout {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #000000;
+  width: 392px;
+  position: relative;
+  top: -12px;
+}
+.sponsorsPhotos {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 26px;
+}
+.wrap_allSponsors {
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 20% 20%;
+  display: grid;
+  height: 360px;
+}
+.sponsorsLogos {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  top: -8px;
+}
+.becomeSponsor {
+  width: 520px;
+  height: 63px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  color: white;
+  background: linear-gradient(to left, #1EC0F4, #6B36EF);
+  left: 388px;
+  top: -20px;
+  cursor: pointer;
 }
 
 @media (min-width: 1000px) and (max-width: 1500px) {

@@ -44,6 +44,7 @@
   line-height: 18px;
   color: black;
   font-family: 'Inter-Regular';
+  text-decoration: underline;
 }
 .wrap_linkes_footer {
   display: -ms-grid;
@@ -64,7 +65,15 @@
 }
 #email {
   position: relative;
-  top: -52px;
+  top: -4px;
+}
+#mrCnt {
+  position: relative;
+  top: -9px;
+}
+#mapSite {
+  position: relative;
+  top: -14px;
 }
 #second_foot {
   position: relative;
@@ -120,7 +129,7 @@
   position: relative;
   grid-column: 5 / 6;
   left: 142px;
-  top: -27px;
+  top: 22px;
   cursor: pointer;
   width: 30px;
 }

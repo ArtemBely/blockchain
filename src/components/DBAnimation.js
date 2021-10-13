@@ -58,11 +58,6 @@ class DBAnimation extends React.Component {
             <div className='secondDb'>
               animation
             </div>
-            <form method='POST' action='/database/signin' className='signForm'>
-               <input type='email' name='email' placeholder='Enter your email' className='signInp'/>
-               <input type='password' name='password' placeholder='Enter your password' className='signInp'/>
-               <button type='submit'>Enter</button>
-            </form>
          </div>
       </div>
     )
