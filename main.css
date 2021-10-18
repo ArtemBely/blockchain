@@ -127,6 +127,7 @@ body {
 .wrap_circle {
   position: relative;
   top: 5px;
+  left: 0px;
 }
 .nav_header {
   font-weight: 400;
@@ -1702,7 +1703,7 @@ bottom
   border-radius: 18.9915px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(0, 209, 255, 0) 100%);
   backdrop-filter: blur(43px);
-  width: 1454px;
+  width: 1271px;
   height: auto;
   max-height: 850px;
 }
@@ -2209,13 +2210,13 @@ bottom
   display: table;
 }
 .commComp {
-  width: 1224px;
+  width: 1126px;
   height: 70px;
   background: white;
   position: relative;
   display: grid;
-  grid-template-columns: 25% repeat(4, 12.5%) 25%;
-  left: 80px;
+  grid-template-columns: 15% repeat(4, 14.5%) 27%;
+  left: 38px;
   top: 91px;
   margin-bottom: 10px;
   padding: 0px 33px;
@@ -2264,7 +2265,7 @@ bottom
 }
 .searchingBlock {
   position: absolute;
-  width: 1290px;
+  width: 1112px;
   left: 80px;
   top: 36px;
   display: grid;
@@ -3314,7 +3315,6 @@ bottom
   }
   .wrap_header {
     width: 768px;
-    left: 56px;
   }
   .reserve, .reserve2 {
     font-family: 'Inter-SemiBold';
@@ -3597,7 +3597,7 @@ bottom
     #global {
       font-size: 18px;
       line-height: 19px;
-      left: -130px;
+      left: -75px;
       top: 6px;
     }
     #circle1{
@@ -4125,6 +4125,622 @@ bottom
 
 }
 
+@media (min-width: 992px) and (max-width: 1116px) {
+    body {
+      -moz-transform: scale(0.88, 0.88); /* Moz-browsers */
+      zoom: 0.88; /* Other non-webkit browsers */
+      zoom: 88%; /* Webkit browsers */
+    }
+}
+@media (min-width: 952px) and (max-width: 1500px) {
+    .wrapDB {
+        top: 160px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1500px) {
+  .vac {
+    width: 952px;
+  }
+  #block_hr {
+    font-size: 40px;
+    line-height: 150%;
+    width: 383px;
+  }
+  #for_hr {
+    font-size: 40px;
+    line-height: 140%;
+    top: -30px;
+  }
+  #job_hr {
+    top: 358px;
+    width: 466px;
+    height: 20px;
+  }
+  #loope {
+    left: 485px;
+    top: -34px;
+  }
+  .wrap_hrHelp {
+    top: 160px;
+  }
+  .hrHelp {
+    width: 912px;
+  }
+  .wrap_Filters {
+    position: relative;
+    top: 211px;
+  }
+  .dB {
+    width: 992px;
+  }
+  .wrap_eachVac {
+    width: 952px;
+    position: relative;
+    top: 305px;
+  }
+  .searchPositions {
+    width: 465px;
+    height: 638px;
+  }
+  .industry_vac {
+    width: 950px;
+    top: 83px;
+  }
+  .right_ind {
+    width: 438px;
+    left: 54px;
+  }
+  .wrap_hr {
+    height: 2025px;
+  }
+  .all_vac {
+    font-size: 18px;
+  }
+  #wrap_hr_footer {
+    position: relative;
+    top: -1516px;
+  }
+  .searchVacs {
+    left: 0px;
+    font-size: 18px;
+    line-height: 140%;
+    width: 399px;
+    height: 50px;
+    padding-left: 34px;
+  }
+  .commVacs {
+    width: 466px;
+  }
+  .lblsFor {
+    font-size: 18px;
+  }
+  .wrap_eachVac {
+    grid-gap: 24px;
+  }
+  #resFil {
+    font-size: 18px;
+    top: -166px;
+  }
+  #req_but2 {
+    font-size: 18px;
+  }
+  .wrap_circle {
+    left: 34px;
+  }
+  .glDb {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 150%;
+  }
+  .comDb {
+    font-size: 40px;
+    line-height: 140%;
+  }
+  .addDb {
+    width: 151px;
+    height: 38px;
+    font-size: 16px;
+  }
+  .moreDb {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .tableMain {
+    width: 992px;
+  }
+  .searchingBlock {
+    width: 862px;
+    left: 63px;
+    top: 36px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .commComp {
+    width: 865px;
+    height: 70px;
+    background: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% repeat(4, 12.5%) 25%;
+    left: 33px;
+    top: 91px;
+  }
+  .searchCompany {
+    position: relative;
+    right: 22px;
+    top: 26px;
+  }
+  #wrap_data_footer {
+    top: -484px;
+  }
+  .jur1, .hir1, .fil1 {
+    display: none;
+  }
+  .mail1 {
+    grid-column: 5 / 6;
+    position: relative;
+    left: 99px;
+  }
+  .ind1 {
+    grid-column: 4 / 5;
+    left: 33px;
+    position: relative;
+  }
+  .req1 {
+    position: relative;
+    grid-column: 3 / 4;
+  }
+  .loop1 {
+    position: relative;
+    grid-column: 6 / 7;
+    top: -13px;
+  }
+  .ind2 {
+    position: relative;
+    grid-column: 4 / 5;
+  }
+  .req2 {
+    grid-column: 3 / 4;
+  }
+  .wrapTable {
+    top: 589px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .glDb {
+    font-size: 30px;
+    line-height: 150%;
+  }
+  #block_hr {
+    font-size: 25px;
+    line-height: 150%;
+    width: 372px;
+  }
+  .searchPositions {
+    width: 721px;
+  }
+  .vac {
+    width: 731px;
+  }
+  .industry_vac {
+    grid-template-columns: 1fr;
+    width: 737px;
+  }
+  #sp1 {
+    font-size: 26px;
+  }
+  #sp3 {
+    width: 99px;
+    height: 40px;
+    font-size: 16px;
+  }
+  #sp2 {
+    left: -17px;
+    font-size: 16px;
+  }
+  .wrap_Filters {
+    position: relative;
+    top: 258px;
+  }
+  .wrap_eachVac {
+    grid-template-columns: 1fr;
+    width: 576px;
+    top: 322px;
+  }
+  .right_ind {
+    left: -22px;
+    top: 27px;
+  }
+  .searchVacs {
+    width: 630px;
+  }
+  .searchVacs::placeholder {
+    font-size: 16px;
+  }
+  #req_but2 {
+    width: 167px;
+    font-size: 16px;
+  }
+  .commVacs {
+    width: 722px;
+    height: 136px
+  }
+  #receiveList2 {
+    top: -135px;
+  }
+  #applFor2 {
+    top: -36px
+  }
+  .lblsFor {
+    font-size: 16px;
+  }
+  #resFil {
+    top: -163px;
+    left: 238px;
+    font-size: 16px;
+  }
+  .wrap_hrHelp {
+    position: relative;
+    top: 177px;
+    height: 80px;
+    left: -7px;
+  }
+  .inside_vacs {
+    grid-row: 2 / 3;
+    position: relative;
+    top: 61px;
+  }
+  .vac {
+    width: 540px;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: -36px;
+  }
+  .wrap_searchPositions {
+    grid-row: 1 / 2;
+  }
+  #wrap_hr_footer {
+    top: -1543px;
+  }
+  .hrHelp {
+    width: 681px;
+    height: 34px;
+  }
+  .all_vac {
+    font-size: 16px;
+  }
+  #loope {
+    left: 307px;
+    top: -1px;
+  }
+  #job_hr {
+    width: 292px;
+    left: 0px;
+    top: 168px;
+  }
+  #job_hr::placeholder {
+    font-size: 12px;
+  }
+  #for_hr {
+    top: -17px;
+    font-size: 25px;
+    line-height: 150%;
+  }
+  .wrap_circle {
+    left: 56px;
+  }
+  .comDb {
+    top: -29px;
+    width: 432px;
+    font-size: 30px;
+    line-height: 140%;
+  }
+  .dB, .tableMain {
+    width: 739px;
+  }
+  .addDb {
+    width: 151px;
+    height: 38px;
+    font-size: 16px;
+  }
+  .moreDb {
+    font-size: 16px;
+    line-height: 140%;
+    font-size: 'Inter-Regular';
+  }
+  .wrapTable {
+    top: 518px;
+  }
+  .commComp {
+    width: 594px;
+  }
+  .searchingBlock {
+    width: 698px;
+    left: 54px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .searchingType {
+    font-size: 16px;
+  }
+  .ind2, .ind1, .jur1, .hir1, .fil1 {
+    display: none;
+  }
+  .commComp {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .req1 {
+    position: relative;
+    left: 6px;
+  }
+  #wrap_data_footer {
+    top: -500px;
+  }
+  .wrapDB {
+    top: 171px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .wrap_circle {
+    top: 5px;
+    left: 17px;
+  }
+  .dB {
+    width: 275px;
+    grid-template-columns: 1fr;
+  }
+  .glDb {
+    width: 295px;
+    font-size: 25px;
+    line-height: 140%;
+  }
+  .comDb {
+    top: -19px;
+    width: 328px;
+    font-size: 25px;
+    line-height: 140%;
+  }
+  .addDb {
+    top: -25px;
+    width: 151px;
+    font-size: 16px;
+    height: 38px;
+  }
+  .moreDb {
+    left: 2px;
+    top: -27px;
+    font-size: 16px;
+    font-family: 'Inter-Regular';
+  }
+  .tableMain {
+    width: 320px;
+  }
+  .commComp {
+    width: 206px;
+    height: 84px;
+    top: 91px;
+    grid-template-columns: repeat(3, 1fr);
+    left: 23px;
+  }
+  .req2, .hir1, .ind2, .jur1, .com1, .ind1 {
+    display: none;
+  }
+  .searchingBlock {
+    width: 248px;
+    left: 43px;
+    top: 26px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .com2 {
+    grid-column: 1 / 3;
+    width: 100px;
+    font-size: 12px;
+  }
+  .req1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    position: relative;
+    top: -16px;
+    font-size: 12px;
+  }
+  .mail1 {
+    width: 100px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 12px;
+    position: relative;
+    top: -6px;
+  }
+  .fil1 {
+    position: relative;
+    top: 12px;
+  }
+  #findComp {
+    width: 94px;
+  }
+  .loop1 {
+    position: relative;
+    top: 6px;
+  }
+  .searchCompany {
+    right: 4px;
+    top: 5px;
+  }
+  .com2 {
+    position: relative;
+    top: 8px;
+  }
+  .req1 {
+    top: -6px;
+  }
+  #wrap_data_footer {
+    top: -95px;
+  }
+  .wrapTable {
+    top: 508px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .industry_vac {
+      grid-template-columns: 1fr !important;
+      width: 320px !important;
+  }
+    #block_hr {
+      font-size: 25px !important;
+      line-height: 150% !important;
+      width: 275px !important;
+      font-size: 25px !important;
+      line-height: 150% !important;
+  }
+    #for_hr {
+      top: -13px !important;
+      font-size: 25px !important;
+      line-height: 140% !important;
+  }
+
+    .industry_vac {
+      width: 320px !important;
+      height: 400px !important;
+      position: relative !important;
+      top: 89px !important;
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      left: 43px !important;
+  }
+  .wrap_eachVac {
+    grid-template-columns: 1fr;
+    width: 320px !important;
+    top: 658px;
+}
+  .searchPositions {
+    width: 320px !important;
+    overflow: hidden;
+}
+.searchVacs {
+    width: 242px !important;
+    font-size: 16px;
+}
+.searchVacs {
+  font-size: 16px;
+}
+#resFil {
+  top: -170px;
+  left: 36px;
+  font-size: 16px;
+}
+#receiveList2 {
+  width: 200px;
+}
+#req_but2 {
+  width: 240px;
+  top: -65px;
+  height: 50px;
+  font-size: 16px;
+}
+    #job_hr {
+      width: 249px !important;
+      left: 0px !important;
+      padding: 18px 14px 17px;
+      top: 236px !important;
+      font-size: 16px;
+  }
+  .all_vac {
+    font-size: 16px;
+  }
+    #loope {
+      left: 245px !important;
+      top: -1px !important;
+  }
+  #loope::placeholder {
+    font-size: 16px !important;
+  }
+  .right_ind {
+    position: relative;
+    left: -21px;
+    top: 40px;
+}
+    .wrap_hrHelp {
+      position: relative;
+      top: 553px !important;
+      height: 79px !important;
+      left: 23px !important;
+  }
+  .commVacs {
+    width: 320px !important;
+    height: 136px !important;
+}
+    .wrap_searchPositions {
+      grid-row: 1 / 2;
+      position: relative;
+      left: 22px !important;
+      top:179px !important;
+  }
+  .wrap_hr {
+    height: 3230px;
+  }
+  #wrap_hr_footer {
+    top: -505px;
+}
+.wrap_vac {
+  top: -40px;
+  left: -21px;
+}
+.inside_vacs {
+    top: 258px;
+    display: grid;
+    grid-gap: 23px;
+    position: relative;
+    left: 23px;
+}
+  #sp1 {
+    font-size: 26px !important;
+    width: 148px !important;
+    position: relative;
+    grid-column: 1 / 2 !important;
+}
+  #sp3 {
+      width: 90px !important;
+      height: 31px !important;
+      font-size: 16px !important;
+      grid-column: 2 / 3 !important;
+      grid-row: 1 / 2 !important;
+      position: relative;
+      right: 6px !important;
+  }
+#sp2 {
+    left: -17px !important;
+    font-size: 16px !important;
+    grid-column: 1 / 3 !important;
+    display: grid !important;
+    justify-content: center;
+    position: relative;
+    left: -2px !important;
+    position: relative;
+    top: 3px !important;
+}
+.wrap_Filters {
+    position: relative;
+    top: 663px !important;
+    width: 320px !important;
+    left: 43px !important;
+}
+.hrHelp {
+    width: 236px !important;
+    height: 77px !important;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 18px;
+    border: 3px solid #D0000F;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+}
+
 @media (min-width: 320px) and (max-width: 350px) {
       body {
         -moz-transform: scale(0.78, 0.78); /* Moz-browsers */
@@ -4152,7 +4768,6 @@ bottom
   }
   .wrap_header {
     width: 320px;
-    left: 20px;
   }
   .main_wrap{
     height: 775px;
@@ -4207,8 +4822,8 @@ bottom
     #global {
       font-size: 16px;
       line-height: 19px;
-      left: 3px;
-      top: 33px;
+      left: 20px;
+      top: 41px;
       width: 190px;
     }
     #circle1{
