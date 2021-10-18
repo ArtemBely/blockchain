@@ -6,6 +6,7 @@ import { StaticRouter } from 'react-router-dom';
 import Profile from '../../components/Profile';
 import Vacancy from '../models/vacancy.js';
 import Hr from '../models/hr.js';
+import Docs from '../models/documents.js';
 const router = express.Router();
 
 router.get('/', isAuth, async (req, res, next) => {
@@ -99,6 +100,41 @@ router.get('/deleteHr/:id', async(req, res) => {
   req.user.save();
   console.log(req.user.hrs);
   res.redirect('/profile')
+});
+
+router.post('/sendDoc', async (req, res, next) => {
+  let { nameOfDoc, descrOfDoc, linkToDoc } = req.body;
+  var doc = new Docs({
+    nameOfDoc: nameOfDoc,
+    descrOfDoc: descrOfDoc,
+    linkToDoc: linkToDoc
+  });
+    let user = req.user;
+    typeof user.docs[0] != 'object' ?
+    user.docs.splice(0, 1) && user.docs.push(doc) :
+    user.docs.push(doc);
+    try {
+      user = await user.save();
+      console.log(user);
+      res.redirect('/profile');
+    }
+    catch {
+      err => console.log(err);
+    }
+});
+
+router.get('/deleteDocs/:id', async (req, res, next) => {
+    let user = req.user;
+    let delDocArr = user.docs;
+    let indexDoc = delDocArr.findIndex(doc => doc._id == req.params.id);
+    delDocArr.splice(indexDoc, 1);
+    try {
+      user = await user.save();
+      res.redirect('/profile');
+    }
+    catch {
+      err => console.log(err);
+    }
 });
 
 router.get('/logout', isAuth, (req, res, next) => {

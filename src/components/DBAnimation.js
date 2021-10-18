@@ -38,6 +38,7 @@ class DBAnimation extends React.Component {
                  <input type='text' name='jurisdiction' className='com_inp' placeholder='Jurisdiction' required/>
                  <input type='hidden' name='vacs' value=''/>
                  <input type='hidden' name='hrs' value=''/>
+                 <input type='hidden' name='docs' value=''/>
                  <input type='hidden' name='show' value='yes'/>
                <button type='submit' id='req_but'>Request</button>
                </form>

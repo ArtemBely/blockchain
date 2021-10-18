@@ -1,0 +1,99 @@
+#wrap_hr_footer {
+  position: relative;
+  top: -1185px;
+}
+.title_of {
+  position: relative;
+  top: 89px;
+}
+#clVac {
+  position: absolute;
+  left: 610px;
+  top: 31px;
+}
+#clVac > img {
+  width: 16px;
+}
+.linHr {
+  position: relative;
+  left: 12px;
+  top: -1px;
+}
+.wrap_docs {
+  position: relative;
+  top: 456px;
+}
+#docs1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 41px;
+  line-height: 140%;
+}
+#crNew {
+  font-size: 18px;
+  line-height: 140%;
+  text-decoration-line: underline;
+}
+#spanPlus1 {
+    transform: rotate(
+  -45deg);
+    position: relative;
+    left: 14px;
+}
+.wrap_docs {
+  position: relative;
+  top: 330px;
+}
+.modDoc {
+  height: 478px !important;
+}
+.profDoc {
+  height: 427px !important;
+}
+.profClose2 {
+  top: -424px !important;
+}
+.eachDoc {
+  width: 232px;
+  height: 88px;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+.nameOfDoc1 {
+  position: relative;
+  top: -10px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Inter-SemiBold';
+  font-size: 18px;
+  line-height: 140%;
+}
+.descrOfDoc1 {
+  position: relative;
+  top: -12px;
+  font-size: 14px;
+  line-height: 140%;
+}
+.eachCloseDocs {
+  position: relative;
+  top: -87px;
+  left: 196px;
+  cursor: pointer;
+}
+.wrapOfDocs {
+  position: relative;
+  grid-gap: 30px;
+  width: 1290px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.wrap_footer_profile {
+      top: -1049px !important;
+      position: relative;
+}
+.docsClose {
+  position: relative;
+  top: -424px !important;
+}

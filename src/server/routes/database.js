@@ -48,7 +48,7 @@ router.get(['/', '/sendRequest'], (req, res, next) => {
 
 router.post('/sendRequest', (req, res, done) => {
    var { name, description, email, password,
-     solved, phone, jurisdiction, industry, request, vasc, hrs, show } = req.body;
+     solved, phone, jurisdiction, industry, request, vasc, hrs, docs, show } = req.body;
 
    req.checkBody("name", "Field 'Name' has to be filled").notEmpty();
    req.checkBody("description", "Field 'Description' has to be filled").notEmpty();
@@ -127,6 +127,7 @@ router.post('/sendRequest', (req, res, done) => {
        phone: phone,
        vasc: vasc,
        hrs: hrs,
+       docs: docs,
        show: show
      });
 

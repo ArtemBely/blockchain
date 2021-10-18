@@ -73,7 +73,7 @@ class Managment extends React.Component {
               <p id='by_click'>By clicking on the «Request» button you confirm your consent to
                the processing of data and agree to the privacy policy</p>
             </div>
-            <span id='close2' className='profClose' ref={this.cl2} onClick={this.closeModal}><img src={close} /></span>
+            <span id='close2' className='profClose2' ref={this.cl2} onClick={this.closeModal}><img src={close} /></span>
            </div>
           </div>
 

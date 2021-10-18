@@ -35,7 +35,7 @@
 .wrap_eachVac {
   width: 1290px;
   position: relative;
-  top: 70px;
+  top: 42px;
   display: grid;
   grid-template-columns: 100% 1%;
   cursor: pointer;
@@ -51,7 +51,7 @@
 }
 .wrap_mng {
   position: relative;
-  top: 49px;
+  top: 200px;
 }
 #cr_newP {
   font-family: 'Inter-Regular';
@@ -78,7 +78,7 @@
   background-color: antiquewhite;
 }
 .nameHr {
-  font-family: 'Inter-Regular';
+  font-family: 'Inter-SemiBold';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;

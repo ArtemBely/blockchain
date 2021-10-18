@@ -15,6 +15,7 @@ const profileOfCompany = new Schema({
   phone: {type: String, required: true},
   vasc: {type: Array},
   hrs: {type: Array},
+  docs: {type: Array},
   show: {type: String}
 });
 

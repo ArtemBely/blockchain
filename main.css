@@ -2009,11 +2009,11 @@ bottom
 .wrap_title {
   position: relative;
   width: 1290px;
-  top: 205px;
+  top: 0px;
 }
 .companyCard {
   position: relative;
-  top: 75px;
+  top: 188px;
   width: 1290px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -2067,6 +2067,7 @@ bottom
 .blockOfHiring {
   position: relative;
   display: grid;
+  top: 41px;
   grid-template-columns: repeat(2, 1fr);
 }
 #hrHelp {
@@ -2086,6 +2087,8 @@ bottom
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
+  top: 45px;
 }
 .postVac {
   font-family: 'Inter-Regular';
@@ -2096,6 +2099,7 @@ bottom
 }
 .hr2 {
   padding: 0px 0px 0px 139px;
+  grid-column: 2 / 4;
 }
 
 .profHr {
@@ -2135,7 +2139,7 @@ bottom
 .wrap_eachVac {
   width: 1290px;
   position: relative;
-  top: 70px;
+  top: 42px;
   display: grid;
   grid-template-columns: 100% 1%;
   cursor: pointer;
@@ -2151,7 +2155,7 @@ bottom
 }
 .wrap_mng {
   position: relative;
-  top: 49px;
+  top: 200px;
 }
 #cr_newP {
   font-family: 'Inter-Regular';
@@ -2178,7 +2182,7 @@ bottom
   background-color: antiquewhite;
 }
 .nameHr {
-  font-family: 'Inter-Regular';
+  font-family: 'Inter-SemiBold';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -2734,6 +2738,106 @@ bottom
     display: none;
   }
 }
+#wrap_hr_footer {
+  position: relative;
+  top: -1185px;
+}
+.title_of {
+  position: relative;
+  top: 89px;
+}
+#clVac {
+  position: absolute;
+  left: 610px;
+  top: 31px;
+}
+#clVac > img {
+  width: 16px;
+}
+.linHr {
+  position: relative;
+  left: 12px;
+  top: -1px;
+}
+.wrap_docs {
+  position: relative;
+  top: 456px;
+}
+#docs1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 41px;
+  line-height: 140%;
+}
+#crNew {
+  font-size: 18px;
+  line-height: 140%;
+  text-decoration-line: underline;
+}
+#spanPlus1 {
+    transform: rotate(
+  -45deg);
+    position: relative;
+    left: 14px;
+}
+.wrap_docs {
+  position: relative;
+  top: 330px;
+}
+.modDoc {
+  height: 478px !important;
+}
+.profDoc {
+  height: 427px !important;
+}
+.profClose2 {
+  top: -424px !important;
+}
+.eachDoc {
+  width: 232px;
+  height: 88px;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+.nameOfDoc1 {
+  position: relative;
+  top: -10px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Inter-SemiBold';
+  font-size: 18px;
+  line-height: 140%;
+}
+.descrOfDoc1 {
+  position: relative;
+  top: -12px;
+  font-size: 14px;
+  line-height: 140%;
+}
+.eachCloseDocs {
+  position: relative;
+  top: -87px;
+  left: 196px;
+  cursor: pointer;
+}
+.wrapOfDocs {
+  position: relative;
+  grid-gap: 30px;
+  width: 1290px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.wrap_footer_profile {
+      top: -1049px !important;
+      position: relative;
+}
+.docsClose {
+  position: relative;
+  top: -424px !important;
+}
+
 @media (min-width: 1000px) and (max-width: 1500px) {
   .nav_header {
     font-size: 16px;

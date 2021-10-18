@@ -160,11 +160,11 @@
 .wrap_title {
   position: relative;
   width: 1290px;
-  top: 205px;
+  top: 0px;
 }
 .companyCard {
   position: relative;
-  top: 75px;
+  top: 188px;
   width: 1290px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -218,6 +218,7 @@
 .blockOfHiring {
   position: relative;
   display: grid;
+  top: 41px;
   grid-template-columns: repeat(2, 1fr);
 }
 #hrHelp {
@@ -237,6 +238,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
+  top: 45px;
 }
 .postVac {
   font-family: 'Inter-Regular';
@@ -247,4 +250,5 @@
 }
 .hr2 {
   padding: 0px 0px 0px 139px;
+  grid-column: 2 / 4;
 }
