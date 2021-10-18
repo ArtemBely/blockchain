@@ -1,0 +1,157 @@
+@media (min-width: 320px) and (max-width: 576px) {
+    .industry_vac {
+      grid-template-columns: 1fr !important;
+      width: 320px !important;
+  }
+    #block_hr {
+      font-size: 25px !important;
+      line-height: 150% !important;
+      width: 275px !important;
+      font-size: 25px !important;
+      line-height: 150% !important;
+  }
+    #for_hr {
+      top: -13px !important;
+      font-size: 25px !important;
+      line-height: 140% !important;
+  }
+
+    .industry_vac {
+      width: 320px !important;
+      height: 400px !important;
+      position: relative !important;
+      top: 89px !important;
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      left: 43px !important;
+  }
+  .wrap_eachVac {
+    grid-template-columns: 1fr;
+    width: 320px !important;
+    top: 658px;
+}
+  .searchPositions {
+    width: 320px !important;
+    overflow: hidden;
+}
+.searchVacs {
+    width: 242px !important;
+    font-size: 16px;
+}
+.searchVacs {
+  font-size: 16px;
+}
+#resFil {
+  top: -170px;
+  left: 36px;
+  font-size: 16px;
+}
+#receiveList2 {
+  width: 200px;
+}
+#req_but2 {
+  width: 240px;
+  top: -65px;
+  height: 50px;
+  font-size: 16px;
+}
+    #job_hr {
+      width: 249px !important;
+      left: 0px !important;
+      padding: 18px 14px 17px;
+      top: 236px !important;
+      font-size: 16px;
+  }
+  .all_vac {
+    font-size: 16px;
+  }
+    #loope {
+      left: 245px !important;
+      top: -1px !important;
+  }
+  #loope::placeholder {
+    font-size: 16px !important;
+  }
+  .right_ind {
+    position: relative;
+    left: -21px;
+    top: 40px;
+}
+    .wrap_hrHelp {
+      position: relative;
+      top: 553px !important;
+      height: 79px !important;
+      left: 23px !important;
+  }
+  .commVacs {
+    width: 320px !important;
+    height: 136px !important;
+}
+    .wrap_searchPositions {
+      grid-row: 1 / 2;
+      position: relative;
+      left: 22px !important;
+      top:179px !important;
+  }
+  .wrap_hr {
+    height: 3230px;
+  }
+  #wrap_hr_footer {
+    top: -505px;
+}
+.wrap_vac {
+  top: -40px;
+  left: -21px;
+}
+.inside_vacs {
+    top: 258px;
+    display: grid;
+    grid-gap: 23px;
+    position: relative;
+    left: 23px;
+}
+  #sp1 {
+    font-size: 26px !important;
+    width: 148px !important;
+    position: relative;
+    grid-column: 1 / 2 !important;
+}
+  #sp3 {
+      width: 90px !important;
+      height: 31px !important;
+      font-size: 16px !important;
+      grid-column: 2 / 3 !important;
+      grid-row: 1 / 2 !important;
+      position: relative;
+      right: 6px !important;
+  }
+#sp2 {
+    left: -17px !important;
+    font-size: 16px !important;
+    grid-column: 1 / 3 !important;
+    display: grid !important;
+    justify-content: center;
+    position: relative;
+    left: -2px !important;
+    position: relative;
+    top: 3px !important;
+}
+  .wrap_Filters {
+      position: relative;
+      top: 663px !important;
+      width: 320px !important;
+      left: 43px !important;
+  }
+  .hrHelp {
+      width: 236px !important;
+      height: 77px !important;
+      display: grid;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 18px;
+      border: 3px solid #D0000F;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+  }
+}

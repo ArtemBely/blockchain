@@ -1,5 +1,355 @@
+@media (min-width: 992px) and (max-width: 1116px) {
+    body {
+      -moz-transform: scale(0.88, 0.88); /* Moz-browsers */
+      zoom: 0.88; /* Other non-webkit browsers */
+      zoom: 88%; /* Webkit browsers */
+    }
+}
 @media (min-width: 952px) and (max-width: 1500px) {
     .wrapDB {
         top: 160px;
     }
+}
+@media (min-width: 992px) and (max-width: 1500px) {
+  .vac {
+    width: 952px;
+  }
+  #block_hr {
+    font-size: 40px;
+    line-height: 150%;
+    width: 383px;
+  }
+  #for_hr {
+    font-size: 40px;
+    line-height: 140%;
+    top: -30px;
+  }
+  #job_hr {
+    top: 358px;
+    width: 466px;
+    height: 20px;
+  }
+  #loope {
+    left: 485px;
+    top: -34px;
+  }
+  .wrap_hrHelp {
+    top: 160px;
+  }
+  .hrHelp {
+    width: 912px;
+  }
+  .wrap_Filters {
+    position: relative;
+    top: 211px;
+  }
+  .dB {
+    width: 992px;
+  }
+  .wrap_eachVac {
+    width: 952px;
+    position: relative;
+    top: 305px;
+  }
+  .searchPositions {
+    width: 465px;
+    height: 638px;
+  }
+  .industry_vac {
+    width: 950px;
+    top: 83px;
+  }
+  .right_ind {
+    width: 438px;
+    left: 54px;
+  }
+  .wrap_hr {
+    height: 2025px;
+  }
+  .all_vac {
+    font-size: 18px;
+  }
+  #wrap_hr_footer {
+    position: relative;
+    top: -1516px;
+  }
+  .searchVacs {
+    left: 0px;
+    font-size: 18px;
+    line-height: 140%;
+    width: 399px;
+    height: 50px;
+    padding-left: 34px;
+  }
+  .commVacs {
+    width: 466px;
+  }
+  .lblsFor {
+    font-size: 18px;
+  }
+  .wrap_eachVac {
+    grid-gap: 24px;
+  }
+  #resFil {
+    font-size: 18px;
+    top: -166px;
+  }
+  #req_but2 {
+    font-size: 18px;
+  }
+  .wrap_circle {
+    left: 34px;
+  }
+  .glDb {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 150%;
+  }
+  .comDb {
+    font-size: 40px;
+    line-height: 140%;
+  }
+  .addDb {
+    width: 151px;
+    height: 38px;
+    font-size: 16px;
+  }
+  .moreDb {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .tableMain {
+    width: 992px;
+  }
+  .searchingBlock {
+    width: 862px;
+    left: 63px;
+    top: 36px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .commComp {
+    width: 865px;
+    height: 70px;
+    background: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% repeat(4, 12.5%) 25%;
+    left: 33px;
+    top: 91px;
+  }
+  .searchCompany {
+    position: relative;
+    right: 22px;
+    top: 26px;
+  }
+  #wrap_data_footer {
+    top: -484px;
+  }
+  .jur1, .hir1, .fil1 {
+    display: none;
+  }
+  .mail1 {
+    grid-column: 5 / 6;
+    position: relative;
+    left: 99px;
+  }
+  .ind1 {
+    grid-column: 4 / 5;
+    left: 33px;
+    position: relative;
+  }
+  .req1 {
+    position: relative;
+    grid-column: 3 / 4;
+  }
+  .loop1 {
+    position: relative;
+    grid-column: 6 / 7;
+    top: -13px;
+  }
+  .ind2 {
+    position: relative;
+    grid-column: 4 / 5;
+  }
+  .req2 {
+    grid-column: 3 / 4;
+  }
+  .wrapTable {
+    top: 589px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .glDb {
+    font-size: 30px;
+    line-height: 150%;
+  }
+  #block_hr {
+    font-size: 25px;
+    line-height: 150%;
+    width: 372px;
+  }
+  .searchPositions {
+    width: 721px;
+  }
+  .vac {
+    width: 731px;
+  }
+  .industry_vac {
+    grid-template-columns: 1fr;
+    width: 737px;
+  }
+  #sp1 {
+    font-size: 26px;
+  }
+  #sp3 {
+    width: 99px;
+    height: 40px;
+    font-size: 16px;
+  }
+  #sp2 {
+    left: -17px;
+    font-size: 16px;
+  }
+  .wrap_Filters {
+    position: relative;
+    top: 258px;
+  }
+  .wrap_eachVac {
+    grid-template-columns: 1fr;
+    width: 576px;
+    top: 322px;
+  }
+  .right_ind {
+    left: -22px;
+    top: 27px;
+  }
+  .searchVacs {
+    width: 630px;
+  }
+  .searchVacs::placeholder {
+    font-size: 16px;
+  }
+  #req_but2 {
+    width: 167px;
+    font-size: 16px;
+  }
+  .commVacs {
+    width: 722px;
+    height: 136px
+  }
+  #receiveList2 {
+    top: -135px;
+  }
+  #applFor2 {
+    top: -36px
+  }
+  .lblsFor {
+    font-size: 16px;
+  }
+  #resFil {
+    top: -163px;
+    left: 238px;
+    font-size: 16px;
+  }
+  .wrap_hrHelp {
+    position: relative;
+    top: 177px;
+    height: 80px;
+    left: -7px;
+  }
+  .inside_vacs {
+    grid-row: 2 / 3;
+    position: relative;
+    top: 61px;
+  }
+  .vac {
+    width: 540px;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: -36px;
+  }
+  .wrap_searchPositions {
+    grid-row: 1 / 2;
+  }
+  #wrap_hr_footer {
+    top: -1543px;
+  }
+  .hrHelp {
+    width: 681px;
+    height: 34px;
+  }
+  .all_vac {
+    font-size: 16px;
+  }
+  #loope {
+    left: 307px;
+    top: -1px;
+  }
+  #job_hr {
+    width: 292px;
+    left: 0px;
+    top: 168px;
+  }
+  #job_hr::placeholder {
+    font-size: 12px;
+  }
+  #for_hr {
+    top: -17px;
+    font-size: 25px;
+    line-height: 150%;
+  }
+  .wrap_circle {
+    left: 56px;
+  }
+  .comDb {
+    top: -29px;
+    width: 432px;
+    font-size: 30px;
+    line-height: 140%;
+  }
+  .dB, .tableMain {
+    width: 739px;
+  }
+  .addDb {
+    width: 151px;
+    height: 38px;
+    font-size: 16px;
+  }
+  .moreDb {
+    font-size: 16px;
+    line-height: 140%;
+    font-size: 'Inter-Regular';
+  }
+  .wrapTable {
+    top: 518px;
+  }
+  .commComp {
+    width: 594px;
+  }
+  .searchingBlock {
+    width: 698px;
+    left: 54px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .searchingType {
+    font-size: 16px;
+  }
+  .ind2, .ind1, .jur1, .hir1, .fil1 {
+    display: none;
+  }
+  .commComp {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .req1 {
+    position: relative;
+    left: 6px;
+  }
+  #wrap_data_footer {
+    top: -500px;
+  }
+  .wrapDB {
+    top: 171px;
+  }
 }

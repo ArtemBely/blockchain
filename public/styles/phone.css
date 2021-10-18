@@ -25,7 +25,6 @@
   }
   .wrap_header {
     width: 320px;
-    left: 20px;
   }
   .main_wrap{
     height: 775px;
@@ -80,8 +79,8 @@
     #global {
       font-size: 16px;
       line-height: 19px;
-      left: 3px;
-      top: 33px;
+      left: 20px;
+      top: 41px;
       width: 190px;
     }
     #circle1{

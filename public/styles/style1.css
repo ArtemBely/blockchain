@@ -127,6 +127,7 @@ body {
 .wrap_circle {
   position: relative;
   top: 5px;
+  left: 0px;
 }
 .nav_header {
   font-weight: 400;

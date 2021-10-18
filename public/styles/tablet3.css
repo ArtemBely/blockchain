@@ -21,7 +21,6 @@
   }
   .wrap_header {
     width: 768px;
-    left: 56px;
   }
   .reserve, .reserve2 {
     font-family: 'Inter-SemiBold';
@@ -304,7 +303,7 @@
     #global {
       font-size: 18px;
       line-height: 19px;
-      left: -130px;
+      left: -75px;
       top: 6px;
     }
     #circle1{

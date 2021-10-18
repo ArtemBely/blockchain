@@ -105,13 +105,13 @@
   display: table;
 }
 .commComp {
-  width: 1224px;
+  width: 1126px;
   height: 70px;
   background: white;
   position: relative;
   display: grid;
-  grid-template-columns: 25% repeat(4, 12.5%) 25%;
-  left: 80px;
+  grid-template-columns: 15% repeat(4, 14.5%) 27%;
+  left: 38px;
   top: 91px;
   margin-bottom: 10px;
   padding: 0px 33px;
@@ -160,7 +160,7 @@
 }
 .searchingBlock {
   position: absolute;
-  width: 1290px;
+  width: 1112px;
   left: 80px;
   top: 36px;
   display: grid;
