@@ -3,7 +3,24 @@
 		top: -700px;
 	}
 }
+
+
+
 @media (min-width: 1000px) and (max-width: 1500px) {
+	.footer{
+		left: 50px;
+	}
+	.wrapDB {
+		position: absolute;
+		display: grid;
+		grid-row: 2 / 3;
+		width: 100%;
+		top: 200px;
+		color: white;
+		justify-content: start;
+		align-items: start;
+		left: 20px;
+	}
 	.wrap_logos {
 		top:1500px;
 	}
@@ -11,6 +28,11 @@
 		font-size: 30px;
 		line-height: 42px;
 		width:358px;
+	}
+	.wrap_header {
+		width: 990px;
+		position: absolute;
+		left: -15px;
 	}
 
 	.seeAll_3 {

@@ -98,6 +98,7 @@ body {
   overflow-x: hidden;
 }
 #global {
+  z-index: 13;
   font-family: 'Mont-Heavy';
   color: #ffffff;
   font-weight: 900;
@@ -126,6 +127,7 @@ body {
 }
 .wrap_circle {
   position: relative;
+  z-index: 13;
   top: 5px;
 }
 .nav_header {
@@ -163,7 +165,7 @@ body {
   width: 164px;
 }
 #partners {
-  left: -75px;
+  left: -50px;
 }
 #database {
   left: -30px;

@@ -219,3 +219,17 @@
   color: white;
   background: #D0000F;
 }
+.wrapTable {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 600px;
+  left: 40px;
+}
+.wrap_footer {
+  position: relative;
+  top: 1547px;
+  display: flex;
+  justify-content: flex-start;
+  left: -450px;
+}

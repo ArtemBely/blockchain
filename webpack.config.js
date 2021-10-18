@@ -2,8 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 var nodeExternals = require('webpack-node-externals');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
 var browserConfig = {
+      
       entry: ['babel-regenerator-runtime', './src/browser/index.js'],
       output: {
         path: path.resolve(__dirname, 'public'),
@@ -44,6 +44,7 @@ var browserConfig = {
          }
         ]
       },
+      
       plugins: [
         new webpack.DefinePlugin({
           __isBrowser__: "true"
@@ -51,10 +52,13 @@ var browserConfig = {
         new MiniCssExtractPlugin({
           filename: '[name].css'
         })
-      ]
+      ],
+      
+      
 }
 
 var serverConfig = {
+  
   entry: ['babel-regenerator-runtime', './src/server/index.js'],
   target: 'node',
   externals: [nodeExternals()],
@@ -105,6 +109,8 @@ var serverConfig = {
       filename: '[name].css'
     })
   ]
+
+  
 }
 
-module.exports = [browserConfig, serverConfig]
+module.exports = [browserConfig, serverConfig ]

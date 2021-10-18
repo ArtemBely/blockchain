@@ -31,11 +31,7 @@ class Vacancies extends React.Component {
                        <span id='sp1'>HR HELP</span> <span id='sp2'>Take your time and get results</span> <span id='sp3'>Help me</span>
                    </div>
                </div>
-               <div className='wrap_Filters'>
-                   <div className='hrHelp'>
-                       <span id='sp1'>HR HELP</span> <span id='sp2'>Take your time and get results</span> <span id='sp3'>Help me</span>
-                   </div>
-               </div>
+              
                <Offer />
             </div>
         </div>

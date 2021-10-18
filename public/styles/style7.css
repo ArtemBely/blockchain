@@ -12,6 +12,7 @@
 }
 .disp_change {
   display: flex;
+  position: absolute;
 }
 .disp_change2 {
   display: none;
@@ -19,7 +20,7 @@
 .wrap_modal1 {
   position: absolute;
   width: 620px;
-  height: 590px;
+  height: 1100px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 99.99%, rgba(0, 209, 255, 0) 100%);
   backdrop-filter: blur(87.4907px);
   border-radius: 20px;
@@ -31,7 +32,7 @@
 .modal1 {
   position: static;
   width: 570px;
-  height: 538px;
+  height: 1000px;
   left: 25px;
   top: 25px;
   background: #FFFFFF;
@@ -106,7 +107,7 @@
   position: relative;
   width: 26px;
   height: 26px;
-  top: -536px;
+  top: -1020px;
   left: 539px;
   cursor: pointer;
 }
@@ -245,6 +246,79 @@
   font-size: 41px;
   line-height: 140%;
 }
+.tableMain {
+  top:100px;
+}
+
 .hr2 {
   padding: 0px 0px 0px 139px;
 }
+
+.wrap_burgerMenu{
+  position: absolute;
+  right: 5%;
+  top: 50px;
+  visibility: hidden;
+  z-index: 100;
+}
+.modal_menu a{
+  color:white;
+  
+
+}
+.modal_menu{
+  width: 100vh;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 80px;
+  padding-top: 50px;
+  padding-left: 50px;
+  right: 10%;
+  gap: 15px;
+  background-color: #151517f0;
+  z-index: 100;
+}
+.menu__btn{
+  visibility: hidden;
+}
+#menu__toggle{
+  z-index: 1000;
+  background-image: url('../images/NavMenu.png');
+}
+#menu__toggle:checked .nav_header{
+  display: flex;
+  top:350px;
+}
+.menu__btn > input{
+  visibility: hidden;
+}
+.bgMenuImg{ /* IMAGE STYLES */
+  z-index: 150;
+  position: absolute;
+  padding: 25px;
+  top: 20px;
+  left: 65%;
+  background-image: url(/images/NavMenu.png);
+  background-repeat: no-repeat;
+}
+
+.navModalN{
+  display: none;
+}
+.nav_modalV{
+  position: absolute;
+  background-color: #0000005d;
+  width: 100vw;
+  height: 100vh;
+}
+.bgMenuImg{
+  visibility: hidden;
+}
+
+/* .wrap_burgerMenu:checked + .wrap_header a{
+  visibility: visible;
+  display: flex;
+  top:350px;
+} */

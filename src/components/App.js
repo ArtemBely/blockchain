@@ -14,7 +14,6 @@ import '../../public/styles/tablet1.css';
 import '../../public/styles/tablet2.css';
 import '../../public/styles/tablet3.css';
 import '../../public/styles/phone.css';
-
 class App extends React.Component {
   render() {
     return (

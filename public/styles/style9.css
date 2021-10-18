@@ -1,3 +1,7 @@
+.burger_menu{
+  display: none;
+  visibility: hidden;
+}
 .wrap_sponsors {
   position: relative;
   width: 100%;
