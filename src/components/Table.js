@@ -31,13 +31,13 @@ class Table extends React.Component{
       return(
           <div className='inside_table'>
           <div className='searchingBlock'>
-             <span className='searchingType'>Company <img src={arrow} className='arrowDown'/></span>
-             <span className='searchingType'>Request<img src={arrow} className='arrowDown'/></span>
-             <span className='searchingType'>Industry<img src={arrow} className='arrowDown'/></span>
-             <span className='searchingType'>Jurisdiction<img src={arrow} className='arrowDown'/></span>
-             <span className='searchingType'>Hiring<img src={arrow} className='arrowDown'/></span>
-             <span className='searchingType'>Filter<img src={filter} className='arrowDown'/></span>
-             <span><img src={searching} className='searchCompany'/><input type='text' id='findComp'/></span>
+             <span className='searchingType com1'>Company <img src={arrow} className='arrowDown'/></span>
+             <span className='searchingType req2'>Request<img src={arrow} className='arrowDown'/></span>
+             <span className='searchingType ind2'>Industry<img src={arrow} className='arrowDown'/></span>
+             <span className='searchingType jur1'>Jurisdiction<img src={arrow} className='arrowDown'/></span>
+             <span className='searchingType hir1'>Hiring<img src={arrow} className='arrowDown'/></span>
+             <span className='searchingType fil1'>Filter<img src={filter} className='arrowDown'/></span>
+             <span className='loop1'><img src={searching} className='searchCompany'/><input type='text' id='findComp'/></span>
           </div>
              {this.state.company.map((comp, index, arr) => (
                <div className='commComp' style={{
@@ -45,12 +45,12 @@ class Table extends React.Component{
                                index == arr.length - 1 ? "0px 0px 20px 20px" :
                                null
                }}>
-                   <p className='eachData'>{comp.name}</p>
-                   <p className='eachData'>{comp.request}</p>
-                   <p className='eachData'>{comp.industry}</p>
-                   <p className='eachData'>{comp.jurisdiction}</p>
-                   <p className='eachData'>{typeof comp.hrs[0] == 'object' ? 'yes' : 'null'}</p>
-                   <p className='eachData'>{comp.email}</p>
+                   <p className='eachData com2'>{comp.name}</p>
+                   <p className='eachData req1'>{comp.request}</p>
+                   <p className='eachData ind1'>{comp.industry}</p>
+                   <p className='eachData jur1'>{comp.jurisdiction}</p>
+                   <p className='eachData jur1'>{typeof comp.hrs[0] == 'object' ? 'yes' : null}</p>
+                   <p className='eachData mail1'>{comp.email}</p>
                </div>
              ))}
           </div>
