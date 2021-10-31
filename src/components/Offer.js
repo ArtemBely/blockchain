@@ -30,15 +30,18 @@ class Offer extends React.Component {
           .then(vacancies => this.setState({ vacancies: vacancies }))
           .catch(err => console.log(err))
         }
-          setTimeout(() => {
+          let a = setInterval(() => {
             if(this.state.vacancies) {
               var mergedVacs1 = [].concat.apply([], this.state.vacancies);
               this.setState({
                 mergedVacs: mergedVacs1
               })
-              console.log(this.state.mergedVacs);
+                console.log(this.state.mergedVacs);
+                this.state.mergedVacs.length > 1 ?
+                clearInterval(a) :
+                null
             }
-          }, 1200);
+          }, 500);
        }
 
     changeStatusOfReceive = () => {
