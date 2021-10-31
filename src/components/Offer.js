@@ -38,7 +38,7 @@ class Offer extends React.Component {
               })
               console.log(this.state.mergedVacs);
             }
-          }, 300);
+          }, 1200);
        }
 
     changeStatusOfReceive = () => {
