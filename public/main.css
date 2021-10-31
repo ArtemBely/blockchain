@@ -2353,7 +2353,7 @@ bottom
 .cl_prof {
       position: relative;
       cursor: pointer;
-      z-index: 1000;
+      z-index: 999;
       float: right;
       top: 13px;
       right: 13px;
@@ -5727,7 +5727,8 @@ bottom
     grid-row: 2 / 3;
     font-size: 12px;
     position: relative;
-    top: -28px;
+    top: -5px;
+    left: 79px;
   }
   .fil1 {
     position: relative;

@@ -16,7 +16,7 @@ class DBAnimation extends React.Component {
     this.cl.current.classList.remove('disp_change') :
     this.cl.current.classList.add('disp_change');
   }
-/*
+
   componentDidMount() {
           VANTA.HALO({
           el: '#your-element-selector',
@@ -30,7 +30,7 @@ class DBAnimation extends React.Component {
           xOffset: 0.12
           })
   }
-*/
+
   render() {
     return (
       <div className='wrapDB'>
