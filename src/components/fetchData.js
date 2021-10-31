@@ -16,7 +16,7 @@ getCompanies()
 
 
 async function getVacancies() {
-  return await axios.get('http://localhost:8080/api/eachHr')
+  return await axios.get('https://gbn.rocks/api/eachHr')
     .then(res => {
       let vacancies = res.data;
       return vacancies;
