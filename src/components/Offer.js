@@ -36,12 +36,11 @@ class Offer extends React.Component {
               this.setState({
                 mergedVacs: mergedVacs1
               })
-                console.log(this.state.mergedVacs);
                 this.state.mergedVacs.length > 1 ?
                 clearInterval(a) :
                 null
             }
-          }, 500);
+          }, 1000);
        }
 
     changeStatusOfReceive = () => {
