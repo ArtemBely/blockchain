@@ -10,10 +10,10 @@ class Database extends React.Component {
     render() {
       return (
         <div className='wrap_database'>
-            <Header />
+            <div><Header /></div>
             <DBAnimation />
             <Table />
-            <div id='wrap_data_footer'><Footer /></div>
+            
         </div>
       )
     }

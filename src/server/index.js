@@ -93,6 +93,7 @@ app.get('*', (req, res, next) => {
                   Promise.resolve()
   promise.then(data => {
     const context = { data };
+    const user = req.user;
     const markup = renderToString(
         <StaticRouter location={req.url} context={context}>
            <App data={data} />
@@ -103,11 +104,12 @@ app.get('*', (req, res, next) => {
         `<!DOCTYPE html>
             <html>
                 <head>
-                  <title>collab</title>
+                  <title>gbn</title>
                    <link rel="stylesheet" type="text/css" href="main.css">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                       <script src='/bundle.js' defer></script>
                         <script>window.__INITIAL_DATA__= ${serialize(data)}</script>
+                          <script>window.__INITIAL_DATA__= ${serialize(user)}</script>
                             <title>Blockchain</title>
                           </head>
                         <body>
@@ -115,6 +117,8 @@ app.get('*', (req, res, next) => {
                      ${markup}
                   </div>
                 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
               </body>
             </html>`;
 

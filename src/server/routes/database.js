@@ -22,6 +22,7 @@ passport.deserializeUser(function(id, done) {
 
 router.get(['/', '/sendRequest'], (req, res, next) => {
   var messages = req.flash('errors');
+  const user = req.user;
   const dB = renderToString(
     <StaticRouter>
       <Database />
@@ -36,6 +37,9 @@ router.get(['/', '/sendRequest'], (req, res, next) => {
                  <meta name="viewport" content="width=device-width, initial-scale=1">
               <script src='/bundle.js' defer></script>
               <script>window.__INITIAL_DATA__ = ${serialize(messages)}</script>
+              <script>window.__INITIAL_USER__ = ${serialize(user)}</script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
         </head>
         <body>
              <div id="app">
@@ -48,7 +52,8 @@ router.get(['/', '/sendRequest'], (req, res, next) => {
 
 router.post('/sendRequest', (req, res, done) => {
    var { name, description, email, password,
-     solved, phone, jurisdiction, industry, request, vasc, hrs, docs, show } = req.body;
+     solved, phone, jurisdiction, industry, request,
+      vasc, hrs, docs, show, showVacs } = req.body;
 
    req.checkBody("name", "Field 'Name' has to be filled").notEmpty();
    req.checkBody("description", "Field 'Description' has to be filled").notEmpty();
@@ -76,6 +81,8 @@ router.post('/sendRequest', (req, res, done) => {
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                  <script src='/bundle.js' defer></script>
               <script>window.__INITIAL_DATA__= ${serialize(err)}</script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
            </head>
            <body>
                 <div id="app">
@@ -105,6 +112,8 @@ router.post('/sendRequest', (req, res, done) => {
                       <meta name="viewport" content="width=device-width, initial-scale=1">
                    <script src='/bundle.js' defer></script>
                 <script>window.__INITIAL_DATA__= ${serialize(errors)}</script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
              </head>
              <body>
                   <div id="app">
@@ -128,7 +137,8 @@ router.post('/sendRequest', (req, res, done) => {
        vasc: vasc,
        hrs: hrs,
        docs: docs,
-       show: show
+       show: show,
+       showVacs: showVacs
      });
 
     User.createUser(newUser, function(err, user) {
@@ -151,6 +161,8 @@ res.send(
                   <meta name="viewport" content="width=device-width, initial-scale=1">
                     <script src='/bundle.js' defer></script>
                     <script>window.__INITIAL_DATA__= ${serialize(success)}</script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
                     </head>
                   <body>
                 <div id="app">

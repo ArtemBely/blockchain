@@ -39,6 +39,7 @@
   top: -1px;
 }
 .each_footer {
+  cursor: pointer;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -65,15 +66,23 @@
 }
 #email {
   position: relative;
-  top: -4px;
+  top: 2px;
+  left: 2px;
 }
 #mrCnt {
   position: relative;
-  top: -9px;
+  top: 6px;
+  left: 39px;
 }
 #mapSite {
   position: relative;
-  top: -14px;
+  top: 7px;
+  left: 90px;
+}
+#loginFor {
+  position: relative;
+  top: 9px;
+  text-align: end;
 }
 #second_foot {
   position: relative;
@@ -128,8 +137,17 @@
 #anchor_link {
   position: relative;
   grid-column: 5 / 6;
-  left: 142px;
+  left: 140px;
   top: 22px;
   cursor: pointer;
   width: 30px;
+}
+.modelAddComp {
+  height: 1002px !important;
+}
+.insideAddModal {
+  height: 947px !important;
+}
+.closeDataModal {
+  top: -945px !important;
 }

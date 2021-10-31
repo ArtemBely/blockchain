@@ -5,6 +5,7 @@ const Schema = mongoose.Schema;
 
 const profileOfCompany = new Schema({
   name: {type: String, required: true},
+  profileImage: {type: String},
   description: {type: String, required: true},
   email: {type: String, required: true},
   password: {type: String, required: true},
@@ -16,7 +17,8 @@ const profileOfCompany = new Schema({
   vasc: {type: Array},
   hrs: {type: Array},
   docs: {type: Array},
-  show: {type: String}
+  show: {type: String},
+  showVacs: {type: String}
 });
 
 module.exports = mongoose.model('User', profileOfCompany);

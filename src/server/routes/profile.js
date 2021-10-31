@@ -1,6 +1,9 @@
 import React from 'react';
 import express from 'express';
 import serialize from 'serialize-javascript';
+import multer from 'multer';  // --> установить на рабочий сервер
+import multerS3 from 'multer-s3';  // --> установить на рабочий сервер
+import aws from 'aws-sdk';  // --> установить на рабочий сервер
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import Profile from '../../components/Profile';
@@ -8,6 +11,43 @@ import Vacancy from '../models/vacancy.js';
 import Hr from '../models/hr.js';
 import Docs from '../models/documents.js';
 const router = express.Router();
+
+
+/* загрузка фотографий профиля в личный кабинет */
+
+require('dotenv/config');
+
+aws.config.update({
+  secretAccessKey: process.env.s3_secretAccessKey,
+  accessKeyId: process.env.s3_accessKeyId,
+  region: process.env.s3_bucketRegion
+});
+
+const s3 = new aws.S3();
+
+const fileFilter = (req, file, cb) => {
+  if( file.mimetype === 'image/png' || file.mimetype === 'image/jpg' || file.mimetype === 'image/jpeg' || file.mimetipe === 'image/svg') {
+    cb(null, true);
+  }
+  else  { cb(null, false); }
+};
+
+var upload = multer({
+  fileFilter: fileFilter,
+  limits:{ fileSize: 5000000 },
+  storage: multerS3({
+    s3: s3,
+    bucket: 'gbnbucket',
+    //acl: 'public-read',  // --> требуются настройки доступа в aws s3, чтобы использовать данный параметр
+    metadata: function (req, file, cb) {
+      cb(null, {fieldName: file.fieldname});
+    },
+    key: function (req, file, cb) {
+      cb(null, Date.now().toString())
+    }
+  })
+});
+
 
 router.get('/', isAuth, async (req, res, next) => {
   const hr = renderToString(
@@ -21,11 +61,13 @@ router.get('/', isAuth, async (req, res, next) => {
   `<!DOCTYPE html>
     <html>
         <head>
-          <title>Database</title>
+          <title>Profile</title>
                <link rel="stylesheet" type="text/css" href="../main.css">
                  <meta name="viewport" content="width=device-width, initial-scale=1">
               <script src='/bundle.js' defer></script>
             <script>window.__INITIAL_USER__ = ${serialize(user)}</script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
         </head>
         <body>
              <div id="app">
@@ -34,6 +76,22 @@ router.get('/', isAuth, async (req, res, next) => {
         </body>
     </html>`
     res.send(html);
+});
+
+router.post('/uploadProfileImage', upload.single('cover'), async(req, res, next) => {
+  const fileName = req.file != null ? req.file.location : null
+
+  var user = req.user;
+  user.profileImage = fileName;
+  console.log(req.file);
+  try {
+    user = await user.save();
+    console.log(user);
+    res.redirect('/profile');
+  }
+  catch {
+    err => console.log(err);
+  }
 });
 
 router.post('/sendVacancy', async (req, res, next) => {
@@ -59,15 +117,17 @@ router.post('/sendVacancy', async (req, res, next) => {
     err => console.log(err);
   }
 });
-router.post('/sendHr', async (req, res, next) => {
+router.post('/sendHr', upload.single('hrPhoto'), async (req, res, next) => {
   let { fullName, position, professional,
      details, linkedin } = req.body;
+  let fileName = req.file != null ? req.file.location : null;
   var hr = new Hr({
     fullName: fullName,
     position: position,
     professional: professional,
     details: details,
-    linkedin: linkedin
+    linkedin: linkedin,
+    hrPhoto: fileName
   });
     let user = req.user;
     typeof user.hrs[0] != 'object' ?
@@ -135,6 +195,21 @@ router.get('/deleteDocs/:id', async (req, res, next) => {
     catch {
       err => console.log(err);
     }
+});
+
+router.get('/changeStatus/:id', async (req, res, next) => {
+  let user = req.user;
+  user.showVacs == 'yes' ?
+  user.showVacs = 'no' :
+  user.showVacs = 'yes';
+  try {
+    user = await user.save();
+    console.log(user);
+    res.redirect('/profile');
+  }
+  catch {
+    console.log(err);
+  }
 });
 
 router.get('/logout', isAuth, (req, res, next) => {

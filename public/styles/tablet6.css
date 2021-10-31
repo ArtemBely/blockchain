@@ -86,18 +86,23 @@
   .commVacs {
     width: 320px !important;
     height: 136px !important;
+    overflow: hidden;
 }
     .wrap_searchPositions {
       grid-row: 1 / 2;
       position: relative;
-      left: 22px !important;
-      top:179px !important;
+      top: 170px !important;
   }
-  .wrap_hr {
-    height: 3230px;
-  }
+
   #wrap_hr_footer {
-    top: -505px;
+    top: -1555px;
+    height: 1px;
+}
+.searchBar {
+  z-index: 1000;
+}
+.lblsFor {
+  font-size: 16px;
 }
 .wrap_vac {
   top: -40px;
@@ -105,10 +110,15 @@
 }
 .inside_vacs {
     top: 258px;
+    width: 357px;
+    height: 927px;
     display: grid;
     grid-gap: 23px;
     position: relative;
-    left: 23px;
+    height: 1964px;
+}
+.afterHr {
+  top: -491px;
 }
   #sp1 {
     font-size: 26px !important;
@@ -138,7 +148,7 @@
 }
   .wrap_Filters {
       position: relative;
-      top: 663px !important;
+      top: 654px !important;
       width: 320px !important;
       left: 43px !important;
   }

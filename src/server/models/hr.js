@@ -7,7 +7,8 @@ const hrOfCompany = new Schema({
   position: {type: String, required: true},
   professional: {type: String, required: true},
   details: {type: String, required: true},
-  linkedin: {type: String, required: true}
+  linkedin: {type: String, required: true},
+  hrPhoto: {type: String}
 });
 
 module.exports = mongoose.model('Hr', hrOfCompany);

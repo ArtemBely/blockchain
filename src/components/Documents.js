@@ -55,8 +55,8 @@ class Documents extends React.Component {
         <div className='wrap_docs'>
 
           <div className='wrap_modal1_dark' ref={this.cl}>
-            <div className='wrap_modal1 modDoc'>
-              <div className='modal1 profDoc'>
+            <div className='wrap_modal1 modDoc2'>
+              <div className='modal1 profDoc2'>
                 <p id='comp_reg'>Add new document</p>
                 <p id='fill_in'>Fill in the form details.</p>
                 <form action='/profile/sendDoc' method='POST' className='companyForm'>
@@ -65,7 +65,7 @@ class Documents extends React.Component {
                     <input type='text' name='linkToDoc' className='com_inp' placeholder='Link' required/>
                  <button type='submit' id='req_but'>Send</button>
                 </form>
-                <p id='by_click'>By clicking on the «Request» button you confirm your consent to
+                <p id='by_click' className='clickForDocs'>By clicking on the «Request» button you confirm your consent to
                  the processing of data and agree to the privacy policy</p>
               </div>
               <span id='close2' className='profClose docsClose' ref={this.cl2} onClick={this.closeModal}><img src={close} /></span>

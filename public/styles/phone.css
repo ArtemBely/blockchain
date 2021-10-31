@@ -23,11 +23,248 @@
   .nav_header {
     display: none;
   }
+  #mrCnt, #mapSite {
+    display: none;
+  }
+  #wrap_data_footer {
+    height: 0px;
+  }
+  .eachData2 {
+    line-height: 15px;
+  }
+  .afterHr {
+    font-size: 16px;
+    width: 280px;
+  }
+  .shortVariant  {
+    width: 302px;
+  }
+  .fullAppearTitles {
+    font-size: 12px;
+    line-height: 9px;
+  }
+  .longVariant {
+    width: 220px;
+  }
+  .closeComp {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    left: 27px;
+    top: -10px;
+  }
+  .fullAppearTitles:nth-child(1) {
+    text-align: start;
+    width: 150px;
+    height: 20px;
+}
+  .fullAppearTitles:nth-child(2) {
+    position: relative;
+    left: -54px;
+    top: 80px;
+}
+.fullAppearTitles:nth-child(3) {
+    position: relative;
+    left: 38px;
+    top: 147px;
+}
+.fullAppearTitles:nth-child(4) {
+    position: relative;
+    left: -166px;
+    top: 148px;
+}
+.eachData, .eachData2 {
+  padding-right: 0px;
+}
+.fullAppearTitles:nth-child(5) {
+    position: relative;
+    left: -94px;
+    top: 80px;
+}
+.fullAppearTitles:nth-child(7) {
+    grid-column: 1 / 1;
+    position: relative;
+    top: -166px;
+    width: 240px;
+    height: 120px;
+}
+.fullAppearTitles:nth-child(8) {
+    grid-column: 1 / 2;
+    position: relative;
+    top: -1687px;
+    grid-row: 5 / 6;
+    width: 224px;
+    height: 120px;
+}
+.fullAppearTitles:nth-child(9) {
+    grid-column: 5 / 7;
+    position: relative;
+    top: 143px;
+    left: -167px;
+}
+.textMnFull {
+  font-size: 12px;
+  top: -22px;
+}
+.manageFull {
+    position: relative;
+    width: 205px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    top: -158px;
+    grid-gap: 38px;
+}
+.eachFull {
+  width: 200px;
+  height: 348px;
+}
+#titDocFull, .fullNameOfDoc {
+  font-size: 14px;
+}
+.fullDescrOfDoc {
+  top: -9px !important;
+}
+.eachFullDoc {
+  width: 206px;
+  height: 85px;
+}
+ .showCard {
+   overflow-y: scroll;
+ }
+ .showCard::-webkit-scrollbar {
+  width: 0;
+}
+.wrap_compProfiles {
+  width: 154px;
+  height: 57px;
+}
+.wrap_fullDocs {
+    position: relative;
+    display: grid;
+    width: 218px;
+    grid-row: 4 / 5;
+    grid-template-columns: 1fr;
+    height: 344px;
+    top: 173px;
+}
+.fullDescrOfDoc {
+  font-size: 12px;
+}
+.fullName {
+    font-size: 16px;
+    line-height: 16px;
+    width: 200px;
+}
+.fullDescr {
+  font-size: 12px;
+  width: 159px;
+}
+.eachFullPerson {
+  width: 150px;
+}
+  .searchCity {
+    top: 24px;
+    grid-row: 3 / 4;
+  }
+  .searchBar {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 45px 0px;
+  }
+  .searchBarElement:nth-child(1) {
+    width: 91px;
+  }
+  .searchBarElement {
+    font-size: 16px;
+  }
+  .searchBarElement:nth-child(2) {
+    position: relative;
+    left: -165px;
+    width: 96px;
+}
+.arrowsSearch {
+  top: 2px;
+}
+.searchBarElement:nth-child(3) {
+    position: relative;
+    left: -159px;
+    width: 102px;
+}
+.searchBarElement:nth-child(4) {
+    position: relative;
+    left: 1px;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    width: 150px;
+    height: 23px;
+    top: -53px;
+}
+#searchBarInput {
+    position: relative;
+    left: 32px;
+}
+.searchCombo {
+    left: 4px;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    top: -81px;
+    position: relative;
+    width: 250px;
+}
+.searchBarElement:nth-child(5) {
+    position: relative;
+    left: 0px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    top: -25px;
+}
+.searchBarElement:nth-child(6) {
+    position: relative;
+    left: -124px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    top: -24px;
+}
   .wrap_header {
     width: 320px;
   }
+  .dir1 {
+    font-size: 18px !important;
+  }
+  .task1, .sal1, .exp1 {
+    position: relative;
+    top: -16px;
+}
+.loc1, .requir1 {
+  position: relative;
+  top: -10px;
+}
+  .eachVacs {
+    font-size: 16px !important;
+  }
+  .wrap_modal1 {
+    -moz-transform: scale(0.62, 0.62); /* Moz-browsers */
+    zoom: 0.62; /* Other non-webkit browsers */
+    zoom: 62%; /* Webkit browsers */
+}
   .main_wrap{
     height: 775px;
+  }
+  .burger {
+    width: 100%;
+    height: 92%;
+    display: grid;
+    padding-left: 28px;
+    padding-top: 15px;
+    grid-gap: 4px;
+    position: relative;
+    top: 14px;
+  }
+  .mobileNav {
+      color: black;
+      font-size: 18px;
+      line-height: 17px;
+      font-family: 'Inter-Regular';
   }
   .main_screen{
 	  height:600px;
@@ -77,16 +314,18 @@
       z-index: 10;
     }
     #global {
-      font-size: 16px;
-      line-height: 19px;
-      left: 20px;
+      font-size: 13px;
+      line-height: 16px;
+      left: 2px;
       top: 41px;
-      width: 190px;
+      width: 174px;
     }
     #circle1{
       margin-left: 7px;
       margin-top: 30px;
+      width: 38px;
     }
+
     #circle2{
       position: relative;
       left: 5px;
@@ -703,6 +942,7 @@
     }
     .each_footer{
       text-decoration-line: underline;
+      width: 123px;
     }
     #second_foot {
       position: absolute;
@@ -712,12 +952,17 @@
     }
     #anchor_link{
       grid-column: 1/2;
-      top: 63px;
+      top: 111px;
       left: 272px;
+    }
+    #loginFor {
+      left: 1px;
+      width: 200px;
     }
     #email{
       top: 0;
     }
-
-
+    #footTel {
+      width: 200px;
+    }
 }

@@ -3,6 +3,50 @@
     top: 5px;
     left: 17px;
   }
+  #findComp {
+    position: relative;
+    top: 6px;
+    left: 0px;
+}
+  .closeBurger {
+        display: block;
+        position: relative;
+        grid-column: 9 / 10;
+        height: 43px;
+        width: 19px;
+        top: 43px;
+        cursor: pointer;
+        left: -14px;
+        z-index: 1000;
+  }
+  .wrap_burger {
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    top: 100px;
+    width: 208px;
+    height: 412px;
+    background: #FFFFFF;
+    border-radius: 15px 0px 15px 15px;
+    z-index: 999;
+    transform: translateX(-1000px);
+    transition: 0.5s;
+    padding: 0px 10px;
+  }
+  .close1 {
+    height: 3px;
+    background: white;
+    width: 18px;
+    transition: 0.2s;
+  }
+  .clDown {
+    background: white;
+    height: 3px;
+    width: 9px;
+    position: relative;
+    left: 9px;
+    top: -10px;
+  }
   .dB {
     width: 275px;
     grid-template-columns: 1fr;
@@ -23,6 +67,7 @@
     width: 151px;
     font-size: 16px;
     height: 38px;
+    z-index: 900;
   }
   .moreDb {
     left: 2px;
@@ -32,6 +77,7 @@
   }
   .tableMain {
     width: 320px;
+    overflow-x: hidden;
   }
   .commComp {
     width: 206px;
@@ -60,6 +106,7 @@
     grid-row: 2 / 3;
     position: relative;
     top: -16px;
+    width: 200px;
     font-size: 12px;
   }
   .mail1 {
@@ -68,7 +115,8 @@
     grid-row: 2 / 3;
     font-size: 12px;
     position: relative;
-    top: -6px;
+    top: -5px;
+    left: 79px;
   }
   .fil1 {
     position: relative;
@@ -88,13 +136,20 @@
   .com2 {
     position: relative;
     top: 8px;
+    width: 200px;
   }
   .req1 {
     top: -6px;
   }
   #wrap_data_footer {
-    top: -95px;
+    top: -595px;
   }
+  .forDataFooter {
+    top: 200px !important;
+}
+  .showCard {
+    height: 2097px !important;
+}
   .wrapTable {
     top: 508px;
   }

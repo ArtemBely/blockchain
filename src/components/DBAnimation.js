@@ -16,14 +16,28 @@ class DBAnimation extends React.Component {
     this.cl.current.classList.remove('disp_change') :
     this.cl.current.classList.add('disp_change');
   }
-
+/*
+  componentDidMount() {
+          VANTA.HALO({
+          el: '#your-element-selector',
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          backgroundColor: 0x131a43,
+          amplitudeFactor: 0.00,
+          xOffset: 0.12
+          })
+  }
+*/
   render() {
     return (
       <div className='wrapDB'>
 
           <div className='wrap_modal1_dark' ref={this.cl}>
-           <div className='wrap_modal1'>
-             <div className='modal1'>
+           <div className='wrap_modal1 modelAddComp2'>
+             <div className='modal1 insideAddModal2'>
                <p id='comp_reg'>Company registration</p>
                <p id='fill_in'>Fill in the form details. Our manager will contact you to clarify the details.</p>
                <form action='/database/sendRequest' method='POST' className='companyForm'>
@@ -35,17 +49,19 @@ class DBAnimation extends React.Component {
                    <input type='text' name='email' className='com_inp' placeholder='Contact Email' required/>
                    <input type='text' name='phone' className='com_inp' placeholder='Phone number' required/>
                    <input type='text' name='password' className='com_inp' placeholder='Your password' required/>
-                 <input type='text' name='jurisdiction' className='com_inp' placeholder='Jurisdiction' required/>
-                 <input type='hidden' name='vacs' value=''/>
-                 <input type='hidden' name='hrs' value=''/>
-                 <input type='hidden' name='docs' value=''/>
-                 <input type='hidden' name='show' value='yes'/>
+                   <input type='text' name='jurisdiction' className='com_inp' placeholder='Jurisdiction' required/>
+                   <input type='hidden' name='vacs' value=''/>
+                   <input type='hidden' name='hrs' value=''/>
+                   <input type='hidden' name='profileImage' value=''/>
+                   <input type='hidden' name='docs' value=''/>
+                   <input type='hidden' name='show' value='yes'/>
+                   <input type='hidden' name='showVacs' value='yes'/>
                <button type='submit' id='req_but'>Request</button>
                </form>
-               <p id='by_click'>By clicking on the «Request» button you confirm your consent to
+               <p id='by_click' className='forCompReg'>By clicking on the «Request» button you confirm your consent to
                 the processing of data and agree to the privacy policy</p>
              </div>
-             <span id='close2' ref={this.cl2} onClick={this.closeModal}><img src={close} /></span>
+             <span id='close2' className='closeDataModal2' ref={this.cl2} onClick={this.closeModal}><img src={close} /></span>
             </div>
           </div>
 
@@ -56,9 +72,11 @@ class DBAnimation extends React.Component {
                   <p className='addDb' onClick={this.closeModal}>Add company →</p>
                 <NavLink to='#' className='moreDb'>More about GBN →</NavLink>
             </div>
-            <div className='secondDb'>
-              animation
-            </div>
+
+              <div className='secondDb'>
+                <div id='your-element-selector'></div>
+              </div>
+
          </div>
       </div>
     )

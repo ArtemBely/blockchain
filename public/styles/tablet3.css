@@ -4,15 +4,33 @@
       zoom: 0.68; /* Other non-webkit browsers */
       zoom: 68%; /* Webkit browsers */
   }
-  #container {
-    left: 281px !important;
-    top: -255px !important;
+    #container {
+      left: 281px !important;
+      top: -255px !important;
+    }
+    .wrap_modal1_dark {
+      -moz-transform: scale(1.6, 1.6); /* Moz-browsers */
+      zoom: 1.6; /* Other non-webkit browsers */
+      zoom: 160%; /* Webkit browsers */
+  }
+  .wrap_modal1 {
+    -moz-transform: scale(0.63, 0.63); /* Moz-browsers */
+    zoom: 0.63; /* Other non-webkit browsers */
+    zoom: 63%; /* Webkit browsers */
+  }
+    .showCard {
+      height: 1600px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
   #container {
     left: 200px !important;
     top: -285px !important;
+  }
+  .wrap_modal1 {
+    -moz-transform: scale(0.78, 0.78); /* Moz-browsers */
+    zoom: 0.78; /* Other non-webkit browsers */
+    zoom: 78%; /* Webkit browsers */
   }
 }
 @media (min-width: 576px) and (max-width: 1000px) {

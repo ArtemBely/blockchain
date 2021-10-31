@@ -8,6 +8,9 @@
 .sponsors {
   width: 1290px;
 }
+.closeBurger {
+  display: none;
+}
 .ourSponsors {
   font-family: 'Inter-SemiBold';
   font-style: normal;

@@ -8,10 +8,20 @@ class Offer extends React.Component {
   constructor() {
     super()
 
+    let user;
+
+    if(__isBrowser__) {
+      user = window.__INITIAL_USER__;
+    }
+
     this.state = {
       vacancies: [],
-      mergedVacs: []
+      mergedVacs: [],
+      user
     }
+
+    this.applForP = React.createRef();
+    this.receiveForP = React.createRef();
   }
 
       componentDidMount() {
@@ -31,10 +41,18 @@ class Offer extends React.Component {
           }, 300);
        }
 
+    changeStatusOfReceive = () => {
+      this.receiveForP.current.classList.toggle('receiveForPColor');
+    }
+    changeStatusOfApply = () => {
+      this.applForP.current.classList.toggle('receiveForPColor2');
+    }
+
     eachVacancie = () => {
       if(this.state.mergedVacs) {
         return(
           <div className='inside_vacs'>
+           <div className='doubleInside_vacs'>
              {this.state.mergedVacs.map((comp, index, arr) => (
                <div className='commVacs' style={{
                  borderRadius: index == 0 ? "20px 20px 0px 0px" :
@@ -49,6 +67,9 @@ class Offer extends React.Component {
                    <p className='eachVacs exp1'>{comp.experience}</p>
                </div>
              ))}
+             </div>
+             <p className='afterHr'>These are all available vacancies for your request.
+              If you do not find what you are looking for, please try another query.</p>
           </div>
         )
       }
@@ -66,9 +87,9 @@ class Offer extends React.Component {
                      <input type='text' className='searchVacs' placeholder='Work experience'/>
                      <input type='text' className='searchVacs' placeholder='Starting salary'/>
                      <input type='text' className='searchVacs' placeholder='Languages'/>
-                     <input type='checkbox' id='applFor' className='searchVacsCheck'/>
+                     <p className='applForP' ref={this.applForP} onClick={this.changeStatusOfApply}><input type='checkbox' id='applFor' className='searchVacsCheck'/></p>
                      <label htmlFor='applFor' className='lblsFor' id='applFor2'>Apply for internship</label>
-                     <input type='checkbox' id='receiveList' className='searchVacsCheck'/>
+                     <p className='receiveForP' ref={this.receiveForP} onClick={this.changeStatusOfReceive}><input type='checkbox' id='receiveList' className='searchVacsCheck'/></p>
                      <label htmlFor='receiveList' className='lblsFor' id='receiveList2'>Receive list of job opportunities</label>
                      <button type='submit' id='req_but2'>Request</button>
                      <p id='resFil'>Reset filters </p>

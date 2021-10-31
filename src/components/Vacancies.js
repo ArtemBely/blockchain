@@ -1,6 +1,8 @@
 import React from 'react';
 import Offer from './Offer';
 import loope from '../../public/images/Ellipse 40.svg';
+import arrow from '../../public/images/Vector 8.svg';
+import close from '../../public/images/Vector (1) — копия 2.svg';
 import { getVacancies } from './fetchData';
 
 
@@ -9,7 +11,13 @@ class Vacancies extends React.Component {
   constructor() {
     super()
 
+    this.searchBar = React.createRef();
   }
+
+  searchBarChange = () => {
+    this.searchBar.current.classList.toggle('receiveForPColor3');
+  }
+
 
     render() {
       return (
@@ -32,8 +40,18 @@ class Vacancies extends React.Component {
                    </div>
                </div>
                <div className='wrap_Filters'>
-                   <div className='hrHelp'>
-                       <span id='sp1'>HR HELP</span> <span id='sp2'>Take your time and get results</span> <span id='sp3'>Help me</span>
+                   <div className='searchBar'>
+                       <span className='searchBarElement'>Salary<img src={arrow} className='arrowsSearch'/></span>
+                       <span className='searchBarElement'>Industry<img src={arrow} className='arrowsSearch'/></span>
+                       <span className='searchBarElement'>Company<img src={arrow} className='arrowsSearch'/></span>
+                       <span className='searchBarElement'>Work experience<img src={arrow} className='arrowsSearch'/></span>
+                       <span className='searchBarElement'>Recently<img src={arrow} className='arrowsSearch'/></span>
+                       <span className='searchBarElement'>Location<img src={arrow} className='arrowsSearch'/></span>
+                       <span className='searchBarElement searchCombo'>
+                       <p className='wrapSearchBarInput' ref={this.searchBar} onClick={this.searchBarChange}><input type='checkbox' className='searchBarElement' id='searchBarInput'/></p>
+                       <label htmlFor='searchBarInput' id='searchLabel'>Apply for internship</label>
+                       </span>
+                       <span className='searchBarElement searchCity'>Zug, Switzerland<img src={close} id='closeSearchBar'/></span>
                    </div>
                </div>
                <Offer />

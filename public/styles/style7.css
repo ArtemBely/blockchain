@@ -9,6 +9,7 @@
   z-index: 1;
   top: 0px;
   left: 0px;
+  z-index: 1000;
 }
 .disp_change {
   display: flex;
@@ -27,6 +28,9 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  -moz-transform: scale(0.78, 0.78); /* Moz-browsers */
+  zoom: 0.78; /* Other non-webkit browsers */
+  zoom: 78%; /* Webkit browsers */
 }
 .modal1 {
   position: static;
@@ -69,6 +73,7 @@
   top: -22px;
   padding: 0px 19px;
   color: #000000;
+  cursor: pointer;
 }
 .com_inp::placeholder {
   font-size: 22px;
@@ -97,7 +102,7 @@
   width: 287px;
   position: relative;
   left: 146px;
-  top: -60px;
+  top: -27px;
   font-size: 14px;
   line-height: 120%;
   font-family: 'Inter-Regular';
@@ -214,6 +219,7 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 140%;
+  color: black;
 }
 .blockOfHiring {
   position: relative;
@@ -239,7 +245,7 @@
   justify-content: center;
   cursor: pointer;
   position: relative;
-  top: 45px;
+  top: 95px;
 }
 .postVac {
   font-family: 'Inter-Regular';
@@ -247,6 +253,9 @@
   font-weight: normal;
   font-size: 41px;
   line-height: 140%;
+}
+.signInClose {
+  top: -309px !important;
 }
 .hr2 {
   padding: 0px 0px 0px 139px;

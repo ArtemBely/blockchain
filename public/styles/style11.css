@@ -1,0 +1,348 @@
+.manageFull {
+    position: relative;
+    width: 1130px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.textMnFull {
+  position: absolute;
+  top: -30px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  font-family: 'Inter-SemiBold';
+}
+.fullMail {
+  position: relative;
+  top: -53px;
+  left: 26px;
+  font-size: 14px;
+  font-family: 'Inter-Regular';
+}
+.fullName {
+  position: relative;
+  top: -10px;
+  font-weight: bold;
+  font-family: 'Inter-SemiBold';
+  font-size: 18px;
+  line-height: 140%;
+}
+.fullDescr {
+  position: relative;
+  top: -22px;
+  font-size: 14px;
+  font-family: 'Inter-Regular';
+}
+.lnkFull {
+  position: relative;
+  top: -19px;
+}
+.wrap_fullDocs {
+  position: relative;
+  display: grid;
+  top: 16px;
+  width: 1130px;
+  grid-row: 4 / 5;
+  grid-template-columns: repeat(4, 1fr);
+}
+#titDocFull {
+  position: absolute;
+  font-weight: bold;
+  font-family: 'Inter-SemiBold';
+  font-size: 18px;
+  line-height: 140%;
+}
+.eachFullDoc {
+  position: relative;
+  top: 24px;
+  width: 232px;
+  height: 88px;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 16px;
+  padding-top: 2px;
+  cursor: pointer;
+}
+.fullNameOfDoc {
+  font-family: 'Inter-SemiBold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+}
+.fullDescrOfDoc {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  position: relative;
+  top: -31px;
+}
+#impComp {
+  font-family: 'Inter-Regular';
+  display: grid;
+  grid-template-columns: 88% 5%;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FFFFFF;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 252px;
+  justify-content: center;
+  position: relative;
+  font-size: 18px;
+  line-height: 140%;
+  height: 46px;
+  color: #808080;
+  padding: 9px 11px 11px;
+  cursor: pointer;
+  top: -31px;
+}
+#logoComp {
+  position: relative;
+  top: 5px;
+}
+.fileUpload {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.sendAvatar {
+  display: none;
+}
+.forAvatar {
+  width: 252px;
+  height: 46px;
+  background: linear-gradient(
+  62.18deg, rgba(107, 54, 239, 0) -22.93%, #1EC0F4 88.82%);
+  display: block;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  top: -27px;
+}
+#navHr, #hr1, .each_vac {
+  font-family: 'Inter-Regular';
+}
+.wrap_compProfiles {
+  width: 242px;
+  height: 90px;
+  position: relative;
+  overflow: hidden;
+}
+#compProfilesImg {
+  width: 87%;
+}
+#crNew {
+  font-family: 'Inter-Regular';
+}
+.check1Class {
+  width: 20px;
+  height: 20px;
+}
+#lblFor1 {
+  top: -24px;
+  left: -10px;
+}
+.labelForSpeakers {
+    font-family: 'Inter-Regular';
+    position: relative;
+    font-size: 20px;
+}
+#check2 {
+  position: relative;
+  top: 33px;
+  left: -252px;
+}
+#lblFor2 {
+  top: 27px;
+  font-size: 20px;
+  left: -262px;
+}
+.publDet {
+  top: 33px;
+}
+.profAddButton {
+  top: 34px !important;
+}
+.profAddButton2 {
+  top: -15px !important;
+}
+#addPhotoPerson {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.addPersonProfile {
+    font-family: 'Inter-Regular';
+    width: 151px;
+    height: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 15px 11px;
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    font-size: 18px;
+    top: 28px;
+    left: 19px;
+    color: #808080;
+    cursor: pointer;
+}
+#imgUp2 {
+  position: relative;
+  top: -19px;
+  left: 103px;
+}
+.reqHr {
+  top: -59px !important;
+}
+.profHr2 {
+  height: 654px !important;
+}
+.modHr2 {
+  height: 702px !important;
+}
+.forCompReg {
+  top: -59px !important;
+}
+.insideAddModal2 {
+  height: 919px !important;
+}
+.modelAddComp2 {
+  height: 970px !important;
+}
+.closeDataModal2 {
+  top: -916px !important;
+}
+.profDoc2 {
+  height: 428px !important;
+}
+.modDoc2 {
+  height: 478px !important;
+}
+.clickForDocs {
+  top: -59px !important;
+}
+.changeColorClass {
+    color: white;
+    padding: 10px 29px 11px !important;
+    border: none !important;
+  background: linear-gradient(
+59.99deg , rgba(107, 54, 239, 0) -41.24%, #1EC0F4 88.17%);
+}
+.fullImage {
+  width: 190px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.eachFullPerson {
+  position: absolute;
+  width: 190px;
+}
+.signInForm {
+  position: relative;
+  top: 31px;
+}
+.eachHrPerson {
+  position: absolute;
+  width: 190px;
+}
+#hr1 {
+  position: relative;
+  font-size: 18px;
+  font-family: 'Inter-SemiBold';
+}
+#navHr {
+  font-size: 18px;
+  color: black;
+  position: relative;
+  top: 18px;
+}
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+  left: 86px;
+  top: 3px;
+  background: linear-gradient(62.18deg, #6B36EF -22.93%, #1EC0F4 88.82%);
+  border-radius: 34px;
+  mix-blend-mode: normal;
+  -webkit-transition: .4s;
+  transition: .4s;
+  cursor: pointer;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  top: 2px;
+  left: 22px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background: white;
+  mix-blend-mode: normal;
+  border: none;
+}
+
+.beforeLock {
+  background: linear-gradient(62.18deg, #6B36EF -22.93%, #1EC0F4 88.82%);
+  mix-blend-mode: normal;
+  left: 3px !important;
+  top: 2px !important;
+}
+.switchLock {
+  border: 2px solid #DFDFDF;
+  background: white;
+}
+.applForP {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 29px;
+  top: 31px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #6B36EF, #1EC0F4);
+}
+.receiveForP {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 29px;
+    top: -73px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #6B36EF, #1EC0F4);
+}
+.wrapSearchBarInput {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -3px;
+    top: -17px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #6B36EF, #1EC0F4);
+}

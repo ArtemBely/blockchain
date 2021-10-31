@@ -30,7 +30,7 @@ router.get('/eachCompany', async(req, res) => {
     return;
 });
 router.get('/eachHr', async(req, res) => {
-    let user = await User.find({show: "yes"});
+    let user = await User.find({showVacs: "yes"});
     let vacs = user.map(vac => vac.vasc);
     //console.log(vacs);
     res.json(vacs);
