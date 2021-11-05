@@ -1728,6 +1728,7 @@ bottom
   max-height: 850px;
   min-height: 550px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .tableMain::-webkit-scrollbar {
   width: 0px;
@@ -3140,7 +3141,7 @@ bottom
   width: 1126px;
   height: 70px;
   display: grid;
-  grid-template-columns: 15% repeat(4, 14.5%) 27%;
+  grid-template-columns: 260px 1px 133px 200px;
   align-items: center;
 }
 .fullAppearTitles {
@@ -3218,6 +3219,8 @@ bottom
   width: 1068px;
   box-shadow: inset -8px 0px 130px 83px #131a43;
 }
+
+
 
 .manageFull {
     position: relative;
@@ -5176,7 +5179,7 @@ bottom
   }
   .ind1 {
     grid-column: 4 / 5;
-    left: 33px;
+    left: 66px;
     position: relative;
   }
   .req1 {
@@ -5191,6 +5194,7 @@ bottom
   .ind2 {
     position: relative;
     grid-column: 4 / 5;
+    justify-self: end;
   }
   .req2 {
     grid-column: 3 / 4;
@@ -6260,6 +6264,61 @@ bottom
   }
 }
 
+@media (max-width: 1525px) {
+  .eachData {
+    width: 210px;
+  }
+
+  .searchingType {
+    font-size: 16px;
+  }
+
+  .searchingType .ind2 {
+    right: 14px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .tableMain {
+    width: 1454px;
+    padding-left: 20px;
+  }
+
+  .searchingType {
+    font-size: 18px;
+  }
+
+  .searchingBlock {
+    width: 1221px;
+    padding-left: 20px;
+  }
+
+  .eachData {
+    margin-top: 20px;
+    width: 210px;
+  }
+
+  .com1 {
+    margin-right: 201px;
+    width: 99px;
+  }
+
+  .com2 {
+    padding-left: 10px;
+  }
+
+  .jur2 {
+    text-decoration: underline;
+  }
+
+  .commComp {
+    width: 1290px;
+  }
+
+  .shortVariant {
+    grid-template-columns: 308px 148px 160px 150px 395px 150px;
+  }
+}
 @media (min-width: 320px) and (max-width: 350px) {
       body {
         -moz-transform: scale(0.78, 0.78); /* Moz-browsers */

@@ -19,6 +19,7 @@ import '../../public/styles/tablet4.css';
 import '../../public/styles/tablet5.css';
 import '../../public/styles/tablet6.css';
 import '../../public/styles/tablet7.css';
+import '../../public/styles/tablet8.css';
 import '../../public/styles/phone.css';
 import '../../public/styles/phone2.css';
 

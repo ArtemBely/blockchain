@@ -1,0 +1,55 @@
+@media (max-width: 1525px) {
+  .eachData {
+    width: 210px;
+  }
+
+  .searchingType {
+    font-size: 16px;
+  }
+
+  .searchingType .ind2 {
+    right: 14px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .tableMain {
+    width: 1454px;
+    padding-left: 20px;
+  }
+
+  .searchingType {
+    font-size: 18px;
+  }
+
+  .searchingBlock {
+    width: 1221px;
+    padding-left: 20px;
+  }
+
+  .eachData {
+    margin-top: 20px;
+    width: 210px;
+  }
+
+  .com1 {
+    margin-right: 201px;
+    width: 99px;
+  }
+
+  .com2 {
+    padding-left: 10px;
+  }
+
+  .jur2 {
+    text-decoration: underline;
+  }
+
+  .commComp {
+    width: 1290px;
+  }
+
+  .shortVariant {
+    grid-template-columns: 308px 148px 160px 150px 395px 150px;
+  }
+}

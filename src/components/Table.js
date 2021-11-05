@@ -82,7 +82,7 @@ class Table extends React.Component{
                          <p className='eachData req1'>{comp.request}</p>
                          <p className='eachData ind1'>{comp.industry}</p>
                          <p className='eachData jur1'>{comp.jurisdiction}</p>
-                         <p className='eachData jur1'>{typeof comp.hrs[0] == 'object' ? 'yes' : 'no'}</p>
+                         <p className='eachData jur1 jur2'>{typeof comp.hrs[0] == 'object' ? 'yes' : 'no'}</p>
                          <p className='eachData mail1'>{comp.email}</p>
                    </div>
 

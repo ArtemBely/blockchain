@@ -303,7 +303,7 @@
   }
   .ind1 {
     grid-column: 4 / 5;
-    left: 33px;
+    left: 66px;
     position: relative;
   }
   .req1 {
@@ -318,6 +318,7 @@
   .ind2 {
     position: relative;
     grid-column: 4 / 5;
+    justify-self: end;
   }
   .req2 {
     grid-column: 3 / 4;

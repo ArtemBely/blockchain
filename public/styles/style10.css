@@ -194,7 +194,7 @@
   width: 1126px;
   height: 70px;
   display: grid;
-  grid-template-columns: 15% repeat(4, 14.5%) 27%;
+  grid-template-columns: 260px 1px 133px 200px;
   align-items: center;
 }
 .fullAppearTitles {
@@ -272,3 +272,5 @@
   width: 1068px;
   box-shadow: inset -8px 0px 130px 83px #131a43;
 }
+
+
