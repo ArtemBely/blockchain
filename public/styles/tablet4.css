@@ -160,12 +160,12 @@
     zoom: 75%; /* Webkit browsers */
 }
   #block_hr {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 150%;
     width: 383px;
   }
   #for_hr {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 140%;
     top: -30px;
   }
@@ -176,7 +176,7 @@
   }
   #loope {
     left: 485px;
-    top: -34px;
+    top: -15px;
   }
   .wrap_hrHelp {
     top: 160px;
@@ -224,7 +224,7 @@
     line-height: 140%;
     width: 399px;
     height: 50px;
-    padding-left: 34px;
+    padding-left: 44px;
   }
   .commVacs {
     width: 466px;

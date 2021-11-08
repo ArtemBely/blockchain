@@ -10,6 +10,15 @@
   .searchingType .ind2 {
     right: 14px;
   }
+
+  .fullAppearTitles:nth-child(2) {
+    margin-left: 42px;
+    left: 0;
+  }
+
+  .businessGrowth {
+    width: 128px;
+  }
 }
 
 @media (min-width: 1500px) {

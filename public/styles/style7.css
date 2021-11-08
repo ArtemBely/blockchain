@@ -169,7 +169,7 @@
 }
 .companyCard {
   position: relative;
-  top: 188px;
+  top: 80px;
   width: 1290px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -196,6 +196,12 @@
   font-size: 18px;
   line-height: 140%;
 }
+
+#profEd {
+  position: relative;
+  top: 16px;
+}
+
 .card1 {
   position: relative;
   display: grid;

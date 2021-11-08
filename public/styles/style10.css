@@ -4,12 +4,12 @@
 }
 .title_of {
   position: relative;
-  top: 89px;
+  top: 35px;
 }
 #clVac {
   position: absolute;
-  left: 610px;
-  top: 31px;
+  left: 420px;
+  top: 30px;
 }
 #clVac > img {
   width: 16px;
@@ -50,7 +50,7 @@
 }
 .wrap_docs {
   position: relative;
-  top: 330px;
+  top: 110px;
 }
 .modDoc {
   height: 478px !important;
@@ -138,7 +138,7 @@
 }
 .exp1 {
   width: 234px;
-  left: 140px;
+  left: 90px;
 }
 .fullDescrOfDoc2 {
   top: -18px !important;
@@ -148,7 +148,7 @@
   width: 200px;
 }
 .showCard {
-  height: 1088px !important;
+  height: 900px !important;
 }
 .fullNameOfDoc2 {
   top: 13px;
@@ -180,6 +180,11 @@
   font-weight: normal !important;
   padding-right: 32px;
 }
+
+.eachData2 {
+  padding-right: 0;
+}
+
 .fullMail {
   padding-right: 83px;
 }
@@ -204,7 +209,7 @@
   font-family: 'Inter-SemiBold';
 }
 .longVariant {
-  width: 1126px;
+  width: 1290px;
   grid-template-columns: 25% repeat(5, 1fr);
   grid-template-rows: 20% 20% 40% 20%;
   height: 100%;

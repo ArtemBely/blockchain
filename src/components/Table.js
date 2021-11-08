@@ -96,7 +96,7 @@ class Table extends React.Component{
                            }}/></p>
                            </p>
                            <p className='fullAppearTitles'>Request
-                             <p className='eachData2'>{comp.request}</p>
+                             <p className='eachData2 businessGrowth'>{comp.request}</p>
                            </p>
 
                            <p className='fullAppearTitles'>Industry
@@ -118,11 +118,11 @@ class Table extends React.Component{
                            <p className='closeComp'><img src={close3} /></p>
 
                            <p className='fullAppearTitles'>Company description
-                              <p className='eachData2'>{comp.description}</p>
+                              <p className='eachData2 popup-paragraph'>{comp.description}</p>
                            </p>
 
                            <p className='fullAppearTitles'>Problem solved
-                               <p className='eachData2'>{comp.solved}</p>
+                               <p className='eachData2 popup-paragraph'>{comp.solved}</p>
                            </p>
 
                            <p className='fullAppearTitles'>Contacts

@@ -150,8 +150,8 @@ class Collaboration extends React.Component {
             var bitmap = document.createElement('canvas');
             var g = bitmap.getContext('2d');
             var blockNumber = Math.floor(Math.random() * Math.floor(1000));
-            bitmap.width = 256;
-            bitmap.height = 256;
+            bitmap.width = 456;
+            bitmap.height = 456;
             g.font = '28px Arial';
             g.fillStyle = 'white';
             g.fillText('Global Blockchain' + '', this.cubeSize * 0.1, this.cubeSize * 0.4);

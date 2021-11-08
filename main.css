@@ -2155,7 +2155,7 @@ bottom
 }
 .companyCard {
   position: relative;
-  top: 188px;
+  top: 80px;
   width: 1290px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -2182,6 +2182,12 @@ bottom
   font-size: 18px;
   line-height: 140%;
 }
+
+#profEd {
+  position: relative;
+  top: 16px;
+}
+
 .card1 {
   position: relative;
   display: grid;
@@ -2271,6 +2277,8 @@ bottom
   grid-gap: 23px;
 }
 .loc1 {
+  position: relative;
+  left: 110px;
   grid-row: 2 / 3;
   grid-column: 3 / 4;
 }
@@ -2283,7 +2291,7 @@ bottom
   grid-column: 2 / 3;
 }
 .wrap_eachVac, .wrap_eachVac2 {
-  width: 1290px;
+  width: 900px;
   position: relative;
   display: grid;
   grid-template-columns: 100% 1%;
@@ -2307,7 +2315,7 @@ bottom
 }
 .wrap_mng {
   position: relative;
-  top: 200px;
+  top: 50px;
 }
 #cr_newP {
   font-family: 'Inter-Regular';
@@ -2330,7 +2338,7 @@ bottom
 }
 .photoHr {
   width: 190px;
-  height: 250px;
+  height: 200px;
 }
 #eachHrPerson {
   width: 100%;
@@ -2410,7 +2418,7 @@ bottom
       grid-template-columns: 10% 20% 70%;
 }
 .eachVacs {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 25px;
   font-family: 'Inter-Regular';
 }
@@ -2482,7 +2490,7 @@ bottom
   width: 488px;
   height: 50px;
   margin: 11px 0px;
-  left: 24px;
+  left: 34px;
   top: 22px;
   position: relative;
   display: flex;
@@ -2951,12 +2959,12 @@ bottom
 }
 .title_of {
   position: relative;
-  top: 89px;
+  top: 35px;
 }
 #clVac {
   position: absolute;
-  left: 610px;
-  top: 31px;
+  left: 420px;
+  top: 30px;
 }
 #clVac > img {
   width: 16px;
@@ -2997,7 +3005,7 @@ bottom
 }
 .wrap_docs {
   position: relative;
-  top: 330px;
+  top: 110px;
 }
 .modDoc {
   height: 478px !important;
@@ -3085,7 +3093,7 @@ bottom
 }
 .exp1 {
   width: 234px;
-  left: 140px;
+  left: 90px;
 }
 .fullDescrOfDoc2 {
   top: -18px !important;
@@ -3095,7 +3103,7 @@ bottom
   width: 200px;
 }
 .showCard {
-  height: 1088px !important;
+  height: 900px !important;
 }
 .fullNameOfDoc2 {
   top: 13px;
@@ -3127,6 +3135,11 @@ bottom
   font-weight: normal !important;
   padding-right: 32px;
 }
+
+.eachData2 {
+  padding-right: 0;
+}
+
 .fullMail {
   padding-right: 83px;
 }
@@ -3151,7 +3164,7 @@ bottom
   font-family: 'Inter-SemiBold';
 }
 .longVariant {
-  width: 1126px;
+  width: 1290px;
   grid-template-columns: 25% repeat(5, 1fr);
   grid-template-rows: 20% 20% 40% 20%;
   height: 100%;
@@ -3474,7 +3487,7 @@ bottom
 }
 .fullImage {
   width: 190px;
-  height: 250px;
+  height: 150px;
   position: relative;
   overflow: hidden;
 }
@@ -5036,12 +5049,12 @@ bottom
     zoom: 75%; /* Webkit browsers */
 }
   #block_hr {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 150%;
     width: 383px;
   }
   #for_hr {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 140%;
     top: -30px;
   }
@@ -5052,7 +5065,7 @@ bottom
   }
   #loope {
     left: 485px;
-    top: -34px;
+    top: -15px;
   }
   .wrap_hrHelp {
     top: 160px;
@@ -5100,7 +5113,7 @@ bottom
     line-height: 140%;
     width: 399px;
     height: 50px;
-    padding-left: 34px;
+    padding-left: 44px;
   }
   .commVacs {
     width: 466px;
@@ -6276,6 +6289,15 @@ bottom
   .searchingType .ind2 {
     right: 14px;
   }
+
+  .fullAppearTitles:nth-child(2) {
+    margin-left: 42px;
+    left: 0;
+  }
+
+  .businessGrowth {
+    width: 128px;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -6317,6 +6339,11 @@ bottom
 
   .shortVariant {
     grid-template-columns: 308px 148px 160px 150px 395px 150px;
+  }
+}
+@media (min-width: 1500px) {
+  .common_Cred {
+    width: 360px;
   }
 }
 @media (min-width: 320px) and (max-width: 350px) {
@@ -7480,3 +7507,21 @@ bottom
   }
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  #your-element-selector {
+    left: -600px;
+    top: 400px;
+  }
+
+  .secondDb {
+    transform: scale(0.8);
+    left: -272px;
+    top: -780px;
+    z-index: 1;
+  }
+
+  .wrap_mainHeader {
+    position: relative;
+    z-index: 8;
+  }
+}
