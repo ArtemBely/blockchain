@@ -32,14 +32,14 @@
     left: -14px;
   }
   .doubleInside_vacs {
-    height: 1043px;
+    height: 700px;
     width: 505px;
   }
   .shortVariant, .longVariant {
     width: 864px;
   }
   .inside_vacs {
-    height: 1307px;
+    height: 900px;
   }
   .titOdCred {
     width: 226px;
@@ -331,7 +331,7 @@
     line-height: 150%;
   }
   .doubleInside_vacs {
-    height: 1109px;
+    height: 700px;
   }
   .switch {
     top: -20px

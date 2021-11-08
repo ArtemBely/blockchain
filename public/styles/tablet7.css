@@ -294,7 +294,7 @@
     }
     .doubleInside_vacs {
       width: 756px;
-      height: 1109px;
+      height: 700px;
     }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -305,7 +305,7 @@
     }
     .doubleInside_vacs {
       width: 756px;
-      height: 1109px;
+      height: 700px;
     }
 }
 @media (min-width: 320px) and (max-width: 576px) {

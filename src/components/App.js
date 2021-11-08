@@ -25,6 +25,7 @@ import '../../public/styles/phone.css';
 import '../../public/styles/phone2.css';
 import '../../public/styles/phone3.css';
 import '../../public/styles/style12.css';
+import '../../public/styles/style13.css';
 
 class App extends React.Component {
   render() {

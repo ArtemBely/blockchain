@@ -1,0 +1,274 @@
+/* adaptive HR */
+@media (min-width: 1051) and (max-width: 1500) {
+  .doubleInside_vacs {
+    height: 676px;
+  }
+
+  .footer {
+    grid-column-gap: 0;
+    top: 2250px;
+  }
+
+  .inside_vacs {
+    height: 1000px;
+  }
+
+  .afterHr {
+    top: -130px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1050px) {
+  .closeBurger {
+    display: none;
+  }
+
+  .searchVacs {
+    width: 330px;
+  }
+
+  .searchPositions {
+    width: 398px;
+  }
+
+  .doubleInside_vacs {
+    height: 676px;
+  }
+
+  .wrap_linkes_footer {
+    bottom: 40px;
+  }
+
+  .wrap_hr_footer {
+    top: -1860px;
+  }
+
+  .wrap_contacts {
+    grid-gap: 50px;
+  }
+
+  .footer {
+    top: 2389px;
+    grid-column-gap: 100px;
+  }
+
+  #anchor {
+    margin-top: 58px;
+  }
+
+  .doubleInside_vacs {
+    height: 700px;
+  }
+
+  .inside_vacs {
+    height: 800px;
+  }
+}
+
+@media (min-width:992px) and (max-width: 1000px) {
+  .inside_vacs {
+    height: 600px;
+  }
+
+  .footer {
+    top: 230px;
+  }
+
+  .wrap_linkes_footer {
+    grid-gap: 47px 85px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .closeBurger {
+    display: block;
+  }
+
+  .wrap_header {
+    width: 676px;
+  }
+
+  .block_hr {
+    margin-left: 50px;
+  }
+
+  #job_hr {
+    top: 208px;
+  }
+
+  .loope {
+    left: 362px;
+  }
+
+  .searchBarElement:nth-child(4) {
+    width: 220px;
+  }
+
+  .commVacs {
+    width: 706px;
+  }
+
+  .doubleInside_vacs {
+    height: 700px;
+  }
+
+  .loc1 {
+    left: 0;
+  }
+
+  .sal1 {
+    left: 0;
+  }
+
+  .exp1 {
+    left: -20px;
+    top: -14;
+  }
+
+  .wrap_footer {
+    top: 2100px;
+  }
+
+  .wrap_linkes_footer {
+    grid-gap: 20px 20px;
+  }
+
+  .inside_vacs {
+    height: 1180px;
+  }
+
+  .footer {
+    top: -20px;
+  }
+
+  .wrap_linkes_footer {
+    grid-gap: 44px 115px;
+  }
+
+  .wrap_contacts {
+    grid-gap: 45px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .commVacs {
+    margin: 0 auto;
+  }
+
+  #block_hr {
+    margin-left: 100px;
+  }
+
+  #for_hr {
+    margin-left: 100px;
+  }
+
+  #job_hr {
+    top: 205px;
+    margin-left: 100px;
+  }
+
+  .loope {
+    left: 410px;
+    top: -1px;
+  }
+
+  .searchBarElement:nth-child(4) {
+    width: 105px;
+  }
+
+  .right_ind {
+    width: 500px;
+    left: 78px;
+  }
+
+  .hrHelp {
+    width: 493px;
+    margin-top: 50px;
+  }
+
+  .searchBar {
+    width: 480px;
+    left: 92px;
+  }
+
+  .searchBarElement {
+    font-size: 12px;
+  }
+
+  .searchCity {
+    left: 135px;
+  }
+
+  .searchPositions {
+    width: 503px;
+  }
+
+  .searchVacs {
+    width: 410px;
+  }
+
+  .commVacs {
+    width: 426px;
+  }
+
+  .inside_vacs {
+    height: 1204px;
+  }
+
+  .dir1 {
+    font-size: 23px;
+  }
+
+  .loc1 {
+    font-size: 16px;
+  }
+
+  .sal1 {
+    font-size: 16px;
+  }
+
+  .requir1 {
+    font-size: 16px;
+  }
+
+  .task1 {
+    font-size: 16px;
+  }
+
+  .exp1 {
+    font-size: 16px;
+  }
+
+  .afterHr {
+    left: 140px;
+  }
+
+  .wrap_contacts {
+    left: -155px;
+  }
+
+  .wrap_linkes_footer {
+    left: 100px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 577px) {
+  .doubleInside_vacs {
+    height: 614px;
+  }
+
+  .inside_vacs {
+    height: 1708px;
+  }
+
+  .requir1 {
+    width: 220px;
+  }
+
+  .loc1 {
+    width: 140px;
+    left: 70px;
+    bottom: 10px;
+  }
+}
