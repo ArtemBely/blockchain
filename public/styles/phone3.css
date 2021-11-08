@@ -1,9 +1,4 @@
-@media (min-width: 320px) and (max-width: 768px) {
-  #your-element-selector {
-    left: -600px;
-    top: 400px;
-  }
-
+@media (min-width: 320px) and (max-width: 576px) {
   .secondDb {
     transform: scale(0.8);
     left: -272px;

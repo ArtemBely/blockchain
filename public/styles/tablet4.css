@@ -148,9 +148,7 @@
   .searchBarElement, .searchBarInput {
     font-size: 16px;
   }
-  .closeBurger {
-    display: none;
-  }
+  
   .searchCombo {
     width: 280px;
   }
@@ -386,7 +384,7 @@
     grid-column: 1 / 3;
     position: relative;
     top: -229px;
-    width: 160%;
+    width: 140%;
 }
 .fullAppearTitles:nth-child(8) {
     grid-column: 3 / 4;
