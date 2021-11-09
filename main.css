@@ -3601,7 +3601,7 @@ bottom
   .wrap_header {
     width: 990px;
     position: relative;
-    left: -15px;
+    left: -65px;
   }
   .wrap_circle {
     position: relative;
@@ -4928,7 +4928,7 @@ bottom
     width: 864px;
   }
   .inside_vacs {
-    height: 1307px;
+    height: 900px;
   }
   .titOdCred {
     width: 226px;
@@ -4947,7 +4947,7 @@ bottom
     opacity: 0;
   }
   .circlesProfile {
-    left: 18px !important;
+    left: 48px !important;
   }
   .fullAppearTitles:nth-child(7) {
     width: 277px;
@@ -4957,7 +4957,7 @@ bottom
   }
   #global_black {
     top: 0px;
-    left: -117px;
+    left: -112px;
   }
   .fullAppearTitles {
     font-size: 16px;
@@ -7535,7 +7535,7 @@ bottom
   }
 
   .wrap_header {
-    width: 800px;
+    width: 900px;
     z-index: 3;
   }
 
@@ -7625,6 +7625,7 @@ bottom
 
   .wrap_header {
     width: 576px;
+    left: 20px;
     z-index: 2;
   }
 
@@ -7913,7 +7914,7 @@ bottom
 
   .searchBar {
     width: 480px;
-    left: 35px;
+    left: 92px;
   }
 
   .searchBarElement {
@@ -7994,5 +7995,125 @@ bottom
     width: 140px;
     left: 70px;
     bottom: 10px;
+  }
+}
+/* Profile Adaptive */
+@media (min-width: 1001px) {
+  .wrap_eachVac2 {
+    width: 460px;
+  }
+
+  #clVac {
+    left: 430px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1000px) {
+  .title_of {
+    left: 30px;  
+  }
+
+  .wrap_eachVac2 {
+    width: 446px;
+  }
+
+  #clVac {
+    left: 413px;
+  }
+
+  .card1, .hr2 {
+    left: 30px;
+  }
+
+  .wrap_mng, .wrap_docs {
+    position: relative;
+    left: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrap_header {
+    margin: 0 auto;
+  }
+
+  .each_vac {
+    width: 455px;
+  }
+
+  .wrap_mng {
+    top: -390px;
+  }
+}
+
+@media (min-width: 576px)  and (max-width: 767px) {
+  .wrap_header {
+    margin: 0 auto;
+  }
+
+  #titleIn {
+    margin-left: 100px;
+  }
+
+  #publIn {
+    margin-left: 100px;
+  }
+
+  #impComp {
+    width: 241px;
+  }
+
+  .wrap_linksProf { 
+    display: grid;
+    grid-template-columns: 360px 300px;
+    margin-left: 100px;
+  }
+
+  .card1 {
+    margin: 0 auto;
+    width: 676px;
+  }
+
+  .common_Cred {
+    width: 250px;
+  }
+
+  .hr2 {
+    margin-left: 100px;
+  }
+
+  .wrap_eachVac2 {
+    width: 559px;
+  }
+
+  #clVac {
+    left: 520px;
+  }
+
+  #docs1 {
+    left: 0;
+  }
+
+  #manage_title, #cr_newP {
+    position: relative;
+    left: 100px;
+  }
+
+  .photoHr {
+    height: 145px;
+  }
+
+  .hr3 {
+    position: relative;
+    left: 100px;
+  }
+
+  .wrap_docs {
+    left: 100px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 575px) {
+  .photoHr {
+    height: 200px;
   }
 }

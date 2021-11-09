@@ -58,7 +58,7 @@
     opacity: 0;
   }
   .circlesProfile {
-    left: 18px !important;
+    left: 48px !important;
   }
   .fullAppearTitles:nth-child(7) {
     width: 277px;
@@ -68,7 +68,7 @@
   }
   #global_black {
     top: 0px;
-    left: -117px;
+    left: -112px;
   }
   .fullAppearTitles {
     font-size: 16px;
