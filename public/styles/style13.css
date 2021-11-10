@@ -6,6 +6,7 @@
 
   .footer {
     grid-column-gap: 0;
+    position: relative;
     top: 2250px;
   }
 
@@ -36,10 +37,12 @@
   }
 
   .wrap_linkes_footer {
+    position: relative;
     bottom: 40px;
   }
 
   .wrap_hr_footer {
+    position: relative;
     top: -1860px;
   }
 
@@ -48,7 +51,8 @@
   }
 
   .footer {
-    top: 2389px;
+    position: relative;
+    top: 2189px;
     grid-column-gap: 100px;
   }
 
@@ -71,6 +75,7 @@
   }
 
   .footer {
+    position: relative;
     top: 230px;
   }
 
@@ -126,6 +131,7 @@
   }
 
   .wrap_footer {
+    position: relative;
     top: 2100px;
   }
 

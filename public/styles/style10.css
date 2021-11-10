@@ -264,7 +264,7 @@
   z-index: 100;
 }
 .secondDb {
-  position: relative;
+  position: absolute;
   z-index: 0;
   height: 657px;
   top: -171px;

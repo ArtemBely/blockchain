@@ -96,6 +96,7 @@
   height: 1px;
 }
 .forDataFooter {
+  position: relative;
   top: 330px !important;
 }
 #standSamples, #floorPlan {

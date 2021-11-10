@@ -111,9 +111,10 @@
 	 #stick7, #stick8, #stick9, #stick10 {
 		 display: none;
 	 }
-	 .wrap_footer {
+	 /* .wrap_footer {
+		 position: relative;
 		 top: -200px;
-	 }
+	 } */
 	 #anchor_link {
 		 left: 122px;
 		 top: -36px;

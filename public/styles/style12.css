@@ -3,13 +3,33 @@ body {
   transform: scale(1);
 }
 
-@media (min-width: 1117px) and (max-width: 1500px) {
+@media (min-width: 1500px) {
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: 1315px;
+  }
+
+  .wrap_circle, #global {
+    z-index: 3;
+  }
+
+  .secondDb {
+    left: 400px;
+  }
+}
+
+@media (min-width: 1117px) and (max-width: 1499px) {
   .secondDb {
     transform: scale(0.8);
   }
 
   .wrap_header {
     z-index: 3;
+  }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: 1900px;
   }
 }
 
@@ -34,12 +54,21 @@ body {
   .secondDb {
     transform: scale(0.8);
   }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: 1900px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1000px) {
   .nav_header {
     display: block;
     font-size: 16px;
+  }
+
+  .wrap_mainHeader .wrap_header {
+    left: 0;
   }
 
   #global {
@@ -69,11 +98,22 @@ body {
   .wrap_header {
     z-index: 3;
   }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: 1900px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .nav_header {
+    display: block;
+    font-size: 16px;
+  }
+
   .secondDb {
     transform: scale(0.8);
+    left: -27px;
   }
 
   .wrap_header {
@@ -100,6 +140,15 @@ body {
     display: none;
   }
 
+  .wrap_mainHeader .wrap_header {
+    left: -10px;
+  }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: -220px;
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -119,7 +168,7 @@ body {
 
   .secondDb {
     transform: scale(0.8);
-    left: -552px;
+    left: -80px;
   }
 
   .tableMain {
@@ -158,6 +207,11 @@ body {
   .eachData {
     font-size: 16px;
   }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: 1900px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
@@ -174,6 +228,11 @@ body {
 }
 
 @media (min-width: 322px) and (max-width: 575px) {
+  .secondDb {
+    top: -380px;
+    left: -272px;
+  }
+
   .fullAppearTitles:nth-child(9) {
     left: -300px;
   }
@@ -204,5 +263,10 @@ body {
 
   .wrap_linkes_footer {
     grid-gap: 30px 10px;
+  }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: -280px;
   }
 }

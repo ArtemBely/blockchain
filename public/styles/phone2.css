@@ -65,7 +65,8 @@
     top: 20px;
   }
   .wrap_footer_profile {
-    top: -1276px !important;
+    position: relative;
+    top: -1276px;
   }
   .eachCloseDocs {
     width: 20px;

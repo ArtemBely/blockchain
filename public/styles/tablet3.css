@@ -802,7 +802,8 @@
     .block_v{
       margin-top: 5px;
     }
-    .wrap_footer{
+    .wrap_hr_footer .wrap_footer{
+      position: relative;
       top: 2090px;
     }
     .footer{

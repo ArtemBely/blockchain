@@ -901,6 +901,7 @@
       width: 279px;
     }
     .wrap_footer{
+      position: relative;
       top: 1669px;
     }
     .footer{

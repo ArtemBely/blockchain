@@ -1,8 +1,4 @@
 /* Profile Adaptive */
-.wrap_footer_profile .wrap_footer .footer {
-  position: relative;
-  top: 0;
-}
 
 @media (min-width: 1501px) {
   .wrap_eachVac2 {
@@ -13,6 +9,10 @@
 @media (min-width: 1000px) and (max-width: 1116px) {
   .wrap_header {
     left: -45px;
+  }
+
+  .wrap_hr_header .wrap_mainHeader .wrap_header {
+    left: 30px;
   }
 }
 
@@ -205,4 +205,17 @@
     top: 0;
     margin-bottom: 150px;
   }
+}
+
+.wrap_footer_profile {
+  top: 0;
+}
+
+.wrap_footer_profile .wrap_footer {
+  top: 0;
+}
+
+.wrap_footer_profile .wrap_footer .footer {
+  position: relative;
+  top: 0;
 }

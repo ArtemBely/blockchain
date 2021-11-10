@@ -1497,6 +1497,7 @@ bottom
   -ms-grid-columns: 12.5% (1fr)[3];
   grid-template-columns: 12.5% repeat(2, 1fr) 21%;
   width: 1290px;
+  position: relative;
 }
 .wrap_footer {
   display: flex;
@@ -1740,6 +1741,7 @@ bottom
   height: 1px;
 }
 .forDataFooter {
+  position: relative;
   top: 330px !important;
 }
 #standSamples, #floorPlan {
@@ -3218,7 +3220,7 @@ bottom
   z-index: 100;
 }
 .secondDb {
-  position: relative;
+  position: absolute;
   z-index: 0;
   height: 657px;
   top: -171px;
@@ -3593,8 +3595,6 @@ bottom
   }
   .wrap_header {
     width: 990px;
-    position: relative;
-    left: -65px;
   }
   .wrap_circle {
     position: relative;
@@ -4021,9 +4021,10 @@ bottom
 	 #stick7, #stick8, #stick9, #stick10 {
 		 display: none;
 	 }
-	 .wrap_footer {
+	 /* .wrap_footer {
+		 position: relative;
 		 top: -200px;
-	 }
+	 } */
 	 #anchor_link {
 		 left: 122px;
 		 top: -36px;
@@ -4834,7 +4835,8 @@ bottom
     .block_v{
       margin-top: 5px;
     }
-    .wrap_footer{
+    .wrap_hr_footer .wrap_footer{
+      position: relative;
       top: 2090px;
     }
     .footer{
@@ -6103,7 +6105,6 @@ bottom
   .descrOfDoc1 {
     font-size: 13px;
   }
-  
   .eachDoc {
     padding: 4px 14px;
   }
@@ -6220,14 +6221,14 @@ bottom
 @media (min-width: 1318px) and (max-width: 1500px) {
   .secondDb {
     transform: scale(0.8);
-    left: -272px;
+    left: 272px;
     top: -143px;
   }
 }
 @media (min-width: 992px) and (max-width: 1318px) {
   .secondDb {
     transform: scale(0.65);
-    left: -272px;
+    left: 272px;
     top: -143px;
   }
 }
@@ -6246,7 +6247,7 @@ bottom
     .secondDb {
       transform: scale(0.41);
       top: -157px;
-      left: -452px;
+      left: 452px; 
     }
     .doubleInside_vacs {
       width: 756px;
@@ -7240,6 +7241,7 @@ bottom
       width: 279px;
     }
     .wrap_footer{
+      position: relative;
       top: 1669px;
     }
     .footer{
@@ -7373,7 +7375,8 @@ bottom
     top: 20px;
   }
   .wrap_footer_profile {
-    top: -1276px !important;
+    position: relative;
+    top: -1276px;
   }
   .eachCloseDocs {
     width: 20px;
@@ -7498,8 +7501,8 @@ bottom
 
 @media (min-width: 320px) and (max-width: 576px) {
   .secondDb {
+    position: absolute;
     transform: scale(0.8);
-    left: -272px;
     top: -780px;
     z-index: 1;
   }
@@ -7514,13 +7517,33 @@ body {
   transform: scale(1);
 }
 
-@media (min-width: 1117px) and (max-width: 1500px) {
+@media (min-width: 1500px) {
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: 1315px;
+  }
+
+  .wrap_circle, #global {
+    z-index: 3;
+  }
+
+  .secondDb {
+    left: 400px;
+  }
+}
+
+@media (min-width: 1117px) and (max-width: 1499px) {
   .secondDb {
     transform: scale(0.8);
   }
 
   .wrap_header {
     z-index: 3;
+  }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: 1900px;
   }
 }
 
@@ -7545,12 +7568,21 @@ body {
   .secondDb {
     transform: scale(0.8);
   }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: 1900px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1000px) {
   .nav_header {
     display: block;
     font-size: 16px;
+  }
+
+  .wrap_mainHeader .wrap_header {
+    left: 0;
   }
 
   #global {
@@ -7580,11 +7612,22 @@ body {
   .wrap_header {
     z-index: 3;
   }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: 1900px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .nav_header {
+    display: block;
+    font-size: 16px;
+  }
+
   .secondDb {
     transform: scale(0.8);
+    left: -27px;
   }
 
   .wrap_header {
@@ -7611,6 +7654,15 @@ body {
     display: none;
   }
 
+  .wrap_mainHeader .wrap_header {
+    left: -10px;
+  }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: -220px;
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -7630,7 +7682,7 @@ body {
 
   .secondDb {
     transform: scale(0.8);
-    left: -552px;
+    left: -80px;
   }
 
   .tableMain {
@@ -7669,6 +7721,11 @@ body {
   .eachData {
     font-size: 16px;
   }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: 1900px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
@@ -7685,6 +7742,11 @@ body {
 }
 
 @media (min-width: 322px) and (max-width: 575px) {
+  .secondDb {
+    top: -380px;
+    left: -272px;
+  }
+
   .fullAppearTitles:nth-child(9) {
     left: -300px;
   }
@@ -7716,6 +7778,11 @@ body {
   .wrap_linkes_footer {
     grid-gap: 30px 10px;
   }
+
+  #wrap_data_footer .wrap_footer .footer {
+    position: relative;
+    top: -280px;
+  }
 }
 
 /* adaptive HR */
@@ -7726,6 +7793,7 @@ body {
 
   .footer {
     grid-column-gap: 0;
+    position: relative;
     top: 2250px;
   }
 
@@ -7756,10 +7824,12 @@ body {
   }
 
   .wrap_linkes_footer {
+    position: relative;
     bottom: 40px;
   }
 
   .wrap_hr_footer {
+    position: relative;
     top: -1860px;
   }
 
@@ -7768,7 +7838,8 @@ body {
   }
 
   .footer {
-    top: 2389px;
+    position: relative;
+    top: 2189px;
     grid-column-gap: 100px;
   }
 
@@ -7791,6 +7862,7 @@ body {
   }
 
   .footer {
+    position: relative;
     top: 230px;
   }
 
@@ -7846,6 +7918,7 @@ body {
   }
 
   .wrap_footer {
+    position: relative;
     top: 2100px;
   }
 
@@ -7993,10 +8066,6 @@ body {
   }
 }
 /* Profile Adaptive */
-.wrap_footer_profile .wrap_footer .footer {
-  position: relative;
-  top: 0;
-}
 
 @media (min-width: 1501px) {
   .wrap_eachVac2 {
@@ -8007,6 +8076,10 @@ body {
 @media (min-width: 1000px) and (max-width: 1116px) {
   .wrap_header {
     left: -45px;
+  }
+
+  .wrap_hr_header .wrap_mainHeader .wrap_header {
+    left: 30px;
   }
 }
 
@@ -8199,4 +8272,17 @@ body {
     top: 0;
     margin-bottom: 150px;
   }
+}
+
+.wrap_footer_profile {
+  top: 0;
+}
+
+.wrap_footer_profile .wrap_footer {
+  top: 0;
+}
+
+.wrap_footer_profile .wrap_footer .footer {
+  position: relative;
+  top: 0;
 }

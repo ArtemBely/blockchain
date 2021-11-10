@@ -157,7 +157,6 @@
   .descrOfDoc1 {
     font-size: 13px;
   }
-  
   .eachDoc {
     padding: 4px 14px;
   }
@@ -274,14 +273,14 @@
 @media (min-width: 1318px) and (max-width: 1500px) {
   .secondDb {
     transform: scale(0.8);
-    left: -272px;
+    left: 272px;
     top: -143px;
   }
 }
 @media (min-width: 992px) and (max-width: 1318px) {
   .secondDb {
     transform: scale(0.65);
-    left: -272px;
+    left: 272px;
     top: -143px;
   }
 }
@@ -300,7 +299,7 @@
     .secondDb {
       transform: scale(0.41);
       top: -157px;
-      left: -452px;
+      left: 452px; 
     }
     .doubleInside_vacs {
       width: 756px;
