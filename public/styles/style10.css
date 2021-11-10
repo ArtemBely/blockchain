@@ -27,10 +27,7 @@
   top: -20px;
   left: 11px;
 }
-.wrap_docs {
-  position: relative;
-  top: 456px;
-}
+
 #docs1 {
   font-style: normal;
   font-weight: normal;
@@ -49,8 +46,7 @@
     left: 14px;
 }
 .wrap_docs {
-  position: relative;
-  top: 110px;
+  margin-top: 50px;
 }
 .modDoc {
   height: 478px !important;
@@ -99,8 +95,6 @@
   grid-template-columns: repeat(5, 1fr);
 }
 .wrap_footer_profile {
-      top: -1049px !important;
-      position: relative;
       height: 1px;
 }
 .docsClose {

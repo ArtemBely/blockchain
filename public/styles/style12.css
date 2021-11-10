@@ -1,4 +1,8 @@
 /* adaptive database*/
+body {
+  transform: scale(1);
+}
+
 @media (min-width: 1117px) and (max-width: 1500px) {
   .secondDb {
     transform: scale(0.8);
@@ -11,7 +15,7 @@
 
 @media (min-width: 1000px) and (max-width: 1116px) {
   .body {
-    -moz-transform: scale(1);
+    transform: scale(1);
   }
 
   .wrap_header {
@@ -100,7 +104,7 @@
 
 @media (min-width: 576px) and (max-width: 768px) {
   .body {
-    -moz-transform: scale(1);
+    transform: scale(1);
   }
 
   .wrap_header {
@@ -169,7 +173,7 @@
   }
 }
 
-@media (min-width: 322px) and (max-width: 576px) {
+@media (min-width: 322px) and (max-width: 575px) {
   .fullAppearTitles:nth-child(9) {
     left: -300px;
   }

@@ -54,9 +54,7 @@
   #compProfilesImg {
     width: 76%;
   }
-  .wrap_docs {
-    top: 214px;
-  }
+
   .wrap_mng {
     top: 138px;
   }
@@ -186,6 +184,6 @@
   .hr2 {
     grid-column: 1 / 2;
     padding: 0px;
-    top: 16px;
+    margin-bottom: 100px;
   }
 }

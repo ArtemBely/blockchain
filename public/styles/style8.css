@@ -58,9 +58,9 @@
     line-height: 140%;
 }
 .wrap_mng {
-  position: relative;
-  top: 50px;
+  margin-top: 50px;
 }
+
 #cr_newP {
   font-family: 'Inter-Regular';
   font-style: normal;
@@ -74,6 +74,7 @@
   cursor: pointer;
 }
 .wrapOfHr {
+  margin-bottom: 50px;
   width: 1290px;
   height: 362px;
   position: relative;

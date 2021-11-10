@@ -42,6 +42,7 @@
 		top: 45px;
 	}
 	.footer{
+		position: relative;
 		top:2300px;
 		width: 990px;
 		grid-template-columns: 14.5% repeat(2, 1fr) 28%;

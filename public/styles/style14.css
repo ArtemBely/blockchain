@@ -1,25 +1,59 @@
 /* Profile Adaptive */
-@media (min-width: 1001px) {
-  .wrap_eachVac2 {
-    width: 460px;
-  }
+.wrap_footer_profile .wrap_footer .footer {
+  position: relative;
+  top: 0;
+}
 
-  #clVac {
-    left: 430px;
+@media (min-width: 1501px) {
+  .wrap_eachVac2 {
+    width: 930px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1000px) {
+@media (min-width: 1000px) and (max-width: 1116px) {
+  .wrap_header {
+    left: -45px;
+  }
+}
+
+@media (min-width: 1001px)  and (max-width: 1500px) {
+  .wrap_eachVac2 {
+    width: 410px;
+  }
+
+  #clVac {
+    left: 380px;
+  }
+
+  .hr2 {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1000px) {
   .title_of {
     left: 30px;  
   }
 
+  .wrap_header {
+    position: relative;
+    left: 16px;
+  }
+
+  .common_Cred {
+    width: 287px;
+  }
+
   .wrap_eachVac2 {
-    width: 446px;
+    width: 410px;
+  }
+
+  .hr2 {
+    margin-left: 40px;
   }
 
   #clVac {
-    left: 413px;
+    left: 380px;
   }
 
   .card1, .hr2 {
@@ -30,9 +64,13 @@
     position: relative;
     left: 32px;
   }
+
+  .wrap_linkes_footer {
+    grid-template-columns: 126px 126px;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .wrap_header {
     margin: 0 auto;
   }
@@ -41,14 +79,48 @@
     width: 455px;
   }
 
-  .wrap_mng {
-    top: -390px;
+  .closeBurger {
+    display: none;
+  }
+
+  .nav_header_black {
+    display: block;
+    font-size: 16px;
+  }
+
+  .wrap_header {
+    margin: 0;
+  }
+
+  #partners {
+    left: 0;
+  }
+
+  #header_about {
+    left: -44px;
+  }
+
+  #header_contacts {
+    left: 60px;
+  }
+
+  #blog {
+    left: 61px;
+  }
+
+  #partners {
+    left: -27px;
+  }
+
+  #conference {
+    left: 30px;
   }
 }
 
-@media (min-width: 576px)  and (max-width: 767px) {
+@media (min-width: 577px)  and (max-width: 768px) {
   .wrap_header {
     margin: 0 auto;
+    left: 0;
   }
 
   #titleIn {
@@ -109,12 +181,28 @@
   }
 
   .wrap_docs {
+    position: relative;
     left: 100px;
+  }
+
+  #anchor_link {
+    left: 0;
   }
 }
 
-@media (min-width: 322px) and (max-width: 575px) {
-  .photoHr {
-    height: 200px;
+@media (min-width: 322px) and (max-width: 576px) {
+  .wrap_footer {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .companyCard {
+    grid-template-rows: 862px auto;
+  }
+
+  .hr2 {
+    top: 0;
+    margin-bottom: 150px;
   }
 }

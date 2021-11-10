@@ -1,5 +1,5 @@
 .footer {
-  position: relative;
+  margin-top: 200px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 12.5% (1fr)[3];
@@ -7,8 +7,6 @@
   width: 1290px;
 }
 .wrap_footer {
-  position: relative;
-  top: 1547px;
   display: flex;
   justify-content: center;
 }
