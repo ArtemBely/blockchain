@@ -3497,6 +3497,7 @@ bottom
 .eachHrPerson {
   position: absolute;
   width: 190px;
+  height: 200px;
 }
 #hr1 {
   position: relative;
@@ -7557,10 +7558,6 @@ body {
     z-index: 3;
   }
 
-  #your-element-selector {
-    right: 140px;
-  }
-
   #global {
     z-index: 2;
   }
@@ -7583,22 +7580,6 @@ body {
 
   .wrap_mainHeader .wrap_header {
     left: 0;
-  }
-
-  #global {
-    left: -132px;
-  }
-
-  #conference {
-    left: 21px;
-  }
-
-  #database {
-    left: -54px;
-  }
-
-  #header_about {
-    left: -53px;
   }
 
   .wrap_circle {
@@ -7786,7 +7767,13 @@ body {
 }
 
 /* adaptive HR */
-@media (min-width: 1051) and (max-width: 1500) {
+@media (min-width: 1500) {
+  #wrap_hr_footer {
+    top: 350px;
+  }
+}
+
+@media (min-width: 1051) and (max-width: 1499) {
   .doubleInside_vacs {
     height: 676px;
   }
@@ -7803,6 +7790,10 @@ body {
 
   .afterHr {
     top: -130px;
+  }
+
+  #wrap_hr_footer {
+    top: -2000px;
   }
 }
 
@@ -7854,6 +7845,10 @@ body {
   .inside_vacs {
     height: 800px;
   }
+
+  #wrap_hr_footer {
+    top: -1750px;
+  }
 }
 
 @media (min-width:992px) and (max-width: 1000px) {
@@ -7868,6 +7863,10 @@ body {
 
   .wrap_linkes_footer {
     grid-gap: 47px 85px;
+  }
+
+  #wrap_hr_footer {
+    top: -2200px;
   }
 }
 
@@ -8044,6 +8043,10 @@ body {
   .wrap_linkes_footer {
     left: 100px;
   }
+
+  #wrap_hr_footer {
+    top: -100px;
+  }
 }
 
 @media (min-width: 322px) and (max-width: 577px) {
@@ -8063,6 +8066,10 @@ body {
     width: 140px;
     left: 70px;
     bottom: 10px;
+  }
+
+  #wrap_hr_footer {
+    top: -1800px;
   }
 }
 /* Profile Adaptive */
@@ -8286,3 +8293,365 @@ body {
   position: relative;
   top: 0;
 }
+/* Main Page */
+
+@media (min-width: 1501px) {
+  .technologies {
+    margin-top: 0;
+  }
+
+  .main_wrap .bubble .wrap_footer {
+    position: relative;
+    top: 1400px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .main_wrap .bubble .wrap_footer .footer {
+    top: 1900px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 999px) {
+  .main_wrap .bubble .wrap_footer .footer {
+    top: 1900px;
+  }
+
+  .join2 {
+    top: 8px;
+  }
+
+  .participating1 {
+    position: relative;
+    bottom: 48px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .VR_Stand {
+    position: relative;
+    top: -58px;
+  }
+
+  .participating1 {
+    position: relative;
+    bottom: 48px;
+  }
+
+  .expo1 {
+    top: 60px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .main_wrap .bubble .wrap_footer .footer {
+    top: 1900px;
+  }
+
+  .participating1 {
+    position: relative;
+    bottom: 48px;
+  }
+
+  .expo1 {
+    top: 60px;
+  }
+}
+
+/* Database Page */
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .secondDb {
+    left: 170px;
+  }
+}
+
+@media (min-width: 1001) and (max-width: 1116px) {
+  .secondDb {
+    left: 0px;
+  }
+}
+
+@media (min-width: 1117) {
+  .secondDb {
+    left: 170px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1000px) {
+  .secondDb {
+    left: 130px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 835px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .firstDb {
+    margin-left: 75px;
+  }
+
+  .popup-paragraph {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  #loope {
+    left: 407px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .secondDb {
+    top: -255px;
+  }
+
+  .popup-paragraph {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 576px) {
+  .popup-paragraph {
+    margin-right: 20px;
+  }
+}
+
+@media (width: 992px) {
+  .tableMain {
+    width: 587px;
+  }
+
+  .commComp {
+    width: 447px;
+  }
+
+  .searchingBlock {
+    width: 488px;
+  }
+
+  .searchCompany {
+    right: 10px;
+    top: 5px;
+  }
+
+  .loop1 {
+    top: 0;
+  }
+
+  .searchingType {
+    width: 162px;
+  }
+
+  .secondDb {
+    left: -27px;
+  }
+}
+
+@media (width: 768px) {
+  .nav_header {
+    display: none;
+  }
+
+  .wrap_hr .wrap_hr_header .wrap_mainHeader .wrap_header {
+    left: -25px;
+  }
+}
+
+@media (width: 576px) {
+  .firstDb {
+    margin-left: 0;
+  }
+
+  .req1 {
+    display: none;
+  }
+
+  .secondDb {
+    top: -350px;
+    left: -200px;
+  }
+}
+
+/* HR Page */
+
+@media (min-width: 1500px) {
+  #wrap_hr_footer {
+    top: 360px;
+  }
+}
+
+@media (min-width: 1051px) and (max-width: 1499px) {
+  #wrap_hr_footer {
+    top: -2000px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1000px) {
+  #wrap_hr_footer {
+    top: 350px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+ #wrap_hr_footer {
+    top: -2200px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .closeBurger {
+    left: -30px;
+  }
+}
+
+/* Header */
+
+@media (width: 1000px) {
+  .wrap_hr_header .wrap_mainHeader .wrap_header #global {
+    left: -165px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .wrap_mainHeader .wrap_header {
+    left: -25px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 999px) {
+  .wrap_mainHeader .wrap_header {
+    left: -25px;
+  }
+
+  .wrap_hr_header .wrap_mainHeader .wrap_header #global {
+    left: -135px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1116px) {
+  .wrap_hr_header .wrap_mainHeader .wrap_header {
+    left: -30px;
+  }
+}
+
+@media (width: 1000px) {
+  .wrap_hr_header .wrap_mainHeader .wrap_header {
+    left: 0;
+  }
+}
+
+@media (width: 992px) {
+  .inside_vacs {
+    height: 1150px;
+  }
+
+  .industry_vac {
+    margin-bottom: 140px;
+  }
+
+  #job_hr {
+    top: 205px;
+  }
+
+  #wrap_hr_footer .wrap_footer .footer {
+    top: -470px;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1525px) {
+  .businessGrowth {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1117px) and (max-width: 1500px) {
+  .wrap_database .wrap_mainHeader .wrap_header {
+    left: -10px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1116px) {
+  .wrap_database .wrap_mainHeader .wrap_header {
+    left: -35px;
+  }
+
+  .wrap_database .wrap_mainHeader .wrap_header #global {
+    left: -85px;
+  }
+
+  .wrap_database .wrap_hr .wrap_hr_header .wrap_mainHeader .wrap_header {
+    left: -65px;
+  }
+}
+
+@media (width: 1500px) {
+  .shortVariant, .longVariant {
+    width: 1290px;
+  }
+
+  .wrap_database #wrap_data_footer {
+    top: -490px;
+  }
+}
+
+@media (width: 1000px) {
+  .wrap_database .wrap_mainHeader .wrap_header #global {
+    left: -160px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 999px) {
+  .wrap_database .wrap_mainHeader .wrap_header #global {
+    left: -130px;
+  }
+
+  .wrap_database .wrap_mainHeader .wrap_header #conference {
+    left: -28px;
+  }
+
+  .wrap_database .wrap_mainHeader .wrap_header #header_about {
+    left: -70px;
+  }
+
+  .wrap_database .wrap_mainHeader .wrap_header #blog {
+    left: 28px;
+  }
+
+  .wrap_database .wrap_mainHeader .wrap_header #conference {
+    left: 26px;
+  }
+
+  .wrap_database .wrap_mainHeader .wrap_header #header_contacts {
+    left: 27px;
+  }
+
+  .wrap_hr .wrap_hr_header .wrap_mainHeader .wrap_header #partners {
+    left: -32px;
+  }
+
+  .main_wrap .bubble .wrap_mainHeader .wrap_header #partners {
+    left: -32px;
+  }
+}
+
+@media (width: 992px) {
+  .wrap_database .wrap_mainHeader .wrap_header {
+    left: 25px;
+  }
+
+  .wrap_database .wrap_mainHeader .wrap_header .wrap_circle {
+    left: 55px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrap_database .wrap_mainHeader .wrap_header {
+    left: 10px;
+  }
+}
+
+

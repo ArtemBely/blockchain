@@ -43,10 +43,6 @@ body {
     z-index: 3;
   }
 
-  #your-element-selector {
-    right: 140px;
-  }
-
   #global {
     z-index: 2;
   }
@@ -69,22 +65,6 @@ body {
 
   .wrap_mainHeader .wrap_header {
     left: 0;
-  }
-
-  #global {
-    left: -132px;
-  }
-
-  #conference {
-    left: 21px;
-  }
-
-  #database {
-    left: -54px;
-  }
-
-  #header_about {
-    left: -53px;
   }
 
   .wrap_circle {

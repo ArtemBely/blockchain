@@ -1,5 +1,11 @@
 /* adaptive HR */
-@media (min-width: 1051) and (max-width: 1500) {
+@media (min-width: 1500) {
+  #wrap_hr_footer {
+    top: 350px;
+  }
+}
+
+@media (min-width: 1051) and (max-width: 1499) {
   .doubleInside_vacs {
     height: 676px;
   }
@@ -16,6 +22,10 @@
 
   .afterHr {
     top: -130px;
+  }
+
+  #wrap_hr_footer {
+    top: -2000px;
   }
 }
 
@@ -67,6 +77,10 @@
   .inside_vacs {
     height: 800px;
   }
+
+  #wrap_hr_footer {
+    top: -1750px;
+  }
 }
 
 @media (min-width:992px) and (max-width: 1000px) {
@@ -81,6 +95,10 @@
 
   .wrap_linkes_footer {
     grid-gap: 47px 85px;
+  }
+
+  #wrap_hr_footer {
+    top: -2200px;
   }
 }
 
@@ -257,6 +275,10 @@
   .wrap_linkes_footer {
     left: 100px;
   }
+
+  #wrap_hr_footer {
+    top: -100px;
+  }
 }
 
 @media (min-width: 322px) and (max-width: 577px) {
@@ -276,5 +298,9 @@
     width: 140px;
     left: 70px;
     bottom: 10px;
+  }
+
+  #wrap_hr_footer {
+    top: -1800px;
   }
 }
