@@ -261,7 +261,7 @@
 }
 .firstDb {
   height: 405px;
-  z-index: 100;
+  z-index: 2;
 }
 .secondDb {
   position: absolute;

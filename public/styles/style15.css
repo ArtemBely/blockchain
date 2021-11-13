@@ -17,6 +17,12 @@
   }
 }
 
+@media (min-width: 992px) and (max-width: 1000px) {
+  .main_wrap .wrap_circle {
+    left: 55px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 999px) {
   .main_wrap .bubble .wrap_footer .footer {
     top: 1900px;
@@ -29,6 +35,12 @@
   .participating1 {
     position: relative;
     bottom: 48px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .main_wrap .wrap_mainHeader .wrap_header {
+    left: -45px;
   }
 }
 
@@ -63,6 +75,12 @@
   }
 }
 
+@media (width: 1000px) {
+  .main_wrap .wrap_circle {
+    left: 80px;
+  }
+}
+
 /* Database Page */
 
 @media (min-width: 1000px) and (max-width: 1500px) {
@@ -80,6 +98,31 @@
 @media (min-width: 1117) {
   .secondDb {
     left: 170px;
+  }
+}
+
+@media (width: 1000px) {
+  .wrap_database .wrap_mainHeader .wrap_header {
+    width: 830px;
+    left: -10px;
+  }
+
+  .wrap_database .wrap_mainHeader .wrap_header #partners {
+    left: -39px;
+  }
+
+  .wrap_database .wrap_mainHeader .wrap_header #header_contacts {
+    left: 62px;
+  }
+
+  .wrap_database .wrap_mainHeader .wrap_header #database {
+    left: -20px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 999px) {
+  .wrap_database .wrap_mainHeader .wrap_header {
+    left: -35px;
   }
 }
 
@@ -183,6 +226,11 @@
   .wrap_hr .wrap_hr_header .wrap_mainHeader .wrap_header .wrap_header .wrap_circle {
     left: 50px;
   }
+
+  .wrap_database .wrap_mainHeader .wrap_header {
+    width: 320px;
+    left: 0px;
+  }
 }
 
 /* HR Page */
@@ -193,9 +241,33 @@
   }
 }
 
+@media (min-width: 1051px) and (max-width: 1500px) {
+  .searchVacs {
+    width: 339px;
+    left: 40px;
+  }
+}
+
 @media (min-width: 1051px) and (max-width: 1499px) {
   #wrap_hr_footer {
     top: -2000px;
+  }
+}
+
+@media (width: 992px) and (max-width: 1050px) {
+  .searchVacs {
+    width: 300px;
+    left: 26px;
+  }
+}
+
+@media (width: 992px) {
+  .wrap_database .wrap_mainHeader .wrap_header {
+    left: 0px;
+  }
+
+  .wrap_hr_header .wrap_mainHeader .wrap_header .wrap_header .wrap_circle {
+    left: 50px;
   }
 }
 
@@ -214,6 +286,18 @@
 @media (min-width: 576px) and (max-width: 768px) {
   .closeBurger {
     left: -30px;
+  }
+}
+
+@media (width: 577px) {
+  #wrap_hr_footer {
+    top: -170px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 576px) {
+  .searchVacs {
+    left: 28px;
   }
 }
 
@@ -249,7 +333,20 @@
 
 @media (width: 1000px) {
   .wrap_hr_header .wrap_mainHeader .wrap_header {
-    left: 0;
+    width: 830px;
+    left: -10px;
+  }
+
+  .wrap_hr .wrap_hr_header .wrap_mainHeader .wrap_header #partners {
+    left: -39px;
+  }
+
+  .wrap_hr .wrap_hr_header .wrap_mainHeader .wrap_header #header_contacts {
+    left: 62px;
+  }
+
+  .wrap_hr .wrap_hr_header .wrap_mainHeader .wrap_header #database {
+    left: -20px;
   }
 }
 
@@ -360,6 +457,40 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .wrap_database .wrap_mainHeader .wrap_header {
     left: 10px;
+  }
+}
+
+/* Profile Page */
+
+@media (min-width: 1117px) and (max-width: 1500px) {
+  .wrap_profile .wrap_title .wrap_header {
+    left: -50px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 999px) {
+  .wrap_profile .wrap_title .wrap_header #blog {
+    left: 82px;
+  }
+
+  .wrap_profile .wrap_title .wrap_header #header_about {
+    left: -33px;
+  }
+
+  .wrap_profile .wrap_title .wrap_header #partners {
+    left: -26px;
+  }
+}
+
+@media (width: 992px) {
+  #profEd {
+    opacity: 1;
+  }
+}
+
+@media (width: 768px) {
+  .wrap_profile .wrap_title .wrap_header {
+    width: 576px;
   }
 }
 
