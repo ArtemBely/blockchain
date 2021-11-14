@@ -17,7 +17,6 @@ class Table extends React.Component{
     this.state = {
       company: [],
       query: '',
-      filteredComany: [],
     }
 
     this.card = React.createRef();
@@ -39,20 +38,23 @@ class Table extends React.Component{
           }, 300);*/
        }
 
-        handleChange(event) {    
-        const query = event.target.value;
-
-        this.setState(prevState => {
-          const filteredComany = prevState.company.filter(comp => {
+        handleChange(event) {  
+          let query = event.target.value;  
+          let filteredComp = this.state.company.filter(comp => {
             return comp.name.toLowerCase().includes(query.toLowerCase());
           });
 
-          return {
-            query,
-            filteredComany,
+          this.setState({
+            company: filteredComp,
+            query: query,
+          });
+
+          if (!query) {
+            getCompanies()
+              .then(company => this.setState({ company: company }))
+              .catch(err => console.log(err))
           }
-        });
-      }  
+        }  
 
 
   eachComp = () => {

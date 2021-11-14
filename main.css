@@ -8800,6 +8800,7 @@ body {
   }
 }
 
+/* This fixies Authorization Popup */
 @media (min-width: 322px) {
   body {
     transform: none;
