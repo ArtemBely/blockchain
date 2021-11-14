@@ -8474,6 +8474,10 @@ body {
     top: -350px;
     left: -200px;
   }
+
+  .wrap_hr .wrap_hr_header .wrap_mainHeader .wrap_header .wrap_header .wrap_circle {
+    left: 50px;
+  }
 }
 
 /* HR Page */
