@@ -50,9 +50,13 @@ class Table extends React.Component{
           });
 
           if (!query) {
-            getCompanies()
+            try {
+              getCompanies()
               .then(company => this.setState({ company: company }))
               .catch(err => console.log(err))
+            } catch (e) {
+              console.log(e)
+            }
           }
         }  
 
