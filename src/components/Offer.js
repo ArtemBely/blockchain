@@ -22,6 +22,8 @@ class Offer extends React.Component {
 
     this.applForP = React.createRef();
     this.receiveForP = React.createRef();
+
+    this.handleOfferChange = this.handleOfferChange.bind(this);
   }
 
       componentDidMount() {
@@ -42,6 +44,8 @@ class Offer extends React.Component {
             }
           }, 1000);
        }
+
+
 
     changeStatusOfReceive = () => {
       this.receiveForP.current.classList.toggle('receiveForPColor');
