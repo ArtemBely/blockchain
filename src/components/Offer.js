@@ -17,13 +17,16 @@ class Offer extends React.Component {
     this.state = {
       vacancies: [],
       mergedVacs: [],
-      user
+      user,
+      query1: '',
+      filteredVacs1: [],
+      filter: [],
     }
 
     this.applForP = React.createRef();
     this.receiveForP = React.createRef();
 
-    this.handleOfferChange = this.handleOfferChange.bind(this);
+    this.handleChange1 = this.handleChange1.bind(this);
   }
 
       componentDidMount() {
@@ -36,15 +39,31 @@ class Offer extends React.Component {
             if(this.state.vacancies) {
               var mergedVacs1 = [].concat.apply([], this.state.vacancies);
               this.setState({
-                mergedVacs: mergedVacs1
+                mergedVacs: mergedVacs1,
+                filter: mergedVacs1,
               })
                 this.state.mergedVacs.length > 1 ?
                 clearInterval(a) :
                 null
             }
           }, 1000);
+
        }
 
+    handleChange1(event) {
+      let query1 = event.target.value;
+
+      this.setState(prevState => {
+        const filteredVacs1 = prevState.mergedVacs.filter(vacs1 => {
+          return vacs1.direction.toLowerCase().includes(query1.toLowerCase());
+        });
+
+        return {
+          query1,
+          filter: filteredVacs1,
+        };
+      });
+    };
 
 
     changeStatusOfReceive = () => {
@@ -55,11 +74,11 @@ class Offer extends React.Component {
     }
 
     eachVacancie = () => {
-      if(this.state.mergedVacs) {
+      if(this.state.vacancies) {
         return(
           <div className='inside_vacs'>
            <div className='doubleInside_vacs'>
-             {this.state.mergedVacs.map((comp, index, arr) => (
+             {this.state.filter.map((comp, index, arr) => (
                <div className='commVacs' style={{
                  borderRadius: index == 0 ? "20px 20px 0px 0px" :
                                index == arr.length - 1 ? "0px 0px 20px 20px" :
@@ -88,11 +107,11 @@ class Offer extends React.Component {
             <div className='wrap_searchPositions'>
                 <div className='searchPositions'>
                 <form method='POST' id='searchForm'>
-                     <input type='text' className='searchVacs' placeholder='Position'/>
-                     <input type='text' className='searchVacs' placeholder='Region'/>
-                     <input type='text' className='searchVacs' placeholder='Work experience'/>
-                     <input type='text' className='searchVacs' placeholder='Starting salary'/>
-                     <input type='text' className='searchVacs' placeholder='Languages'/>
+                     <input type='text' value={this.state.query1} onChange={this.handleChange1} className='searchVacs' required placeholder='Position'/>
+                     <input type='text' className='searchVacs' required placeholder='Region'/>
+                     <input type='text' className='searchVacs' required placeholder='Work experience'/>
+                     <input type='text' className='searchVacs' required placeholder='Starting salary'/>
+                     <input type='text' className='searchVacs' required placeholder='Languages'/>
                      <p className='applForP' ref={this.applForP} onClick={this.changeStatusOfApply}><input type='checkbox' id='applFor' className='searchVacsCheck'/></p>
                      <label htmlFor='applFor' className='lblsFor' id='applFor2'>Apply for internship</label>
                      <p className='receiveForP' ref={this.receiveForP} onClick={this.changeStatusOfReceive}><input type='checkbox' id='receiveList' className='searchVacsCheck'/></p>
