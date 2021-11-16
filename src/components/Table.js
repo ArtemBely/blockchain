@@ -16,11 +16,14 @@ class Table extends React.Component{
 
     this.state = {
       company: [],
+      query: '',
     }
 
     this.card = React.createRef();
     this.tabl = React.createRef();
     this.dataFooter = React.createRef();
+
+    this.handleChange = this.handleChange.bind(this);
   }
 
       componentDidMount() {
@@ -35,6 +38,28 @@ class Table extends React.Component{
           }, 300);*/
        }
 
+        handleChange(event) {  
+          let query = event.target.value;  
+          let filteredComp = this.state.company.filter(comp => {
+            return comp.name.toLowerCase().includes(query.toLowerCase());
+          });
+
+          this.setState({
+            company: filteredComp,
+            query: query,
+          });
+
+          if (!query) {
+            try {
+              getCompanies()
+              .then(company => this.setState({ company: company }))
+              .catch(err => console.log(err))
+            } catch (e) {
+              console.log(e)
+            }
+          }
+        }  
+
 
   eachComp = () => {
     if(this.state.company) {
@@ -47,7 +72,7 @@ class Table extends React.Component{
              <span className='searchingType jur1'>Jurisdiction<img src={arrow} className='arrowDown'/></span>
              <span className='searchingType hir1'>Hiring<img src={arrow} className='arrowDown'/></span>
              <span className='searchingType fil1'>Filter<img src={filter} className='arrowDown'/></span>
-             <span className='loop1'><img src={searching} className='searchCompany'/><input type='text' id='findComp'/></span>
+             <span className='loop1'><img src={searching} className='searchCompany'/><input value={this.state.query} onChange={this.handleChange} type='text' id='findComp'/></span>
           </div>
              {this.state.company.map((comp, index, arr) => (
                <div className={'commComp ' + 'company' + index}

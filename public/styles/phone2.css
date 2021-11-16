@@ -84,7 +84,8 @@
   }
   .photoHr {
     width: 200px;
-    height: 260px;
+    position: relative;
+    overflow: hidden;
   }
   .eachDoc {
     width: 100%;

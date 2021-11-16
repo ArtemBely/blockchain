@@ -35,7 +35,8 @@
   }
 
   .searchVacs {
-    width: 330px;
+    width: 300px;
+    left: 26px;
   }
 
   .searchPositions {
