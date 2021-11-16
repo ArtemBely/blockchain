@@ -18,15 +18,15 @@ class Offer extends React.Component {
       vacancies: [],
       mergedVacs: [],
       user,
-      query1: '',
-      filteredVacs1: [],
+      query: '',
+      filteredVacs: [],
       filter: [],
     }
 
     this.applForP = React.createRef();
     this.receiveForP = React.createRef();
 
-    this.handleChange1 = this.handleChange1.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
       componentDidMount() {
@@ -50,17 +50,20 @@ class Offer extends React.Component {
 
        }
 
-    handleChange1(event) {
-      let query1 = event.target.value;
+    handleChange(event) {
+      let query = event.target.value;
 
       this.setState(prevState => {
-        const filteredVacs1 = prevState.mergedVacs.filter(vacs1 => {
-          return vacs1.direction.toLowerCase().includes(query1.toLowerCase());
+        const filteredVacs = prevState.mergedVacs.filter(vacs => {
+          return vacs.direction.toLowerCase().includes(query.toLowerCase()) ||
+                 vacs.location.toLowerCase().includes(query.toLowerCase()) ||
+                 vacs.experience.toLowerCase().includes(query.toLowerCase()) ||
+                 vacs.salary.toLowerCase().includes(query.toLowerCase());
         });
 
         return {
-          query1,
-          filter: filteredVacs1,
+          query,
+          filter: filteredVacs,
         };
       });
     };
@@ -106,8 +109,8 @@ class Offer extends React.Component {
             {this.eachVacancie()}
             <div className='wrap_searchPositions'>
                 <div className='searchPositions'>
-                <form method='POST' id='searchForm'>
-                     <input type='text' value={this.state.query1} onChange={this.handleChange1} className='searchVacs' required placeholder='Position'/>
+                <form onChange={this.handleChange} method='POST' id='searchForm'>
+                     <input type='text' className='searchVacs' required placeholder='Position'/>
                      <input type='text' className='searchVacs' required placeholder='Region'/>
                      <input type='text' className='searchVacs' required placeholder='Work experience'/>
                      <input type='text' className='searchVacs' required placeholder='Starting salary'/>
