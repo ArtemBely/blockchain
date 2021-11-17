@@ -27,6 +27,7 @@ class Offer extends React.Component {
     this.receiveForP = React.createRef();
 
     this.handleChange = this.handleChange.bind(this);
+    this.applyFilters = this.applyFilters.bind(this);
   }
 
       componentDidMount() {
@@ -63,10 +64,19 @@ class Offer extends React.Component {
 
         return {
           query,
-          filter: filteredVacs,
+          filteredVacs,
         };
       });
     };
+
+    applyFilters() {
+      if (this.state.filteredVacs) {
+        const filteredVacs = this.state.filteredVacs;
+        this.setState({
+          filter: filteredVacs,
+        });
+      }
+    }
 
 
     changeStatusOfReceive = () => {
@@ -119,7 +129,7 @@ class Offer extends React.Component {
                      <label htmlFor='applFor' className='lblsFor' id='applFor2'>Apply for internship</label>
                      <p className='receiveForP' ref={this.receiveForP} onClick={this.changeStatusOfReceive}><input type='checkbox' id='receiveList' className='searchVacsCheck'/></p>
                      <label htmlFor='receiveList' className='lblsFor' id='receiveList2'>Receive list of job opportunities</label>
-                     <button type='submit' id='req_but2'>Request</button>
+                     <button onClick={this.applyFilters} type='button' id='req_but2'>Request</button>
                      <p id='resFil'>Reset filters </p>
                 </form>
              </div>
