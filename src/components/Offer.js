@@ -17,11 +17,16 @@ class Offer extends React.Component {
     this.state = {
       vacancies: [],
       mergedVacs: [],
-      user
+      user,
+      query: '',
+      filteredVacs: [],
+      filter: [],
     }
 
     this.applForP = React.createRef();
     this.receiveForP = React.createRef();
+
+    this.handleChange = this.handleChange.bind(this);
   }
 
       componentDidMount() {
@@ -34,14 +39,35 @@ class Offer extends React.Component {
             if(this.state.vacancies) {
               var mergedVacs1 = [].concat.apply([], this.state.vacancies);
               this.setState({
-                mergedVacs: mergedVacs1
+                mergedVacs: mergedVacs1,
+                filter: mergedVacs1,
               })
                 this.state.mergedVacs.length > 1 ?
                 clearInterval(a) :
                 null
             }
           }, 1000);
+
        }
+
+    handleChange(event) {
+      let query = event.target.value;
+
+      this.setState(prevState => {
+        const filteredVacs = prevState.mergedVacs.filter(vacs => {
+          return vacs.direction.toLowerCase().includes(query.toLowerCase()) ||
+                 vacs.location.toLowerCase().includes(query.toLowerCase()) ||
+                 vacs.experience.toLowerCase().includes(query.toLowerCase()) ||
+                 vacs.salary.toLowerCase().includes(query.toLowerCase());
+        });
+
+        return {
+          query,
+          filter: filteredVacs,
+        };
+      });
+    };
+
 
     changeStatusOfReceive = () => {
       this.receiveForP.current.classList.toggle('receiveForPColor');
@@ -51,11 +77,11 @@ class Offer extends React.Component {
     }
 
     eachVacancie = () => {
-      if(this.state.mergedVacs) {
+      if(this.state.vacancies) {
         return(
           <div className='inside_vacs'>
            <div className='doubleInside_vacs'>
-             {this.state.mergedVacs.map((comp, index, arr) => (
+             {this.state.filter.map((comp, index, arr) => (
                <div className='commVacs' style={{
                  borderRadius: index == 0 ? "20px 20px 0px 0px" :
                                index == arr.length - 1 ? "0px 0px 20px 20px" :
@@ -83,12 +109,12 @@ class Offer extends React.Component {
             {this.eachVacancie()}
             <div className='wrap_searchPositions'>
                 <div className='searchPositions'>
-                <form method='POST' id='searchForm'>
-                     <input type='text' className='searchVacs' placeholder='Position'/>
-                     <input type='text' className='searchVacs' placeholder='Region'/>
-                     <input type='text' className='searchVacs' placeholder='Work experience'/>
-                     <input type='text' className='searchVacs' placeholder='Starting salary'/>
-                     <input type='text' className='searchVacs' placeholder='Languages'/>
+                <form onChange={this.handleChange} method='POST' id='searchForm'>
+                     <input type='text' className='searchVacs' required placeholder='Position'/>
+                     <input type='text' className='searchVacs' required placeholder='Region'/>
+                     <input type='text' className='searchVacs' required placeholder='Work experience'/>
+                     <input type='text' className='searchVacs' required placeholder='Starting salary'/>
+                     <input type='text' className='searchVacs' required placeholder='Languages'/>
                      <p className='applForP' ref={this.applForP} onClick={this.changeStatusOfApply}><input type='checkbox' id='applFor' className='searchVacsCheck'/></p>
                      <label htmlFor='applFor' className='lblsFor' id='applFor2'>Apply for internship</label>
                      <p className='receiveForP' ref={this.receiveForP} onClick={this.changeStatusOfReceive}><input type='checkbox' id='receiveList' className='searchVacsCheck'/></p>

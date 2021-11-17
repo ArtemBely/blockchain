@@ -17,6 +17,7 @@ class Table extends React.Component{
     this.state = {
       company: [],
       query: '',
+      filteredCompanies: [],
     }
 
     this.card = React.createRef();
@@ -29,7 +30,7 @@ class Table extends React.Component{
       componentDidMount() {
         if(this.state.company && this.state.company.length < 1) {
           getCompanies()
-          .then(company => this.setState({ company: company }))
+          .then(company => this.setState({ company: company, filteredCompanies: company }))
           .catch(err => console.log(err))
         }
           /*setTimeout(() => {
@@ -40,25 +41,18 @@ class Table extends React.Component{
 
         handleChange(event) {  
           let query = event.target.value;  
-          let filteredComp = this.state.company.filter(comp => {
-            return comp.name.toLowerCase().includes(query.toLowerCase());
-          });
 
-          this.setState({
-            company: filteredComp,
-            query: query,
-          });
+          this.setState(prevState => {
+            const filteredCompanies = prevState.company.filter(comp => {
+              return comp.name.toLowerCase().includes(query.toLowerCase());
+            });
 
-          if (!query) {
-            try {
-              getCompanies()
-              .then(company => this.setState({ company: company }))
-              .catch(err => console.log(err))
-            } catch (e) {
-              console.log(e)
-            }
-          }
-        }  
+            return {
+              query,
+              filteredCompanies,
+            };
+          });
+        };  
 
 
   eachComp = () => {
@@ -74,7 +68,7 @@ class Table extends React.Component{
              <span className='searchingType fil1'>Filter<img src={filter} className='arrowDown'/></span>
              <span className='loop1'><img src={searching} className='searchCompany'/><input value={this.state.query} onChange={this.handleChange} type='text' id='findComp'/></span>
           </div>
-             {this.state.company.map((comp, index, arr) => (
+             {this.state.filteredCompanies.map((comp, index, arr) => (
                <div className={'commComp ' + 'company' + index}
                    style={{
                     borderRadius: index == 0 ? "20px 20px 0px 0px" :
