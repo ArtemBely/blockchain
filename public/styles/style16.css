@@ -11,3 +11,191 @@
     transform: none;
   };
 }
+
+/* Main Page bugs */
+
+@media (min-width: 1501px) {
+  .community {
+    margin-top: -220px;
+  }
+
+  .subtitle_2 {
+    margin-top: -230px;
+  }
+
+  .subtitle_3 {
+    margin-top: -422px;
+  }
+
+  .description_people {
+    top: 19px;
+  }
+}
+
+@media (width: 1000px) {
+  .main_wrap .bubble .wrap_footer .footer {
+    top: 2900px;
+  }
+
+  .brands {
+    top: 1700px;
+    right: 72px;
+  }
+
+  .VR_Stand {
+    top: -50px;
+  }
+
+  .wrap_vacancies {
+    top: 535px;
+  }
+
+  #table_3, #table_2 {
+    top: -750px;
+    left: 236px;
+  }
+
+  .wrap_sponsors {
+    top: 350px;
+  }
+
+  #full_database {
+    left: -170px;
+  }
+
+  #register {
+    left: 130px;
+  }
+
+  .table_text {
+    left: -12px;
+  }
+
+  .wrap_logos {
+    top: 1620px;
+  }
+
+  .participating1 {
+    position: relative;
+    top: -50px;
+  }
+
+  .wrap_vacancies {
+    top: 335px;
+  }
+
+  .wide {
+    top: 1900px;
+  }
+
+  .expo1 {
+    top: 60px;
+  }
+
+  .people {
+    top: 400px;
+  }
+
+  .info_people {
+    position: relative;
+    top: -100px;
+  }
+
+  .our_people {
+    top: -50px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 999px) {
+  .VR_Stand {
+    top: -55px;
+  }
+
+  .expo1 {
+    top: 57px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .VR_Stand {
+    top: -55px;
+  }
+}
+
+@media (width: 576px) {
+  .main_wrap .bubble .wrap_mainHeader .wrap_header .wrap_circle {
+    left: 66px;
+  }
+
+  .blockchain_network {
+    top: 120px;
+    left: -50px;
+  }
+
+  .watch_inside {
+    top: 1100px;
+    left: 353px;
+  }
+
+  #table_mobile {
+    right: 72px;
+  }
+
+  #full_database, #register, .table_text {
+    left: -66px;
+  }
+
+  .people {
+    top: -630px;
+    left: 94px;
+  }
+
+  .wrap_sponsors {
+    top: 920px;
+  }
+
+  .vr_gl {
+    top: -5px;
+  }
+
+  .stand_between {
+    display: none;
+  }
+}
+
+@media (min-width: 567px) and (max-width: 575px) {
+  .people {
+    top: -660px;
+  }
+
+  .wrap_sponsors {
+    top: 850px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 575px) {
+  .vr_gl {
+    top: -7px;
+  }
+}
+
+/* HR Footer */
+
+@media (width: 1500px) {
+  #wrap_hr_footer .wrap_footer .footer {
+    top: -5px;
+  }
+}
+
+/* All footers */
+
+@media (min-width: 1001px) and (max-width: 1050px) {
+  .wrap_contacts {
+    top: 80px;
+    left: -970px;
+  }
+
+  #footTel {
+    width: 180px;
+  }
+}

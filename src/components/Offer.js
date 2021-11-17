@@ -59,7 +59,8 @@ class Offer extends React.Component {
           return vacs.direction.toLowerCase().includes(query.toLowerCase()) ||
                  vacs.location.toLowerCase().includes(query.toLowerCase()) ||
                  vacs.experience.toLowerCase().includes(query.toLowerCase()) ||
-                 vacs.salary.toLowerCase().includes(query.toLowerCase());
+                 vacs.salary.toLowerCase().includes(query.toLowerCase()) ||
+                 vacs.requirements.toLowerCase().includes(query.toLowerCase());
         });
 
         return {
@@ -124,7 +125,7 @@ class Offer extends React.Component {
                      <input type='text' className='searchVacs' required placeholder='Region'/>
                      <input type='text' className='searchVacs' required placeholder='Work experience'/>
                      <input type='text' className='searchVacs' required placeholder='Starting salary'/>
-                     <input type='text' className='searchVacs' required placeholder='Languages'/>
+                     <input type='text' className='searchVacs' required placeholder='Requirements'/>
                      <p className='applForP' ref={this.applForP} onClick={this.changeStatusOfApply}><input type='checkbox' id='applFor' className='searchVacsCheck'/></p>
                      <label htmlFor='applFor' className='lblsFor' id='applFor2'>Apply for internship</label>
                      <p className='receiveForP' ref={this.receiveForP} onClick={this.changeStatusOfReceive}><input type='checkbox' id='receiveList' className='searchVacsCheck'/></p>
