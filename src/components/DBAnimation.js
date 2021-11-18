@@ -42,14 +42,14 @@ class DBAnimation extends React.Component {
                <p id='fill_in'>Fill in the form details. Our manager will contact you to clarify the details.</p>
                <form action='/database/sendRequest' method='POST' className='companyForm'>
                  <input type='text' name='name' className='com_inp' placeholder='Company name' required/>
-                   <input type='text' name='request' className='com_inp' placeholder='Company request' required/>
+                   {/* <input type='text' name='request' className='com_inp' placeholder='Company request' required/>
                    <input type='text' name='industry' className='com_inp' placeholder='Industry' required/>
-                   <input type='text' name='solved' className='com_inp' placeholder='Problem solved' required/>
+                   <input type='text' name='solved' className='com_inp' placeholder='Problem solved' required/> */}
                    <input type='text' name='description' className='com_inp' placeholder='Company description' required/>
                    <input type='text' name='email' className='com_inp' placeholder='Contact Email' required/>
                    <input type='text' name='phone' className='com_inp' placeholder='Phone number' required/>
-                   <input type='text' name='password' className='com_inp' placeholder='Your password' required/>
-                   <input type='text' name='jurisdiction' className='com_inp' placeholder='Jurisdiction' required/>
+                   {/* <input type='text' name='password' className='com_inp' placeholder='Your password' required/>
+                   <input type='text' name='jurisdiction' className='com_inp' placeholder='Jurisdiction' required/> */}
                    <input type='hidden' name='vacs' value=''/>
                    <input type='hidden' name='hrs' value=''/>
                    <input type='hidden' name='profileImage' value=''/>

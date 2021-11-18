@@ -201,17 +201,3 @@
     left: 18px;
   }
 }
-
-/* DB Popup(Add Company) */
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .wrap_modal1 {
-    top: 150px;
-  }
-}
-
-@media (width: 768px) {
-  .wrap_modal1 {
-    top: 250px;
-  }
-}
