@@ -124,6 +124,9 @@ body {
 .stand_between {
   display: none;
 }
+.loop1 {
+  z-index: 1000;
+}
 .wrap_circle {
   position: relative;
   top: 5px;

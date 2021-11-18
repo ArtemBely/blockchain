@@ -27,6 +27,7 @@ class Offer extends React.Component {
     this.receiveForP = React.createRef();
 
     this.handleChange = this.handleChange.bind(this);
+    this.applyFilters = this.applyFilters.bind(this);
   }
 
       componentDidMount() {
@@ -58,15 +59,25 @@ class Offer extends React.Component {
           return vacs.direction.toLowerCase().includes(query.toLowerCase()) ||
                  vacs.location.toLowerCase().includes(query.toLowerCase()) ||
                  vacs.experience.toLowerCase().includes(query.toLowerCase()) ||
-                 vacs.salary.toLowerCase().includes(query.toLowerCase());
+                 vacs.salary.toLowerCase().includes(query.toLowerCase()) ||
+                 vacs.requirements.toLowerCase().includes(query.toLowerCase());
         });
 
         return {
           query,
-          filter: filteredVacs,
+          filteredVacs,
         };
       });
     };
+
+    applyFilters() {
+      if (this.state.filteredVacs) {
+        const filteredVacs = this.state.filteredVacs;
+        this.setState({
+          filter: filteredVacs,
+        });
+      }
+    }
 
 
     changeStatusOfReceive = () => {
@@ -114,12 +125,12 @@ class Offer extends React.Component {
                      <input type='text' className='searchVacs' required placeholder='Region'/>
                      <input type='text' className='searchVacs' required placeholder='Work experience'/>
                      <input type='text' className='searchVacs' required placeholder='Starting salary'/>
-                     <input type='text' className='searchVacs' required placeholder='Languages'/>
+                     <input type='text' className='searchVacs' required placeholder='Requirements'/>
                      <p className='applForP' ref={this.applForP} onClick={this.changeStatusOfApply}><input type='checkbox' id='applFor' className='searchVacsCheck'/></p>
                      <label htmlFor='applFor' className='lblsFor' id='applFor2'>Apply for internship</label>
                      <p className='receiveForP' ref={this.receiveForP} onClick={this.changeStatusOfReceive}><input type='checkbox' id='receiveList' className='searchVacsCheck'/></p>
                      <label htmlFor='receiveList' className='lblsFor' id='receiveList2'>Receive list of job opportunities</label>
-                     <button type='submit' id='req_but2'>Request</button>
+                     <button onClick={this.applyFilters} type='button' id='req_but2'>Request</button>
                      <p id='resFil'>Reset filters </p>
                 </form>
              </div>
