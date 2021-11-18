@@ -21,6 +21,7 @@
   position: absolute;
   width: 620px;
   height: 590px;
+  top: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 99.99%, rgba(0, 209, 255, 0) 100%);
   backdrop-filter: blur(87.4907px);
   border-radius: 20px;

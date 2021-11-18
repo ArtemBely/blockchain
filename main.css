@@ -2010,6 +2010,7 @@ bottom
   position: absolute;
   width: 620px;
   height: 590px;
+  top: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 99.99%, rgba(0, 209, 255, 0) 100%);
   backdrop-filter: blur(87.4907px);
   border-radius: 20px;
@@ -3221,7 +3222,7 @@ bottom
   cursor: pointer;
 }
 .firstDb {
-  height: 405px;
+  height: 345px;
   z-index: 2;
 }
 .secondDb {
@@ -8994,7 +8995,22 @@ body {
   }
 
   #footTel {
+    position: relative;
     width: 180px;
+    left: 18px;
   }
 }
 
+/* DB Popup(Add Company) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .wrap_modal1 {
+    top: 150px;
+  }
+}
+
+@media (width: 768px) {
+  .wrap_modal1 {
+    top: 250px;
+  }
+}
