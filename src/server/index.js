@@ -104,7 +104,7 @@ app.get('*', (req, res, next) => {
         `<!DOCTYPE html>
             <html>
                 <head>
-                  <title>gbn</title>
+                  <title>Global Blockchain Network</title>
                    <link rel="stylesheet" type="text/css" href="main.css">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                       <script src='/bundle.js' defer></script>

@@ -13,8 +13,8 @@ function Table1() {
             <img src={table2} id='table_2'/>
              <img src={table3} id='table_3'/>
 		         <div className='table_glass'></div>
-             <NavLink to='#' id='full_database'>Full database</NavLink>
-            <NavLink to='#' id='register'>Register a company</NavLink>
+             <NavLink to='/database' id='full_database'>Full database</NavLink>
+            <NavLink to='/database' id='register'>Register a company</NavLink>
 		      <p className='table_text'>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.</p>
       </div>
     )

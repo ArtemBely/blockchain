@@ -6,7 +6,7 @@ import Collaboration from './Collaboration';
 import Table1 from './Table1';
 import Sponsors from './Sponsors';
 import People from './People';
-import Wide from './Wide';
+// import Wide from './Wide';
 import Brands from './Brands';
 import Logos from './Logos';
 import Footer from './Footer';
@@ -22,7 +22,7 @@ class Main extends React.Component{
           <Table1 />
           <Sponsors />
           <People />
-          <Wide />
+          {/* <Wide /> */}
           <Brands />
           <Logos />
           <Footer />

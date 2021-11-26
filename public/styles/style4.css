@@ -197,7 +197,7 @@
 	left: 26px;
 	z-index: -1;
 }
-.stand_one:hover .reserve {
+/* .stand_one:hover .reserve {
 	opacity: 1;
 }
 .stand_one:hover .discover_more {
@@ -252,7 +252,7 @@
 }
 .stand_two:hover .discover_more2 {
 	opacity: 1;
-}
+} */
 .reserve3, .discover_more3 {
 	opacity: 0;
 }
@@ -413,8 +413,6 @@
 	grid-column: 1 / 5;
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 67% 33%;
-	grid-template-columns: 67% 33%;
 }
 .participating1, .vacancies {
 	font-family: 'Inter-SemiBold';

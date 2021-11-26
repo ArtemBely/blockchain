@@ -107,14 +107,6 @@
   #blog {
     left: 61px;
   }
-
-  #partners {
-    left: -27px;
-  }
-
-  #conference {
-    left: 30px;
-  }
 }
 
 @media (min-width: 577px)  and (max-width: 768px) {

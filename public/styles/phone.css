@@ -766,7 +766,7 @@
       top: 0px;
       margin-left: 75px;
     }
-    .stand_one:hover .square_projects2 {
+    /* .stand_one:hover .square_projects2 {
       opacity: 0;
       width: 1px;
       height: 1px;
@@ -806,7 +806,7 @@
     .stand_two:hover .discover_more2 {
       opacity: 0;
       display: none;
-    }
+    } */
 
     .square_projects2, .square_projects22, .square_projects1, .square_projects11 {
       display: none;

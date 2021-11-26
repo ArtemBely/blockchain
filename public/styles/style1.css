@@ -163,9 +163,6 @@ body {
   left: -50px;
   width: 164px;
 }
-#partners {
-  left: -75px;
-}
 #database {
   left: -30px;
 }
@@ -175,15 +172,12 @@ body {
 }
 #conference {
   text-align: center;
-  left: 69px;
   width: 82px;
 }
 .wrap_header {
   position: relative;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (20%)[2] 5% 20% (7%)[5];
-  grid-template-columns: repeat(2, 20%) 5% 20% repeat(5, 7%);
+  display: flex;
+  justify-content: space-between;
   width: 1290px;
 }
 .wrap_mainHeader {

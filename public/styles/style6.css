@@ -79,7 +79,6 @@
   backdrop-filter: blur(43px);
   width: 1271px;
   height: auto;
-  max-height: 850px;
   min-height: 550px;
   overflow-y: scroll;
   overflow-x: hidden;

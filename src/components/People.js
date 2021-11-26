@@ -20,7 +20,7 @@ class People extends React.Component{
            <p className='info_people'>
              <p className='our_people'>Our people</p>
                <p className='description_people'>If you would like to become a member of the GBN personally, feel free to send us more information about yourself. Let the community know you. </p>
-             <NavLink to='#' className='seeAll'>See all →</NavLink>
+             {/* <NavLink to='#' className='seeAll'>See all →</NavLink> */}
            </p>
            <div className='each_person' id='person01'>
             <p className='grad_each' ref={this.square}></p>
