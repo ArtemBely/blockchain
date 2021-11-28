@@ -46,7 +46,7 @@
 	-ms-grid-column: 1;
 	-ms-grid-column-span: 1;
 	grid-column: 1/4;
-	font-family: 'Mont-SemiBold';
+	font-family: 'Inter-SemiBold';
 	font-weight: 800;
 	font-size:45px;
 	line-height:69px;
@@ -60,7 +60,7 @@
 	margin-top:-109px;
 	width: 939px;
 	height: 200px;
-	font-family: 'Mont-DEMOExtraLight';
+	font-family: 'Inter-ExtralightBETA';
 	font-weight: 500;
 	-ms-grid-column: 1;
 	-ms-grid-column-span: 1;
@@ -137,7 +137,7 @@
 	color:#FFFFFF;
 	position: relative;
 	grid-column: 1 / 2;
-	top: -306px;
+	top: -300px;
 }
 
 .subtitle_3{

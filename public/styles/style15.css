@@ -1,9 +1,6 @@
 /* Main Page */
 
 @media (min-width: 1501px) {
-  .technologies {
-    margin-top: 0;
-  }
 
   .main_wrap .bubble .wrap_footer {
     position: relative;

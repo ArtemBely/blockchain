@@ -29,6 +29,7 @@ import '../../public/styles/style13.css';
 import '../../public/styles/style14.css';
 import '../../public/styles/style15.css';
 import '../../public/styles/style16.css';
+import '../../public/styles/style17.css';
 
 class App extends React.Component {
   render() {

@@ -1,0 +1,43 @@
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 1501px) {
+  .header__logo {
+    width: 468px;
+  }
+}
+
+@media (min-width: 1117px) and (max-width: 1500px) {
+  .header__logo {
+    width: 408px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1116px) {
+  .header__logo {
+    width: 396px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 999px) {
+  .header__logo {
+    width: 368px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 576px) {
+  .header__logo {
+    width: 238px;
+  }
+}
+
+#explore {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  width: 120px;
+}
+

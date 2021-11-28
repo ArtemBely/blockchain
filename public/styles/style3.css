@@ -164,6 +164,7 @@ bottom
   left: 25px;
 }
 .wide {
+  display: none;
   position: relative;
   top: 860px;
   width: 100%;

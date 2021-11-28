@@ -12,7 +12,7 @@ function Logos() {
         <div className='logos'>
           <p className='explain2'>
             <p className='participating1'>Participating companies</p>
-              <NavLink to='#' className='seeAll_3'>See all →</NavLink>
+              {/* <NavLink to='#' className='seeAll_3'>See all →</NavLink> */}
               <p className='join2'>Join GBN VR Expro and give a full experience of what you do to the world.</p>
              </p>
           <img src={logo1} className='each_logo' id='bmw' />

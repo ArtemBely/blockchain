@@ -70,7 +70,7 @@ class DBAnimation extends React.Component {
                 <p className='glDb'>Global Blockchain Network database</p>
                   <p className='comDb'>Community of open blockchain companies</p>
                   <p className='addDb' onClick={this.closeModal}>Add company →</p>
-                <NavLink to='#' className='moreDb'>More about GBN →</NavLink>
+                <NavLink to='/' className='moreDb'>More about GBN →</NavLink>
             </div>
 
               <div className='secondDb'>
