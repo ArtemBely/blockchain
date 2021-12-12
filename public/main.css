@@ -8982,6 +8982,7 @@ body {
 @media (min-width: 1501px) {
   .header__logo {
     width: 468px;
+    text-decoration: none;
   }
 }
 
@@ -8995,18 +8996,21 @@ body {
 @media (min-width: 1000px) and (max-width: 1116px) {
   .header__logo {
     width: 396px;
+    text-decoration: none;
   }
 }
 
 @media (min-width: 577px) and (max-width: 999px) {
   .header__logo {
     width: 368px;
+    text-decoration: none;
   }
 }
 
 @media (min-width: 322px) and (max-width: 576px) {
   .header__logo {
     width: 238px;
+    text-decoration: none;
   }
 }
 
