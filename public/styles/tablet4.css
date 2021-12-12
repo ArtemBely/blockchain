@@ -193,6 +193,7 @@
   .searchPositions {
     width: 465px;
     height: 638px;
+    margin: 0;
   }
   .industry_vac {
     width: 950px;
@@ -561,6 +562,7 @@
   }
   .searchPositions {
     width: 721px;
+    margin: 0 20px 0 0;
   }
   .vac {
     width: 731px;

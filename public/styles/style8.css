@@ -232,6 +232,7 @@
   180deg, rgba(255, 255, 255, 0.22) 0%, rgba(0, 209, 255, 0) 100%);
   backdrop-filter: blur(43px);
   border-radius: 18.9915px;
+  margin-left: 60px;
 }
 .searchVacs {
   width: 488px;

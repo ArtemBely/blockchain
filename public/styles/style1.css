@@ -176,6 +176,12 @@ body {
 #conference {
   text-align: center;
   width: 82px;
+  padding-right: 20px;
+}
+.nav_header_flex {
+  width: 800px;
+  justify-content: flex-end;
+  display: flex;
 }
 .wrap_header {
   position: relative;

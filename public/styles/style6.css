@@ -168,7 +168,7 @@
   align-items: flex-start;
   padding: 18px 30px 17px;
   position: absolute;
-  width: 630px;
+  width: 580px;
   left: 0px;
   top: 243px;
   color: white;
@@ -182,7 +182,7 @@
 }
 #loope {
   position: relative;
-  left: 645px;
+  left: 600px;
   top: -42px;
   cursor: pointer;
 }

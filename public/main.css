@@ -176,6 +176,12 @@ body {
 #conference {
   text-align: center;
   width: 82px;
+  padding-right: 20px;
+}
+.nav_header_flex {
+  width: 800px;
+  justify-content: flex-end;
+  display: flex;
 }
 .wrap_header {
   position: relative;
@@ -1809,7 +1815,7 @@ bottom
   align-items: flex-start;
   padding: 18px 30px 17px;
   position: absolute;
-  width: 630px;
+  width: 580px;
   left: 0px;
   top: 243px;
   color: white;
@@ -1823,7 +1829,7 @@ bottom
 }
 #loope {
   position: relative;
-  left: 645px;
+  left: 600px;
   top: -42px;
   cursor: pointer;
 }
@@ -2483,6 +2489,7 @@ bottom
   180deg, rgba(255, 255, 255, 0.22) 0%, rgba(0, 209, 255, 0) 100%);
   backdrop-filter: blur(43px);
   border-radius: 18.9915px;
+  margin-left: 60px;
 }
 .searchVacs {
   width: 488px;
@@ -3269,7 +3276,7 @@ bottom
 .wrap_fullDocs {
   position: relative;
   display: grid;
-  top: 16px;
+  top: -12px;
   width: 1130px;
   grid-row: 4 / 5;
   grid-template-columns: repeat(4, 1fr);
@@ -5075,6 +5082,7 @@ bottom
   .searchPositions {
     width: 465px;
     height: 638px;
+    margin: 0;
   }
   .industry_vac {
     width: 950px;
@@ -5443,6 +5451,7 @@ bottom
   }
   .searchPositions {
     width: 721px;
+    margin: 0 20px 0 0;
   }
   .vac {
     width: 731px;
@@ -5804,6 +5813,7 @@ bottom
   .searchPositions {
     width: 320px !important;
     overflow: hidden;
+    margin: 0;
 }
 .searchVacs {
     width: 242px !important;
@@ -7876,7 +7886,7 @@ body {
   }
 
   #job_hr {
-    top: 208px;
+    /* top: 208px; */
   }
 
   .loope {
