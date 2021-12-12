@@ -143,6 +143,7 @@ body {
   font-family: 'Inter-LightBETA';
   z-index: 10;
   height: 30px;
+  top: 20px;
 }
 .nav_header_black {
   font-weight: 400;
@@ -177,6 +178,7 @@ body {
   text-align: center;
   width: 82px;
   padding-right: 20px;
+  top: 20px;
 }
 .nav_header_flex {
   width: 800px;
