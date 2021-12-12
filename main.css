@@ -1729,8 +1729,8 @@ bottom
   width: 1271px;
   height: auto;
   min-height: 550px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
 }
 .tableMain::-webkit-scrollbar {
   width: 0px;
