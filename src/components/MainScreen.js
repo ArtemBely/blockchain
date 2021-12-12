@@ -29,7 +29,7 @@ class MainScreen extends React.Component{
                    <img src={oculus} id='oculus'/>
                    <img src={macbook} id='macbook'/>
                    <img src={play} id='play1'/>
-                   <NavLink to='/vr_tour' className='vr'>Watch VR-tour</NavLink>
+                   {/* <NavLink to='/vr_tour' className='vr'>Watch VR-tour</NavLink> */}
                 </p>
             </div>
          </div>

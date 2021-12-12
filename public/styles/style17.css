@@ -12,6 +12,7 @@
 @media (min-width: 1117px) and (max-width: 1500px) {
   .header__logo {
     width: 408px;
+    text-decoration: none;
   }
 }
 
