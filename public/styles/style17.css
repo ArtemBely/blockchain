@@ -1,6 +1,7 @@
 .header__logo {
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 @media (min-width: 1501px) {
