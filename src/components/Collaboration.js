@@ -12,7 +12,7 @@ class Collaboration extends React.Component {
 
 
   componentDidMount() {
-
+    console.log('render home_page');
 
     window.launchApp = function() {
 
@@ -254,10 +254,14 @@ class Collaboration extends React.Component {
         this.initApp();
     };
 
-    document.addEventListener("DOMContentLoaded", function() {
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     console.log('start animation');
+    //     this.app = new launchApp();
+    // });
+    setTimeout(function() {
+        console.log('start animation');
         this.app = new launchApp();
-    });
-    
+      }, 200);
   }
 
   render() {
