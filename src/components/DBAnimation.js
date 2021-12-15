@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+//import { useQuery } from 'react-query';
 import close from '../../public/images/Union.svg';
 
 class DBAnimation extends React.Component {
@@ -17,18 +18,36 @@ class DBAnimation extends React.Component {
     this.cl.current.classList.add('disp_change');
   }
 
-  componentDidMount() {
-          VANTA.HALO({
-          el: '#your-element-selector',
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          backgroundColor: 0x131a43,
-          amplitudeFactor: 0.00,
-          xOffset: 0.12
-          })
+  checkAutoOpenOfModal ()
+  {
+    console.log( 'checkAutoOpenOfModal' );
+
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+
+    console.log( 'Hallo !!!! ' + params.showpopup );
+
+    if ( params.showpopup )
+    {
+      this.closeModal();
+    }
+  }
+
+  componentDidMount()
+  {
+    VANTA.HALO({
+    el: '#your-element-selector',
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    backgroundColor: 0x131a43,
+    amplitudeFactor: 0.00,
+    xOffset: 0.12
+    });
+
+    this.checkAutoOpenOfModal();
   }
 
   render() {

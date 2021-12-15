@@ -12,20 +12,27 @@ import Logos from './Logos';
 import Footer from './Footer';
 
 class Main extends React.Component{
+  componentDidMount()
+  {
+    console.log( 'componentDidMount' );
+
+    setTimeout(window.scrollTo({ left: 0, top: 0 }));
+  }
+
   render() {
     return(
       <div className='bubble'>
-          <Header />
-          <MainScreen />
-          <Fone />
-          <Collaboration />
-          <Table1 />
-          <Sponsors />
-          <People />
-          {/* <Wide /> */}
-          <Brands />
-          <Logos />
-          <Footer />
+        <Header />
+        <MainScreen />
+        <Fone />
+        <Collaboration />
+        <Table1 />
+        <Sponsors />
+        <People />
+        {/* <Wide /> */}
+        <Brands />
+        <Logos />
+        <Footer />
       </div>
     )
   }

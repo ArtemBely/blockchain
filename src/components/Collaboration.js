@@ -254,10 +254,9 @@ class Collaboration extends React.Component {
         this.initApp();
     };
 
-    document.addEventListener("DOMContentLoaded", function() {
+    /*document.addEventListener("DOMContentLoaded", function() {
         this.app = new launchApp();
-    });
-    
+    });*/
   }
 
   render() {

@@ -178,6 +178,8 @@ body {
 
   .wrap_spheres {
     left: 80px;
+    color: black;
+    text-decoration: none;
   }
 
   .wrap_contacts {

@@ -301,6 +301,12 @@
   position: relative;
   left: 10px;
 }
+
+.arrowsSearch.sorted {
+  transform: rotate( 180deg );
+}
+
+
 .searchCity {
   width: 230px;
   position: relative;

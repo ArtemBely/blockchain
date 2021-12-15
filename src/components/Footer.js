@@ -4,6 +4,7 @@ import sphere1 from '../../public/images/Ellipse 47.svg'
 import sphere2 from '../../public/images/Ellipse 48.svg'
 import anchor from '../../public/images/Polygon 6.svg';
 import close from '../../public/images/Union.svg';
+import { history } from 'history';
 
 class Footer extends React.Component {
 
@@ -29,8 +30,14 @@ class Footer extends React.Component {
     this.cl.current.classList.remove('disp_change') :
     this.cl.current.classList.add('disp_change');
   }
+
   logOut = () => {
     window.location.replace('/profile/logout');
+  }
+
+  toHomePage ()
+  {
+    history.push('/');
   }
 
   render() {
@@ -52,11 +59,11 @@ class Footer extends React.Component {
       </div>
 
         <div className='footer'>
-            <p className='wrap_spheres'>
+            <NavLink className='wrap_spheres' to={{ pathname: `/`, state: 0 }} /*onClick={this.toHomePage}*/>
               <img src={sphere1} id='sphere1'/>
-                <img src={sphere2} id='sphere2'/>
+              <img src={sphere2} id='sphere2'/>
               <p className='global_bn'>Global Blockchain Network</p>
-            </p>
+            </NavLink>
             <div className='wrap_linkes_footer'>
                <NavLink to='/Database' className='each_footer'>Database</NavLink>
                  {/* <NavLink to='#' className='each_footer'>Our people</NavLink>

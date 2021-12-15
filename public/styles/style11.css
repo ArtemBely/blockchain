@@ -346,3 +346,89 @@
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, #6B36EF, #1EC0F4);
 }
+
+
+/* Css-Stilen für der Karte der Arbeitsstelle auf der HR-Seite BEGINN */
+
+.card-of-vacancy_wrapper {
+  position : relative;
+  height   : auto !important;
+}
+
+.card-of-vacancy_wrapper .close-card {
+  position  : absolute;
+  width     : 26px;
+  height    : 26px;
+  top       : 50px;
+  right     : 35px;
+  cursor    : pointer;
+}
+
+.card-of-vacancy {
+  position      : relative;
+  width         : 570px;
+  height        : auto;
+  background    : #FFFFFF;
+  border-radius : 10px;
+  margin        : 25px 10px;
+}
+
+.card-of-vacancy .titel {
+  padding : 40px 35px 30px 20px;
+}
+
+.card-of-vacancy .section1, .card-of-vacancy .section2 {
+  padding : 0px 35px 30px 20px;
+}
+
+.card-of-vacancy .section3 {
+  padding : 0px 35px 40px 20px;
+}
+
+.card-of-vacancy .titel {
+  font-family : Inter;
+  font-style  : normal;
+  font-weight : bold;
+  font-size   : 25px;
+  line-height : 140%;
+  color       : #000000;
+}
+
+.card-of-vacancy .section1 .item {
+  display               : grid;
+  grid-template-columns : 30% 70%;
+  margin-bottom         : 10px;
+}
+
+.card-of-vacancy .unter-titel, .card-of-vacancy .item .unter-titel-wert {
+  font-family : Inter;
+  font-style  : normal;
+  font-weight : normal;
+  font-size   : 18px;
+  line-height : 140%;
+  color       : #000000;
+}
+
+.card-of-vacancy .unter-titel {
+  font-weight : bold;
+}
+
+.card-of-vacancy .btn {
+  background  : linear-gradient( 62.18deg, rgba(107, 54, 239, 0) -22.93%, #1EC0F4 88.82% );
+  width       : 190px;
+  height      : 50px;
+  border      : none;
+  font-size   : 22px;
+  line-height : 140%;
+  color       : white;
+  font-family : 'Inter-LightBETA';
+  cursor      : pointer;
+  white-space : nowrap;
+  margin      : 0px 0px 40px 20px;
+}
+
+/* Css-Stilen für der Karte der Arbeitsstelle auf der HR-Seite ENDE */
+
+.hidden-green-filter {
+  display : none;
+}
