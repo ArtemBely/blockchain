@@ -13,7 +13,6 @@ class Collaboration extends React.Component {
 
   componentDidMount() {
 
-
     window.launchApp = function() {
 
         /// ---------------------------
@@ -254,9 +253,9 @@ class Collaboration extends React.Component {
         this.initApp();
     };
 
-    /*document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
         this.app = new launchApp();
-    });*/
+      }, 200);
   }
 
   render() {

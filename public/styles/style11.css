@@ -40,7 +40,7 @@
 .wrap_fullDocs {
   position: relative;
   display: grid;
-  top: 16px;
+  top: -12px;
   width: 1130px;
   grid-row: 4 / 5;
   grid-template-columns: repeat(4, 1fr);
@@ -351,8 +351,9 @@
 /* Css-Stilen für der Karte der Arbeitsstelle auf der HR-Seite BEGINN */
 
 .card-of-vacancy_wrapper {
-  position : relative;
-  height   : auto !important;
+  font-family : 'Inter', sans-serif;
+  position    : relative;
+  height      : auto !important;
 }
 
 .card-of-vacancy_wrapper .close-card {
@@ -386,7 +387,6 @@
 }
 
 .card-of-vacancy .titel {
-  font-family : Inter;
   font-style  : normal;
   font-weight : bold;
   font-size   : 25px;
@@ -401,7 +401,6 @@
 }
 
 .card-of-vacancy .unter-titel, .card-of-vacancy .item .unter-titel-wert {
-  font-family : Inter;
   font-style  : normal;
   font-weight : normal;
   font-size   : 18px;

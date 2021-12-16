@@ -143,6 +143,7 @@ body {
   font-family: 'Inter-LightBETA';
   z-index: 10;
   height: 30px;
+  top: 20px;
 }
 .nav_header_black {
   font-weight: 400;
@@ -176,6 +177,13 @@ body {
 #conference {
   text-align: center;
   width: 82px;
+  padding-right: 20px;
+  top: 20px;
+}
+.nav_header_flex {
+  width: 800px;
+  justify-content: flex-end;
+  display: flex;
 }
 .wrap_header {
   position: relative;
@@ -1724,8 +1732,8 @@ bottom
   width: 1271px;
   height: auto;
   min-height: 550px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
 }
 .tableMain::-webkit-scrollbar {
   width: 0px;
@@ -1812,7 +1820,7 @@ bottom
   align-items: flex-start;
   padding: 18px 30px 17px;
   position: absolute;
-  width: 630px;
+  width: 580px;
   left: 0px;
   top: 243px;
   color: white;
@@ -1826,7 +1834,7 @@ bottom
 }
 #loope {
   position: relative;
-  left: 645px;
+  left: 600px;
   top: -42px;
   cursor: pointer;
 }
@@ -2492,6 +2500,7 @@ bottom
   180deg, rgba(255, 255, 255, 0.22) 0%, rgba(0, 209, 255, 0) 100%);
   backdrop-filter: blur(43px);
   border-radius: 18.9915px;
+  margin-left: 60px;
 }
 .searchVacs {
   width: 488px;
@@ -3278,7 +3287,7 @@ bottom
 .wrap_fullDocs {
   position: relative;
   display: grid;
-  top: 16px;
+  top: -12px;
   width: 1130px;
   grid-row: 4 / 5;
   grid-template-columns: repeat(4, 1fr);
@@ -3589,8 +3598,9 @@ bottom
 /* Css-Stilen für der Karte der Arbeitsstelle auf der HR-Seite BEGINN */
 
 .card-of-vacancy_wrapper {
-  position : relative;
-  height   : auto !important;
+  font-family : 'Inter', sans-serif;
+  position    : relative;
+  height      : auto !important;
 }
 
 .card-of-vacancy_wrapper .close-card {
@@ -3624,7 +3634,6 @@ bottom
 }
 
 .card-of-vacancy .titel {
-  font-family : Inter;
   font-style  : normal;
   font-weight : bold;
   font-size   : 25px;
@@ -3639,7 +3648,6 @@ bottom
 }
 
 .card-of-vacancy .unter-titel, .card-of-vacancy .item .unter-titel-wert {
-  font-family : Inter;
   font-style  : normal;
   font-weight : normal;
   font-size   : 18px;
@@ -3673,7 +3681,7 @@ bottom
 @media (min-width: 1000px) and (max-width: 1500px) {
   .nav_header {
     font-size: 16px;
-    top: 35px;
+    top: 20px;
   }
   #global {
     font-size: 18px;
@@ -5174,6 +5182,7 @@ bottom
   .searchPositions {
     width: 465px;
     height: 638px;
+    margin: 0;
   }
   .industry_vac {
     width: 950px;
@@ -5542,6 +5551,7 @@ bottom
   }
   .searchPositions {
     width: 721px;
+    margin: 0 20px 0 0;
   }
   .vac {
     width: 731px;
@@ -5903,6 +5913,7 @@ bottom
   .searchPositions {
     width: 320px !important;
     overflow: hidden;
+    margin: 0;
 }
 .searchVacs {
     width: 242px !important;
@@ -7635,6 +7646,12 @@ body {
     z-index: 3;
   }
 
+  .nav_header_flex {
+    width: 500px;
+    justify-content: flex-end;
+    display: flex;
+  }
+
   #wrap_data_footer .wrap_footer .footer {
     position: relative;
     top: 1900px;
@@ -7730,6 +7747,12 @@ body {
 
   .wrap_mainHeader .wrap_header {
     left: -10px;
+  }
+
+  .nav_header_flex {
+    width: 0;
+    justify-content: flex-end;
+    display: flex;
   }
 
   #wrap_data_footer .wrap_footer .footer {
@@ -7980,7 +8003,7 @@ body {
   }
 
   #job_hr {
-    top: 208px;
+    /* top: 208px; */
   }
 
   .loope {
@@ -8181,6 +8204,12 @@ body {
     left: -45px;
   }
 
+  .nav_header_flex {
+    width: 500px;
+    justify-content: flex-end;
+    display: flex;
+  }
+
   .wrap_hr_header .wrap_mainHeader .wrap_header {
     left: 30px;
   }
@@ -8283,6 +8312,12 @@ body {
   .wrap_header {
     margin: 0 auto;
     left: 0;
+  }
+
+  .nav_header_flex {
+    width: 0;
+    justify-content: flex-end;
+    display: flex;
   }
 
   #titleIn {
@@ -9081,35 +9116,41 @@ body {
 .header__logo {
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 @media (min-width: 1501px) {
   .header__logo {
     width: 468px;
+    text-decoration: none;
   }
 }
 
 @media (min-width: 1117px) and (max-width: 1500px) {
   .header__logo {
     width: 408px;
+    text-decoration: none;
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1116px) {
   .header__logo {
     width: 396px;
+    text-decoration: none;
   }
 }
 
 @media (min-width: 577px) and (max-width: 999px) {
   .header__logo {
     width: 368px;
+    text-decoration: none;
   }
 }
 
 @media (min-width: 322px) and (max-width: 576px) {
   .header__logo {
     width: 238px;
+    text-decoration: none;
   }
 }
 

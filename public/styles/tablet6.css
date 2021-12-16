@@ -33,6 +33,7 @@
   .searchPositions {
     width: 320px !important;
     overflow: hidden;
+    margin: 0;
 }
 .searchVacs {
     width: 242px !important;

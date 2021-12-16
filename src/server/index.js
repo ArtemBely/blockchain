@@ -105,7 +105,11 @@ app.get('*', (req, res, next) => {
             <html>
                 <head>
                   <title>Global Blockchain Network</title>
-                   <link rel="stylesheet" type="text/css" href="main.css">
+                  <link rel="icon" href="/images/gbn.ico" type="image/x-icon" />
+                  <link rel="stylesheet" type="text/css" href="main.css">
+                  <link rel="preconnect" href="https://fonts.googleapis.com">
+                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                       <script src='/bundle.js' defer></script>
                         <script>window.__INITIAL_DATA__= ${serialize(data)}</script>

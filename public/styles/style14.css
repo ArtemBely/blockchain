@@ -11,6 +11,12 @@
     left: -45px;
   }
 
+  .nav_header_flex {
+    width: 500px;
+    justify-content: flex-end;
+    display: flex;
+  }
+
   .wrap_hr_header .wrap_mainHeader .wrap_header {
     left: 30px;
   }
@@ -113,6 +119,12 @@
   .wrap_header {
     margin: 0 auto;
     left: 0;
+  }
+
+  .nav_header_flex {
+    width: 0;
+    justify-content: flex-end;
+    display: flex;
   }
 
   #titleIn {

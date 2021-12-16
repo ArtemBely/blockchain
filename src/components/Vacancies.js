@@ -27,7 +27,7 @@ class Vacancies extends React.Component {
     this.cl3        = React.createRef();
     this.cl2        = React.createRef();
     this.cl         = React.createRef();
-    /*this.state      = {
+    this.state      = {
       vacancies     : [],
       mergedVacs    : [],
       user,
@@ -35,14 +35,15 @@ class Vacancies extends React.Component {
       filteredVacs  : [],
       filter        : [],
       greenFilter   : '',
-    };*/
+    };
 
     this.sortBy = {
       column    : 'Industry',
       direction : true,
     };
 
-    this.state      = {
+    // für testen
+    /*this.state      = {
       vacancies     : [
         [
           {
@@ -98,14 +99,14 @@ class Vacancies extends React.Component {
       filteredVacs  : [],
       filter        : [],
       greenFilter   : '',
-    };
+    };*/
   }
 
   componentDidMount ()
   {
     console.log( 'componentDidMount Vacancies' );
 
-    /*getVacancies().then( vacancies => {
+    getVacancies().then( vacancies => {
       console.log( 'vacancies' );
       console.log( vacancies );
 
@@ -118,15 +119,15 @@ class Vacancies extends React.Component {
         filter: mergedVacs1,
       });
     } )
-                  .catch( err => console.log( err ) );*/
+                  .catch( err => console.log( err ) );
 
-    //////////////
-    let mergedVacs1 = [].concat.apply([], this.state.vacancies);
+    ////////////// für testen
+    /*let mergedVacs1 = [].concat.apply([], this.state.vacancies);
 
     this.setState({
       mergedVacs: mergedVacs1,
       filter: mergedVacs1,
-    });
+    });*/
     ////////////////
 
     console.log( 'this.state' );
