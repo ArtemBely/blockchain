@@ -3678,6 +3678,15 @@ bottom
 .hidden-green-filter {
   display : none;
 }
+
+.spr-table {
+  z-index: 99999999 !important;
+}
+
+.spr-table_close2 {
+  top: -930px !important;
+  left: 550px !important;
+}
 @media (min-width: 1000px) and (max-width: 1500px) {
   .nav_header {
     font-size: 16px;
