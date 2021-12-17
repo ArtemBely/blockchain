@@ -35,6 +35,16 @@ class Vacancies extends React.Component {
       filteredVacs  : [],
       filter        : [],
       greenFilter   : '',
+
+      showed        : false,
+      titel         : 'test titel',
+      company       : 'test company',
+      location      : 'test location',
+      direction     : 'test direction',
+      experience    : 'test experience',
+      salary        : 'test salary',
+      tasks         : 'test tasks',
+      requirements  : 'test requirements',
     };
 
     this.sortBy = {
@@ -99,6 +109,16 @@ class Vacancies extends React.Component {
       filteredVacs  : [],
       filter        : [],
       greenFilter   : '',
+
+      showed        : false,
+      titel         : 'test titel',
+      company       : 'test company',
+      location      : 'test location',
+      direction     : 'test direction',
+      experience    : 'test experience',
+      salary        : 'test salary',
+      tasks         : 'test tasks',
+      requirements  : 'test requirements',
     };*/
   }
 
@@ -146,6 +166,8 @@ class Vacancies extends React.Component {
   {
     console.log( 'sortVacancies: ' + sortBy );
     console.log( 'id: ' + id );
+
+    this.hiddenVacancyCard();
 
     if ( sortBy === this.sortBy.column )
     {
@@ -203,20 +225,34 @@ class Vacancies extends React.Component {
     console.log( 'vacancy' );
     console.log( this.state.filter[ index ] );
 
-    document.querySelector( '.js-titel' ).textContent         = this.state.filter[ index ].direction;
-    document.querySelector( '.js-company' ).textContent       = this.state.filter[ index ].requirements;
-    document.querySelector( '.js-location' ).textContent      = this.state.filter[ index ].location;
-    document.querySelector( '.js-direction' ).textContent     = this.state.filter[ index ].tasks;
-    document.querySelector( '.js-experience' ).textContent    = this.state.filter[ index ].experience;
-    document.querySelector( '.js-salary' ).textContent        = this.state.filter[ index ].salary;
-    document.querySelector( '.js-tasks' ).textContent         = this.state.filter[ index ].tasks;
-    document.querySelector( '.js-requirements' ).textContent  = this.state.filter[ index ].requirements;
+    this.setState(() => {
+      // Важно: используем `state` вместо `this.state` при обновлении.
+      return {
+        showed        : true,
+        titel         : this.state.filter[ index ].direction,
+        company       : this.state.filter[ index ].requirements,
+        location      : this.state.filter[ index ].location,
+        direction     : this.state.filter[ index ].tasks,
+        experience    : this.state.filter[ index ].experience,
+        salary        : this.state.filter[ index ].salary,
+        tasks         : this.state.filter[ index ].tasks,
+        requirements  : this.state.filter[ index ].requirements,
+      }
+    });
 
-    this.showVacancyCard()
+    //this.showVacancyCard()
   }
 
-  showVacancyCard = () => {
-    this.cl3.current.classList.contains('disp_change') ? this.cl3.current.classList.remove('disp_change') : this.cl3.current.classList.add('disp_change');
+  hiddenVacancyCard = () => {
+    //this.cl3.current.classList.contains('disp_change') ? this.cl3.current.classList.remove('disp_change') : this.cl3.current.classList.add('disp_change');
+
+    this.setState(
+      () => {
+        return {
+          showed  : false,
+        }
+      }
+    );
   }
 
   eachVacancie = () => {
@@ -311,6 +347,8 @@ class Vacancies extends React.Component {
     console.log( 'setGreenFilter' );
     console.log( event );
 
+    this.hiddenVacancyCard();
+
     let query = event.target.textContent;
 
     console.log( 'query ' + query );
@@ -397,79 +435,6 @@ class Vacancies extends React.Component {
           </div>
         </div>
 
-        <div className='wrap_modal1_dark' ref={this.cl3}>
-          <div className='wrap_modal1 card-of-vacancy_wrapper'>
-            <div className='card-of-vacancy'>
-              <div className='titel js-titel'>
-                TITLE
-              </div>
-              
-              <div className='section1'>
-                <div className='item'>
-                  <div className='unter-titel'>
-                    Company
-                  </div>
-
-                  <div className='unter-titel-wert js-company'> text 1</div>
-                </div>
-
-                <div className='item'>
-                  <div className='unter-titel'>
-                    Location
-                  </div>
-
-                  <div className='unter-titel-wert js-location'> text 2</div>
-                </div>
-
-                <div className='item'>
-                  <div className='unter-titel'>
-                    Direction
-                  </div>
-
-                  <div className='unter-titel-wert js-direction'> text 3</div>
-                </div>
-
-                <div className='item'>
-                  <div className='unter-titel'>
-                    Experience
-                  </div>
-
-                  <div className='unter-titel-wert js-experience'> text 4</div>
-                </div>
-
-                <div className='item'>
-                  <div className='unter-titel'>
-                    Salary
-                  </div>
-
-                  <div className='unter-titel-wert js-salary'> text 5</div>
-                </div>
-              </div>
-
-              <div className='section2'>
-                <div className='unter-titel'>
-                  Tasks
-                </div>
-
-                <div className='unter-titel-wert js-tasks'> text 6</div>
-              </div>
-
-              <div className='section3'>
-                <div className='unter-titel'>
-                  Requirements
-                </div>
-
-                <div className='unter-titel-wert js-requirements'> text 7</div>
-              </div>
-
-              <button type='submit' className='btn'>
-                Apply for job
-              </button>
-            </div>
-            <span className='close-card' onClick={this.showVacancyCard}><img src={_close} /></span>
-          </div>
-        </div>
-
         <div className='vac'>
           <div className='industry_vac'>
             <div className='left_ind'>
@@ -515,10 +480,12 @@ class Vacancies extends React.Component {
           </div>
 
           <Offer
-            handleChange  ={ this.handleChange }
-            eachVacancie  ={ this.eachVacancie }
-            applyFilters  ={ this.applyFilters }
-            resetFilters  ={ this.resetFilters }
+            handleChange      ={ this.handleChange }
+            eachVacancie      ={ this.eachVacancie }
+            applyFilters      ={ this.applyFilters }
+            resetFilters      ={ this.resetFilters }
+            hiddenVacancyCard ={ this.hiddenVacancyCard }
+            cardVacancy       ={ this.state }
           />
         </div>
       </div>

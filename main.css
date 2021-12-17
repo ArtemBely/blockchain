@@ -3607,18 +3607,18 @@ bottom
   position  : absolute;
   width     : 26px;
   height    : 26px;
-  top       : 50px;
+  top       : 35px;
   right     : 35px;
   cursor    : pointer;
 }
 
 .card-of-vacancy {
   position      : relative;
-  width         : 570px;
+  width         : auto;
   height        : auto;
   background    : #FFFFFF;
   border-radius : 10px;
-  margin        : 25px 10px;
+  margin        : 10px;
 }
 
 .card-of-vacancy .titel {
@@ -3681,6 +3681,10 @@ bottom
 
 .hidden-green-filter {
   display : none;
+}
+
+.hidden {
+  display : none !important;
 }
 
 .spr-table {
