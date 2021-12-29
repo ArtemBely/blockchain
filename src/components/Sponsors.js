@@ -30,7 +30,7 @@ class Sponsors extends React.Component{
   render() {
     return(
       <div className='wrap_sponsors'>
-        <div className='wrap_modal1_dark' ref={this.cl}>
+        <div className='wrap_modal1_dark spr-table' ref={this.cl}>
           <div className='wrap_modal1 modelAddComp2'>
             <div className='modal1 insideAddModal2'>
               <p id='comp_reg'>Become a sponsor and support community</p>
@@ -56,7 +56,7 @@ class Sponsors extends React.Component{
               <p id='by_click' className='forCompReg'>By clicking on the «Request» button you confirm your consent to
               the processing of data and agree to the privacy policy</p>
             </div>
-            <span id='close2' className='closeDataModal2' ref={this.cl2} onClick={this.closeModal}><img src={close} /></span>
+            <span id='close2' className='closeDataModal2 spr-table_close2' ref={this.cl2} onClick={this.closeModal}><img src={close} /></span>
           </div>
         </div>
 

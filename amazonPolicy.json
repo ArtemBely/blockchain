@@ -1,0 +1,13 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1640781265976",
+    "Statement": [
+        {
+            "Sid": "AllAccess",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::websterzgbn/*"
+        }
+    ]
+}
