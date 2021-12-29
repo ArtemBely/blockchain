@@ -37,7 +37,7 @@ var upload = multer({
   limits:{ fileSize: 5000000 },
   storage: multerS3({
     s3: s3,
-    bucket: 'gbnbucket',
+    bucket: 'websterzgbn',
     //acl: 'public-read',  // --> требуются настройки доступа в aws s3, чтобы использовать данный параметр
     metadata: function (req, file, cb) {
       cb(null, {fieldName: file.fieldname});
