@@ -80,7 +80,7 @@ body {
   .secondDb {
     transform: scale(0.8);
   }
-  
+
   .wrap_header {
     z-index: 3;
   }
@@ -105,7 +105,13 @@ body {
   .wrap_header {
     z-index: 3;
   }
-
+  .wrap_linkes_footer {
+    position: relative;
+    left: -97px !important;
+    grid-row: 2/3;
+    grid-gap: 30px 118px;
+    grid-template-columns: 1fr !important;
+  }
   .tableMain {
     width: 587px;
   }
@@ -131,7 +137,7 @@ body {
   }
 
   .nav_header_flex {
-    width: 0;
+    width: 312;
     justify-content: flex-end;
     display: flex;
   }
@@ -185,11 +191,16 @@ body {
 
   .wrap_linkes_footer {
     grid-gap: 20px 30px;
-    left: 80px;
+    left: -97px !important;
+    grid-template-columns: 1fr !important;
   }
-
+  #hr_foot {
+    position: relative;
+    top: 10px;
+    left: -55px;
+  }
   .wrap_spheres {
-    left: 80px;
+    left: 0px;
     color: black;
     text-decoration: none;
   }

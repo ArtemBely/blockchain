@@ -32,7 +32,7 @@ class Main extends React.Component{
         {/* <Wide /> */}
         <Brands />
         <Logos />
-        <Footer />
+        <p className='wrap_main_footer'><Footer /></p>
       </div>
     )
   }

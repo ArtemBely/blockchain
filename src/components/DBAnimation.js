@@ -18,7 +18,7 @@ class DBAnimation extends React.Component {
     this.cl.current.classList.add('disp_change');
   }
 
-  checkAutoOpenOfModal ()
+  /*checkAutoOpenOfModal ()
   {
     console.log( 'checkAutoOpenOfModal' );
 
@@ -48,6 +48,11 @@ class DBAnimation extends React.Component {
     });
 
     this.checkAutoOpenOfModal();
+  }*/
+  componentDidMount() {
+    if(window.location.pathname == '/database/showpopup') {
+      this.closeModal();
+    }
   }
 
   render() {
@@ -75,6 +80,7 @@ class DBAnimation extends React.Component {
                    <input type='hidden' name='docs' value=''/>
                    <input type='hidden' name='show' value='yes'/>
                    <input type='hidden' name='showVacs' value='yes'/>
+                   <input type='hidden' name='showCompany' value='no'/>
                <button type='submit' id='req_but'>Request</button>
                </form>
                <p id='by_click' className='forCompReg'>By clicking on the «Request» button you confirm your consent to

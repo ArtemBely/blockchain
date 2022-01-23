@@ -33,14 +33,14 @@ class Table extends React.Component{
           .then(company => this.setState({ company: company, filteredCompanies: company }))
           .catch(err => console.log(err))
         }
-          /*setTimeout(() => {
+          setTimeout(() => {
             if(this.state.company) console.log(this.state.company);
 
-          }, 300);*/
+          }, 900);
        }
 
-        handleChange(event) {  
-          let query = event.target.value;  
+        handleChange(event) {
+          let query = event.target.value;
 
           this.setState(prevState => {
             const filteredCompanies = prevState.company.filter(comp => {
@@ -52,7 +52,7 @@ class Table extends React.Component{
               filteredCompanies,
             };
           });
-        };  
+        };
 
 
   eachComp = () => {
@@ -110,7 +110,7 @@ class Table extends React.Component{
                      document.querySelector(`.eachProfileLong${index}`).classList.remove('dispGrid');
                    }}>
                          <p className='eachData2 fullAppearTitles'>{comp.name}
-                           <p className='wrap_compProfiles'><img src={comp.profileImage ? comp.profileImage  : null} id='compProfilesImg' style={{
+                           <p className='wrap_compProfiles'><img src={comp.profileImage ? "uploadsProfileImages/" + comp.profileImage  : null} id='compProfilesImg' style={{
                              display: comp.profileImage ? 'block' : 'none'
                            }}/></p>
                            </p>
@@ -152,7 +152,7 @@ class Table extends React.Component{
                            <div className='manageFull'><span className='textMnFull'>Managment and representatives</span>
                                 {comp.hrs.map(hr => (
                                   <div className='eachFull'>
-                                    <p className='fullImage'><img src={hr.hrPhoto != null ? hr.hrPhoto : userByDefault} className='eachFullPerson' /></p>
+                                    <p className='fullImage'><img src={hr.hrPhoto != null ? "uploadsProfileHrs/" + hr.hrPhoto : userByDefault} className='eachFullPerson' /></p>
                                     <p className='fullName'>{hr.fullName}</p>
                                     <p className='fullDescr'>{hr.details}</p>
                                     <img src={lnk} className='lnkFull'/>

@@ -73,11 +73,11 @@
 	}
 	.wrap_linkes_footer {
 		position: relative;
-		left: 182px;
-	  grid-gap: 26px;
-		grid-column-gap: 76px;
-		top: -15px;
-		width: 400px;
+    left: 115px;
+    grid-gap: 7px;
+    grid-column-gap: 9px;
+    top: -15px;
+    width: 168px;
 	}
 	.wrap_spheres {
 		margin-top:0px;
@@ -118,7 +118,7 @@
 		 top: -200px;
 	 } */
 	 #anchor_link {
-		 left: 122px;
+		 left: 162px;
 		 top: -36px;
 	 }
 }

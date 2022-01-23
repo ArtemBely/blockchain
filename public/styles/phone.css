@@ -26,8 +26,15 @@
   #mrCnt, #mapSite {
     display: none;
   }
+  .fil1 {
+    opacity: 1;
+  }
   #wrap_data_footer {
     height: 0px;
+  }
+  .circle11 {
+    left: 2px !important;
+    top: -20px !important;
   }
   .eachData2 {
     line-height: 15px;
@@ -316,7 +323,7 @@
     #global {
       font-size: 13px;
       line-height: 16px;
-      left: 2px;
+      left: 13px;
       top: 41px;
       width: 174px;
     }
@@ -328,8 +335,8 @@
 
     #circle2{
       position: relative;
-      left: 5px;
-      top: -25px;
+      left: -41px;
+      top: 7px;
     }
     .watch_vr {
       position: relative;
@@ -914,7 +921,7 @@
     }
     .wrap_linkes_footer {
       position: relative;
-      left: 24px;
+      left: -2px;
       grid-column: 1/2;
       grid-row: 2/3;
       grid-gap: 30px 59px;
@@ -931,12 +938,12 @@
       text-decoration: none;
     }
     .wrap_contacts{
-      top: 0;
+      top: -77px;
       grid-column: 1/2;
       grid-row: 4/5;
       margin-top: -84px;
       grid-template-rows: 18px 18px;
-      grid-gap: 30px;
+      grid-gap: 58px;
       height: 170px;
       width: 200px;
       left: 24px;
@@ -961,10 +968,12 @@
     }
     #loginFor {
       left: 1px;
-      width: 200px;
+      width: 161px;
+      top: -32px;
     }
     #email{
       top: 0;
+      left: 108px;
     }
     #footTel {
       width: 200px;

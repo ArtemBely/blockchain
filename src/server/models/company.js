@@ -4,21 +4,23 @@ const bcrypt = require('bcryptjs');
 const Schema = mongoose.Schema;
 
 const profileOfCompany = new Schema({
-  name: {type: String, required: true},
+  name: {type: String},
   profileImage: {type: String},
-  description: {type: String, required: true},
+  description: {type: String},
   email: {type: String, required: true},
   password: {type: String, required: true},
-  jurisdiction: {type: String, required: true},
-  request: {type: String, required: true},
-  industry: {type: String, required: true},
-  solved: {type: String, required: true},
-  phone: {type: String, required: true},
+  jurisdiction: {type: String},
+  request: {type: String},
+  industry: {type: String},
+  solved: {type: String},
+  phone: {type: String},
   vasc: {type: Array},
   hrs: {type: Array},
   docs: {type: Array},
   show: {type: String},
-  showVacs: {type: String}
+  showVacs: {type: String},
+  admin: {type: String},
+  showCompany: {type: String}
 });
 
 module.exports = mongoose.model('User', profileOfCompany);

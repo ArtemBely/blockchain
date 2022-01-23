@@ -20,7 +20,7 @@ class MainScreen extends React.Component{
             <div className='blockchain_network'>
                <p id='block_net'>Global Blockchain <br/>Network</p>
                <p id='reality'>New business reality <br/>from virtual to real</p>
-               <NavLink to='/database?showpopup=true' id='join_for'>Join for free</NavLink>
+               <NavLink to='/database/showpopup' id='join_for'>Join for free</NavLink>
                <button onClick={this.scrollToBottom} id='explore'>Explore →</button>
             </div>
             <div className='watch_vr'>

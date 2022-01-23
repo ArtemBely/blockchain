@@ -109,6 +109,9 @@ body {
   top: 6px;
   left: -193px;
 }
+.wrap_main_footer {
+  height: 1px;
+}
 #global_black {
   font-family: 'Mont-Heavy';
   color: #000000;
@@ -119,7 +122,13 @@ body {
   width: 210px;
   position: relative;
   top: 6px;
-  left: -193px;
+  left: -183px;
+}
+#modelAddComp3 {
+      height: 503px !important;
+}
+#insideAddModal3 {
+      height: 456px !important;
 }
 .stand_between {
   display: none;
@@ -156,23 +165,32 @@ body {
   font-family: 'Inter-LightBETA';
   z-index: 10;
   height: 30px;
+      left: 179px;
+}
+.data2 {
+      left: 480px;
+      top: 40px !important;
 }
 #cont {
   left: 90px;
 }
 #blog {
   left: 57px;
+  display: none;
 }
 #header_about {
   left: -50px;
   width: 164px;
+  display: none;
 }
 #database {
   left: -30px;
+  display: none;
 }
 #header_contacts {
   left: 90px;
   width: 100px;
+  display: none;
 }
 #conference {
   text-align: center;

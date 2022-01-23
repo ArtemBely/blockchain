@@ -24,6 +24,8 @@ import hrRouter from './routes/hr';
 import profRouter from './routes/profile';
 import signRouter from './routes/signin';
 import apiRouter from './routes/api';
+import profAdminRouter from './routes/profile_admin';
+import profCheck from './routes/profile_check';
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -85,6 +87,8 @@ app.use('/hr', hrRouter);
 app.use('/profile', profRouter);
 app.use('/signin', signRouter);
 app.use('/api', apiRouter);
+app.use('/profile_admin', profAdminRouter);
+app.use('/profile_check', profCheck);
 
 app.get('*', (req, res, next) => {
   const activeRouter = Routes.find((route) => matchPath(req.url, route)) || {};

@@ -69,7 +69,7 @@ class Footer extends React.Component {
                  {/* <NavLink to='#' className='each_footer'>Our people</NavLink>
                    <NavLink to='#' className='each_footer'>Conferences</NavLink> */}
                      {/* <NavLink to='#' className='each_footer'>Blog</NavLink> */}
-                       <NavLink to='/HR' className='each_footer'>HR</NavLink>
+                       <NavLink to='/HR' className='each_footer' id='hr_foot'>HR</NavLink>
                        {/* <NavLink to='#' className='each_footer'>About GBN</NavLink> */}
                      {/* <NavLink to='#' className='each_footer' id='floorPlan'>Floor plan</NavLink>
                    <NavLink to='#' className='each_footer' id='comNews'>Сommunity news</NavLink>
@@ -78,10 +78,10 @@ class Footer extends React.Component {
             </div>
             <div className='wrap_contacts'>
               <p className='each_footer' id='footTel'>+41 79 269 5360</p>
-              <p className='each_footer' id='email'>A.Yudina@qlstrategy.ch</p>
+              <a href="mailto:A.Yudina@qlstrategy.ch" className='each_footer' id='email'>A.Yudina@qlstrategy.ch</a>
               {/* <p className='each_footer' id='mrCnt'>More contacts</p> */}
               <p className='each_footer' id='mapSite'>Map site</p>
-              <p className='each_footer' id='loginFor' onClick={this.state.user ? this.logOut : this.closeModal}>{this.state.user ? "Logout" : "Login for partners"}</p>
+              <p className='each_footer' id='loginFor' onClick={this.state.user ? this.logOut : this.closeModal}>{this.state.user ? "Logout" : "Login"}</p>
             </div>
             <div id='second_foot'></div>
             <a href='#circle1' id='anchor_link'><img src={anchor} id='anchor' /></a>

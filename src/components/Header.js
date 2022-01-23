@@ -24,13 +24,13 @@ class Header extends React.Component {
     return(
       <div className='wrap_mainHeader'>
         <div className='wrap_header'>
-             <NavLink className='header__logo' to='/' exact>
-              <p className='wrap_circle'>
+             <a href='/' className='header__logo'>
+              <p className='wrap_circle mainCircle'>
                   <img src={circle1} id='circle1'/>
-                  <img src={circle2} id='circle2'/>
+                  <img src={circle2} id='circle2' className='circle11'/>
               </p>
               <p id={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'global_black' : 'global'}>Global Blockchain Network</p>
-             </NavLink>
+             </a>
              {/* <NavLink to='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} activeClassName='active_header' id='database'>Conference</NavLink> */}
              <p className='nav_header_flex'>
              <NavLink to='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} activeClassName='active_header' id='conference'>Database</NavLink>

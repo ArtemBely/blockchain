@@ -95,36 +95,37 @@ class Profile extends React.Component{
 
             <div className='wrap_title'>
 
-                <p className='wrap_header head_forProfile'>
-                     <p className='wrap_circle circlesProfile'>
-                        <img src={circle1} id='circle1'/>
-                        <img src={circle2} id='circle2'/>
-                     </p>
-                     <p id={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'global_black' : 'global'}>Global Blockchain Network</p>
-                       <a href='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} id='database'>Conference</a>
-                       <a href='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} id='conference'>Database</a>
-                       <a href='/hr' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} id='partners'>HR</a>
-                       <a href='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} id='header_about'>Сommunity news</a>
-                       <a href='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} id='blog'>Blog</a>
-                       <a href='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} id='header_contacts'>About GBN</a>
-                     <p></p>
-                     <div className='closeBurger' onClick={this.turnModal}>
-                         <p className='close1 darkBurger' ref={this.close1}></p>
-                         <p className='close1 clDown darkBurger' ref={this.close2}></p>
-                     </div>
-                </p>
-                <div className='wrap_burger' ref={this.burger}>
-                    <div className='burger'>
-                        <NavLink to='/database' className='mobileNav'>Conference</NavLink>
-                        <NavLink to='/database' className='mobileNav'>Database</NavLink>
-                        <NavLink to='/hr' className='mobileNav'>HR</NavLink>
-                        <NavLink to='/database' className='mobileNav'>Our people</NavLink>
-                        <NavLink to='/database' className='mobileNav'>Blog</NavLink>
-                        <NavLink to='/database' className='mobileNav'>About GBN</NavLink>
-                        <NavLink to='/database' className='mobileNav'>Сommunity news</NavLink>
-                        <NavLink to='/database' className='mobileNav'>FAQ</NavLink>
-                    </div>
+
+            <p className='wrap_header head_forProfile'>
+                 <p className='wrap_circle circlesProfile' id='circlesProfile2'>
+                    <img src={circle1} id='circle1' className='downBall0'/>
+                    <img src={circle2} id='circle2' className='downBall'/>
+                 </p>
+                 <p id={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'global_black' : 'global'} className='prof_global_black'>Global Blockchain Network</p>
+                   <a href='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} id='database'>Conference</a>
+                   <a href='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black data2' : 'nav_header'} id='conference'>Database</a>
+                   <a href='/hr' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black hr2' : 'nav_header'} id='partners'>HR</a>
+                   <a href='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} id='header_about'>Сommunity news</a>
+                   <a href='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} id='blog'>Blog</a>
+                   <a href='/database' className={typeof window !== "undefined" && window.location.pathname == '/profile' ? 'nav_header_black' : 'nav_header'} id='header_contacts'>About GBN</a>
+                 <p></p>
+                 <div className='closeBurger' onClick={this.turnModal}>
+                     <p className='close1 darkBurger' ref={this.close1}></p>
+                     <p className='close1 clDown darkBurger' ref={this.close2}></p>
+                 </div>
+            </p>
+            <div className='wrap_burger' ref={this.burger}>
+                <div className='burger'>
+                    <NavLink to='/database' className='mobileNav'>Conference</NavLink>
+                    <NavLink to='/database' className='mobileNav'>Database</NavLink>
+                    <NavLink to='/hr' className='mobileNav'>HR</NavLink>
+                    <NavLink to='/database' className='mobileNav'>Our people</NavLink>
+                    <NavLink to='/database' className='mobileNav'>Blog</NavLink>
+                    <NavLink to='/database' className='mobileNav'>About GBN</NavLink>
+                    <NavLink to='/database' className='mobileNav'>Сommunity news</NavLink>
+                    <NavLink to='/database' className='mobileNav'>FAQ</NavLink>
                 </div>
+            </div>
 
                 <div className='title_of'>
                     <p id='titleIn'>{this.state.user ? this.state.user.name : null}</p>
@@ -167,7 +168,7 @@ class Profile extends React.Component{
                      <div className='prt2 comPrt'>
                               <p className='titOdCred'>Logo</p>
 
-                              <form method="POST" action="/profile/uploadProfileImage" className="forma" encType="multipart/form-data">
+                              <form method="POST" action="/profile/uploadsProfileImages" className="forma" encType="multipart/form-data">
                                   <p id='impComp'>{this.state.user && this.state.user.profileImage != null ? "Change company logo " : "Choose company logo "}
                                   <input type='file' name='cover' className='fileUpload' ref={this.inp} onClick={this.checkInp}/>
                                   <img src={uploadImg} id='logoComp'/>

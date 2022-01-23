@@ -360,7 +360,7 @@ class Vacancies extends React.Component {
     );
 
     this.filternListe( query );
-    
+
     setTimeout( () => { this.applyFilters() }, 1000 );
   }
 
@@ -416,9 +416,9 @@ class Vacancies extends React.Component {
   {
     return (
       <div className='wrap_vac'>
-        <div className='wrap_modal1_dark' ref={this.cl}>
-          <div className='wrap_modal1 modelAddComp2'>
-            <div className='modal1 insideAddModal2'>
+        <div className='wrap_modal1_dark' ref={this.cl} onClick={this.closeModal}>
+          <div className='wrap_modal1 modelAddComp2' id='modelAddComp3'>
+            <div className='modal1 insideAddModal2' id='insideAddModal3'>
               <p id='comp_reg'>HR Help</p>
               <p id='fill_in'>Fill in the form details. Our manager will contact you to clarify the details.</p>
               <form action='/database/sendRequest' method='POST' className='companyForm'>

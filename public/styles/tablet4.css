@@ -27,9 +27,24 @@
   .companyCard {
     grid-template-columns: 40% 60%;
   }
+  #circlesProfile2 {
+        left: 52px !important;
+  }
+  .prof_global_black {
+        left: -44px !important;
+  }
   .wrap_compProfiles {
     top: -14px;
     left: -14px;
+  }
+  .wrap_contacts {
+        grid-gap: 24px;
+  }
+  .nav_header_black {
+        left: 85px !important;
+  }
+  .data2 {
+        left: 322px !important;
   }
   .doubleInside_vacs {
     height: 700px;
@@ -58,7 +73,7 @@
     opacity: 0;
   }
   .circlesProfile {
-    left: 48px !important;
+    left: 0px !important;
   }
   .fullAppearTitles:nth-child(7) {
     width: 277px;
@@ -68,7 +83,7 @@
   }
   #global_black {
     top: 0px;
-    left: -112px;
+    left: -94px;
   }
   .fullAppearTitles {
     font-size: 16px;
@@ -142,7 +157,7 @@
   .searchBarElement, .searchBarInput {
     font-size: 16px;
   }
-  
+
   .searchCombo {
     width: 280px;
   }
@@ -338,14 +353,19 @@
     display: none;
   }
   .circlesProfile {
-    left: 41px !important;
+    left: 31px !important;
   }
   #global_black {
     font-size: 16px;
     line-height: 19px;
     top: 13px;
-    left: -90px;
+    left: -37px;
   }
+  #circle2 {
+    position: relative;
+    right: 43px;
+    top: -23px;
+}
   #wrap_data_footer {
     height: 0px;
   }
@@ -448,8 +468,7 @@
   }
   #loginFor {
     position: relative;
-    top: -1px;
-    left: -21px;
+    top: -33px;
   }
   #findComp {
     top: 1px;

@@ -3,6 +3,11 @@
       grid-template-columns: 1fr !important;
       width: 320px !important;
   }
+  .wrpa_admin_footer {
+    position: relative;
+    top: -1759px !important;
+    height: 1px;
+  }
     #block_hr {
       font-size: 25px !important;
       line-height: 150% !important;
@@ -100,7 +105,7 @@
     height: 1px;
 }
 .searchBar {
-  z-index: 1000;
+  z-index: 999;
 }
 .lblsFor {
   font-size: 16px;
@@ -165,4 +170,73 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
   }
+
+  .profile_admin, .admins_account, .profile_admin {
+    width: 320px !important;
+}
+.admins_account {
+  font-size: 25px !important;
+line-height: 37px !important;
+}
+.wrap_cand {
+  width: 320px !important;
+  height: 560px !important;
+  margin-bottom: 202px !important;
+}
+.each_cand {
+  width: 262px !important;
+  grid-template-columns: 12% 95% !important;
+}
+
+.approve_btn {
+      width: 320px !important;
+      top: 285px !important;
+      font-size: 16px !important;
+}
+.info_btn {
+      top: 379px !important;
+      width: 318px !important;
+      left: 0px !important;
+      font-size: 16px !important;
+}
+.reject_btn {
+      top: 250px !important;
+      left: 0px !important;
+      width: 318px !important;
+      font-size: 16px !important;
+}
+.common_links, .titles_of, .each_cand {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+.common_links {
+  width: 200px !important;
+}
+#part_admin {
+  position: relative;
+  top: 36px;
+  left: -163px;
+}
+#people_admin {
+    left: 42px !important;
+    position: relative;
+    width: 50px !important;
+}
+.titles_of {
+  left: 32px !important;
+  top: -40px !important;
+  width: 200px !important;
+  height: 10px !important;
+  margin-bottom: 60px !important;
+}
+.wrapAll_cand {
+      width: 340px !important;
+      top: 64px !important;
+}
+.wrap_common_links {
+  width: 340px !important;
+}
+.profile_admin {
+  position: relative;
+}
 }

@@ -191,13 +191,15 @@
 
 @media (min-width: 1001px) and (max-width: 1050px) {
   .wrap_contacts {
-    top: 80px;
-    left: -970px;
+    top: -33px;
+    left: -206px;
   }
-
+  #anchor_link {
+    left: -22px;
+    top: -84px;
+}
   #footTel {
     position: relative;
     width: 180px;
-    left: 18px;
   }
 }

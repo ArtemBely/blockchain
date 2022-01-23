@@ -8,10 +8,18 @@
       left: 281px !important;
       top: -255px !important;
     }
+    .wrap_main_footer {
+      height: 1px;
+      position: relative;
+      left: -68px;
+    }
     .wrap_modal1_dark {
       -moz-transform: scale(1.6, 1.6); /* Moz-browsers */
       zoom: 1.6; /* Other non-webkit browsers */
       zoom: 160%; /* Webkit browsers */
+  }
+  .mainCircle {
+        left: -44px !important;
   }
   .wrap_modal1 {
     -moz-transform: scale(0.63, 0.63); /* Moz-browsers */
@@ -21,6 +29,34 @@
     .showCard {
       height: 1600px !important;
   }
+  .downBall {
+    right: 53px !important;
+    top: 7px !important;
+  }
+  .circlesProfile {
+    left: 29px !important;
+}
+#global_black {
+  left: -73px !important;
+}
+#global {
+      left: -176px !important;
+}
+.circle11 {
+  right: 50px !important;
+  top: -3px !important;
+}
+.footer {
+    width: 696px !important;
+    margin-left: 92px !important;
+    grid-template-columns: 400px 164px !important;
+    grid-template-rows: 64px 200px;
+    grid-column-gap: 179px !important;
+    grid-row-gap: 80px !important;
+}
+.wrap_contacts {
+      grid-gap: 48px !important;
+}
 }
 @media (min-width: 768px) and (max-width: 1000px) {
   #container {
@@ -321,7 +357,7 @@
     #global {
       font-size: 18px;
       line-height: 19px;
-      left: -75px;
+      left: 49px;
       top: 6px;
     }
     #circle1{
@@ -844,7 +880,7 @@
     #anchor_link{
       grid-column: 2/3;
       top: -93px;
-      left: 107px;
+      left: 131px;
     }
     #email{
       top: 0;

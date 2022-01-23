@@ -7,6 +7,7 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import Database from '../../components/Database';
 import User from '../models/company.js';
+import Administrator_Registration from '../../components/Administrator_Registration';
 
 const LocalStrategy = require('passport-local').Strategy;
 const router = express.Router();
@@ -20,7 +21,37 @@ passport.deserializeUser(function(id, done) {
   });
 });
 
-router.get(['/', '/sendRequest'], (req, res, next) => {
+router.get('/admin_registration_page', (req, res, next) => {
+  var messages = req.flash('errors');
+  const user = req.user;
+  const dB = renderToString(
+    <StaticRouter>
+      <Administrator_Registration />
+    </StaticRouter>
+  );
+  const html =
+  `<!DOCTYPE html>
+    <html>
+        <head>
+          <title>Database</title>
+          <link rel="icon" href="../images/gbn.ico" type="image/x-icon" />
+               <link rel="stylesheet" type="text/css" href="../main.css">
+                 <meta name="viewport" content="width=device-width, initial-scale=1">
+              <script src='/bundle.js' defer></script>
+              <script>window.__INITIAL_DATA__ = ${serialize(messages)}</script>
+              <script>window.__INITIAL_USER__ = ${serialize(user)}</script>
+        </head>
+        <body>
+             <div id="app">
+                 ${dB}
+             </div>
+        </body>
+    </html>`
+    res.send(html);
+});
+
+
+router.get(['/', '/sendRequest', '/showpopup'], (req, res, next) => {
   var messages = req.flash('errors');
   const user = req.user;
   const dB = renderToString(
@@ -54,14 +85,10 @@ router.get(['/', '/sendRequest'], (req, res, next) => {
 router.post('/sendRequest', (req, res, done) => {
    var { name, description, email, password,
      solved, phone, jurisdiction, industry, request,
-      vasc, hrs, docs, show, showVacs } = req.body;
+      vasc, hrs, docs, show, showVacs, admin, showCompany } = req.body;
 
-   req.checkBody("name", "Field 'Name' has to be filled").notEmpty();
-   req.checkBody("description", "Field 'Description' has to be filled").notEmpty();
    req.checkBody("email", "Wrong type of email field").isEmail();
    req.checkBody("password", "Minimal length of 'password' field is 5").isLength({min: 5});
-   req.checkBody("jurisdiction", "Field 'Description' has to be filled").notEmpty();
-   req.checkBody("phone", "Minimal length of 'Phone number' field is 10").isLength({min: 10});
 
    var errors = req.validationErrors();
 
@@ -139,7 +166,9 @@ router.post('/sendRequest', (req, res, done) => {
        hrs: hrs,
        docs: docs,
        show: show,
-       showVacs: showVacs
+       showVacs: showVacs,
+       admin: admin,
+       showCompany: showCompany
      });
 
     User.createUser(newUser, function(err, user) {
@@ -209,7 +238,7 @@ res.send(
 
   router.post('/signin',
     passport.authenticate('local.signin', {
-    successRedirect: '/profile',
+    successRedirect: '/profile_check',
     failureRedirect: '/database',
     passReqToCallback: true
  })
@@ -219,7 +248,7 @@ function notLoggedIn(req, res, next) {
   if(!req.isAuthenticated()) {
     return next();
   }
-  res.redirect('/profile');
+  res.redirect('/profile_check');
 }
 
 export default router;

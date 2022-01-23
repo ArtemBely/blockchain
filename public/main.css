@@ -109,6 +109,9 @@ body {
   top: 6px;
   left: -193px;
 }
+.wrap_main_footer {
+  height: 1px;
+}
 #global_black {
   font-family: 'Mont-Heavy';
   color: #000000;
@@ -119,7 +122,13 @@ body {
   width: 210px;
   position: relative;
   top: 6px;
-  left: -193px;
+  left: -183px;
+}
+#modelAddComp3 {
+      height: 503px !important;
+}
+#insideAddModal3 {
+      height: 456px !important;
 }
 .stand_between {
   display: none;
@@ -156,23 +165,32 @@ body {
   font-family: 'Inter-LightBETA';
   z-index: 10;
   height: 30px;
+      left: 179px;
+}
+.data2 {
+      left: 480px;
+      top: 40px !important;
 }
 #cont {
   left: 90px;
 }
 #blog {
   left: 57px;
+  display: none;
 }
 #header_about {
   left: -50px;
   width: 164px;
+  display: none;
 }
 #database {
   left: -30px;
+  display: none;
 }
 #header_contacts {
   left: 90px;
   width: 100px;
+  display: none;
 }
 #conference {
   text-align: center;
@@ -1542,6 +1560,8 @@ bottom
   font-size: 18px;
   line-height: 18px;
   color: black;
+  display: flex;
+  justify-content: end;
   font-family: 'Inter-Regular';
   text-decoration: underline;
 }
@@ -1552,6 +1572,10 @@ bottom
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 14px 90px;
   font-family: 'Inter-Regular';
+  width: 200px;
+  height: 50px;
+  position: relative;
+  left: 91px;
 }
 .wrap_contacts {
   display: -ms-grid;
@@ -1575,7 +1599,7 @@ bottom
 #mapSite {
   position: relative;
   top: 7px;
-  left: 90px;
+  display: none;
 }
 #loginFor {
   position: relative;
@@ -1635,7 +1659,7 @@ bottom
 #anchor_link {
   position: relative;
   grid-column: 5 / 6;
-  left: 140px;
+  left: 179px;
   top: 22px;
   cursor: pointer;
   width: 30px;
@@ -1743,7 +1767,7 @@ bottom
   display: flex;
   justify-content: center;
   width: 100%;
-  top: -560px;
+  top: -516px;
   height: 1px;
 }
 .forDataFooter {
@@ -2470,6 +2494,10 @@ bottom
   position: relative;
   left: 10px;
   top: 2px;
+  display: none;
+}
+.fil1 {
+  opacity: 0;
 }
 .searchingBlock {
   position: absolute;
@@ -4099,11 +4127,11 @@ bottom
 	}
 	.wrap_linkes_footer {
 		position: relative;
-		left: 182px;
-	  grid-gap: 26px;
-		grid-column-gap: 76px;
-		top: -15px;
-		width: 400px;
+    left: 115px;
+    grid-gap: 7px;
+    grid-column-gap: 9px;
+    top: -15px;
+    width: 168px;
 	}
 	.wrap_spheres {
 		margin-top:0px;
@@ -4144,7 +4172,7 @@ bottom
 		 top: -200px;
 	 } */
 	 #anchor_link {
-		 left: 122px;
+		 left: 162px;
 		 top: -36px;
 	 }
 }
@@ -4159,10 +4187,18 @@ bottom
       left: 281px !important;
       top: -255px !important;
     }
+    .wrap_main_footer {
+      height: 1px;
+      position: relative;
+      left: -68px;
+    }
     .wrap_modal1_dark {
       -moz-transform: scale(1.6, 1.6); /* Moz-browsers */
       zoom: 1.6; /* Other non-webkit browsers */
       zoom: 160%; /* Webkit browsers */
+  }
+  .mainCircle {
+        left: -44px !important;
   }
   .wrap_modal1 {
     -moz-transform: scale(0.63, 0.63); /* Moz-browsers */
@@ -4172,6 +4208,34 @@ bottom
     .showCard {
       height: 1600px !important;
   }
+  .downBall {
+    right: 53px !important;
+    top: 7px !important;
+  }
+  .circlesProfile {
+    left: 29px !important;
+}
+#global_black {
+  left: -73px !important;
+}
+#global {
+      left: -176px !important;
+}
+.circle11 {
+  right: 50px !important;
+  top: -3px !important;
+}
+.footer {
+    width: 696px !important;
+    margin-left: 92px !important;
+    grid-template-columns: 400px 164px !important;
+    grid-template-rows: 64px 200px;
+    grid-column-gap: 179px !important;
+    grid-row-gap: 80px !important;
+}
+.wrap_contacts {
+      grid-gap: 48px !important;
+}
 }
 @media (min-width: 768px) and (max-width: 1000px) {
   #container {
@@ -4472,7 +4536,7 @@ bottom
     #global {
       font-size: 18px;
       line-height: 19px;
-      left: -75px;
+      left: 49px;
       top: 6px;
     }
     #circle1{
@@ -4995,7 +5059,7 @@ bottom
     #anchor_link{
       grid-column: 2/3;
       top: -93px;
-      left: 107px;
+      left: 131px;
     }
     #email{
       top: 0;
@@ -5033,9 +5097,24 @@ bottom
   .companyCard {
     grid-template-columns: 40% 60%;
   }
+  #circlesProfile2 {
+        left: 52px !important;
+  }
+  .prof_global_black {
+        left: -44px !important;
+  }
   .wrap_compProfiles {
     top: -14px;
     left: -14px;
+  }
+  .wrap_contacts {
+        grid-gap: 24px;
+  }
+  .nav_header_black {
+        left: 85px !important;
+  }
+  .data2 {
+        left: 322px !important;
   }
   .doubleInside_vacs {
     height: 700px;
@@ -5064,7 +5143,7 @@ bottom
     opacity: 0;
   }
   .circlesProfile {
-    left: 48px !important;
+    left: 0px !important;
   }
   .fullAppearTitles:nth-child(7) {
     width: 277px;
@@ -5074,7 +5153,7 @@ bottom
   }
   #global_black {
     top: 0px;
-    left: -112px;
+    left: -94px;
   }
   .fullAppearTitles {
     font-size: 16px;
@@ -5148,7 +5227,7 @@ bottom
   .searchBarElement, .searchBarInput {
     font-size: 16px;
   }
-  
+
   .searchCombo {
     width: 280px;
   }
@@ -5344,14 +5423,19 @@ bottom
     display: none;
   }
   .circlesProfile {
-    left: 41px !important;
+    left: 31px !important;
   }
   #global_black {
     font-size: 16px;
     line-height: 19px;
     top: 13px;
-    left: -90px;
+    left: -37px;
   }
+  #circle2 {
+    position: relative;
+    right: 43px;
+    top: -23px;
+}
   #wrap_data_footer {
     height: 0px;
   }
@@ -5454,8 +5538,7 @@ bottom
   }
   #loginFor {
     position: relative;
-    top: -1px;
-    left: -21px;
+    top: -33px;
   }
   #findComp {
     top: 1px;
@@ -5900,6 +5983,11 @@ bottom
       grid-template-columns: 1fr !important;
       width: 320px !important;
   }
+  .wrpa_admin_footer {
+    position: relative;
+    top: -1759px !important;
+    height: 1px;
+  }
     #block_hr {
       font-size: 25px !important;
       line-height: 150% !important;
@@ -5997,7 +6085,7 @@ bottom
     height: 1px;
 }
 .searchBar {
-  z-index: 1000;
+  z-index: 999;
 }
 .lblsFor {
   font-size: 16px;
@@ -6062,6 +6150,75 @@ bottom
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
   }
+
+  .profile_admin, .admins_account, .profile_admin {
+    width: 320px !important;
+}
+.admins_account {
+  font-size: 25px !important;
+line-height: 37px !important;
+}
+.wrap_cand {
+  width: 320px !important;
+  height: 560px !important;
+  margin-bottom: 202px !important;
+}
+.each_cand {
+  width: 262px !important;
+  grid-template-columns: 12% 95% !important;
+}
+
+.approve_btn {
+      width: 320px !important;
+      top: 285px !important;
+      font-size: 16px !important;
+}
+.info_btn {
+      top: 379px !important;
+      width: 318px !important;
+      left: 0px !important;
+      font-size: 16px !important;
+}
+.reject_btn {
+      top: 250px !important;
+      left: 0px !important;
+      width: 318px !important;
+      font-size: 16px !important;
+}
+.common_links, .titles_of, .each_cand {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+.common_links {
+  width: 200px !important;
+}
+#part_admin {
+  position: relative;
+  top: 36px;
+  left: -163px;
+}
+#people_admin {
+    left: 42px !important;
+    position: relative;
+    width: 50px !important;
+}
+.titles_of {
+  left: 32px !important;
+  top: -40px !important;
+  width: 200px !important;
+  height: 10px !important;
+  margin-bottom: 60px !important;
+}
+.wrapAll_cand {
+      width: 340px !important;
+      top: 64px !important;
+}
+.wrap_common_links {
+  width: 340px !important;
+}
+.profile_admin {
+  position: relative;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1500px)  {
@@ -6083,6 +6240,10 @@ bottom
     width: 256px;
     padding: 10px 15px 11px;
     top: -28px;
+  }
+  .wrpa_admin_footer {
+    top: -2300px !important;
+    position: relative;
   }
   .wrap_title, .companyCard, .wrap_docs {
     width: 992px;
@@ -6120,6 +6281,33 @@ bottom
   .wrap_footer_profile {
     top: -1552px !important;
   }
+  .profile_admin, .admins_account, .profile_admin {
+    width: 982px !important;
+}
+.wrap_cand {
+  width: 982px !important;
+  height: 401px !important;
+}
+.each_cand {
+  width: 952px !important;
+      grid-template-columns: 45% 49% !important;
+}
+.each_cand, .titles_of {
+  font-size: 20px;
+}
+.approve_btn {
+      top: 203px !important;
+}
+.info_btn {
+      top: 149px !important;
+}
+.reject_btn {
+      top: 95px !important;
+}
+.common_links {
+  font-size: 20px;
+}
+
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .title_of, .companyCard, .wrap_mng, .wrap_title {
@@ -6154,7 +6342,6 @@ bottom
   }
   .hr2 {
     grid-column: 1 / 2;
-    width: 768px;
     padding: 0px;
     position: relative;
     top: 19px;
@@ -6227,7 +6414,8 @@ bottom
     padding: 4px 14px;
   }
   .wrap_footer_profile {
-    top: -1606px !important;
+    left: 12px !important;
+    position: relative;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -6236,6 +6424,10 @@ bottom
   }
   #compProfilesImg {
     width: 60%;
+  }
+  .wrpa_admin_footer {
+    top: -2054px !important;
+    position: relative;
   }
   .wrapOfHr {
     grid-template-columns: repeat(3, 1fr);
@@ -6253,10 +6445,9 @@ bottom
   }
   .hr2 {
     grid-column: 1 / 2;
-    width: 768px;
     padding: 0px;
     position: relative;
-    top: 45px;
+    top: 45px !important;
   }
   #navHr {
     font-size: 18px;
@@ -6326,6 +6517,39 @@ bottom
   .wrap_footer_profile {
     top: -1611px !important;
   }
+
+  .profile_admin, .admins_account, .profile_admin {
+    width: 768px !important;
+}
+.admins_account {
+  font-size: 35px;
+line-height: 52px;
+}
+.wrap_cand {
+  width: 800px !important;
+  height: 401px !important;
+}
+.each_cand {
+  width: 768px !important;
+      grid-template-columns: 45% 49% !important;
+}
+
+.approve_btn {
+      top: 233px !important;
+}
+.info_btn {
+      top: 179px !important;
+}
+.reject_btn {
+      top: 125px !important;
+}
+.common_links, .titles_of, .each_cand {
+  font-size: 18px !important;
+  line-height: 25px !important;
+}
+.wrapAll_cand {
+      width: 800px !important;
+}
 }
 @media (min-width: 1500px) and (max-width: 1717px) {
   .secondDb {
@@ -6365,12 +6589,60 @@ bottom
     .secondDb {
       transform: scale(0.41);
       top: -157px;
-      left: 452px; 
+      left: 452px;
     }
     .doubleInside_vacs {
       width: 756px;
       height: 700px;
     }
+    .profile_admin, .admins_account, .profile_admin {
+      width: 576px !important;
+  }
+  .admins_account {
+    font-size: 30px;
+  line-height: 45px;
+  }
+  .wrap_cand {
+    width: 600px !important;
+    height: 401px !important;
+    margin-bottom: 116px !important;
+  }
+  .each_cand {
+    width: 576px !important;
+        grid-template-columns: 45% 55% !important;
+  }
+
+  .approve_btn {
+        top: 251px !important;
+        font-size: 16px !important;
+  }
+  .info_btn {
+        top: 273px !important;
+        left: 0px !important;
+        font-size: 16px !important;
+  }
+  .reject_btn {
+        top: 141px !important;
+        left: 150px !important;
+        font-size: 16px !important;
+  }
+  .common_links, .titles_of, .each_cand {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+  .titles_of {
+    left: 45px !important;
+  }
+  .wrapAll_cand {
+        width: 600px !important;
+  }
+  .wrap_common_links {
+    width: 582px !important;
+  }
+  .profile_admin {
+    position: relative;
+    left: 100px !important;
+  }
 }
 @media (min-width: 320px) and (max-width: 576px) {
   .firstDb {
@@ -6484,8 +6756,15 @@ bottom
   #mrCnt, #mapSite {
     display: none;
   }
+  .fil1 {
+    opacity: 1;
+  }
   #wrap_data_footer {
     height: 0px;
+  }
+  .circle11 {
+    left: 2px !important;
+    top: -20px !important;
   }
   .eachData2 {
     line-height: 15px;
@@ -6774,7 +7053,7 @@ bottom
     #global {
       font-size: 13px;
       line-height: 16px;
-      left: 2px;
+      left: 13px;
       top: 41px;
       width: 174px;
     }
@@ -6786,8 +7065,8 @@ bottom
 
     #circle2{
       position: relative;
-      left: 5px;
-      top: -25px;
+      left: -41px;
+      top: 7px;
     }
     .watch_vr {
       position: relative;
@@ -7372,7 +7651,7 @@ bottom
     }
     .wrap_linkes_footer {
       position: relative;
-      left: 24px;
+      left: -2px;
       grid-column: 1/2;
       grid-row: 2/3;
       grid-gap: 30px 59px;
@@ -7389,12 +7668,12 @@ bottom
       text-decoration: none;
     }
     .wrap_contacts{
-      top: 0;
+      top: -77px;
       grid-column: 1/2;
       grid-row: 4/5;
       margin-top: -84px;
       grid-template-rows: 18px 18px;
-      grid-gap: 30px;
+      grid-gap: 58px;
       height: 170px;
       width: 200px;
       left: 24px;
@@ -7419,10 +7698,12 @@ bottom
     }
     #loginFor {
       left: 1px;
-      width: 200px;
+      width: 161px;
+      top: -32px;
     }
     #email{
       top: 0;
+      left: 108px;
     }
     #footTel {
       width: 200px;
@@ -7456,7 +7737,7 @@ bottom
     line-height: 14px;
     width: 131px;
     height: 37px;
-    left: -14px;
+    left: -49px;
     top: 43px;
   }
   .title_of {
@@ -7716,7 +7997,7 @@ body {
   .secondDb {
     transform: scale(0.8);
   }
-  
+
   .wrap_header {
     z-index: 3;
   }
@@ -7741,7 +8022,13 @@ body {
   .wrap_header {
     z-index: 3;
   }
-
+  .wrap_linkes_footer {
+    position: relative;
+    left: -97px !important;
+    grid-row: 2/3;
+    grid-gap: 30px 118px;
+    grid-template-columns: 1fr !important;
+  }
   .tableMain {
     width: 587px;
   }
@@ -7767,7 +8054,7 @@ body {
   }
 
   .nav_header_flex {
-    width: 0;
+    width: 312;
     justify-content: flex-end;
     display: flex;
   }
@@ -7821,11 +8108,16 @@ body {
 
   .wrap_linkes_footer {
     grid-gap: 20px 30px;
-    left: 80px;
+    left: -97px !important;
+    grid-template-columns: 1fr !important;
   }
-
+  #hr_foot {
+    position: relative;
+    top: 10px;
+    left: -55px;
+  }
   .wrap_spheres {
-    left: 80px;
+    left: 0px;
     color: black;
     text-decoration: none;
   }
@@ -7904,7 +8196,7 @@ body {
 /* adaptive HR */
 @media (min-width: 1500) {
   #wrap_hr_footer {
-    top: 350px;
+    top: 267px;
   }
 }
 
@@ -8022,7 +8314,11 @@ body {
   #job_hr {
     /* top: 208px; */
   }
-
+  #hr_foot {
+    left: -57px;
+    position: relative;
+    top: 26px;
+  }
   .loope {
     left: 362px;
   }
@@ -8067,14 +8363,15 @@ body {
 
   .footer {
     top: -20px;
-  }
-
-  .wrap_linkes_footer {
-    grid-gap: 44px 115px;
+        margin-left: 0px;
   }
 
   .wrap_contacts {
     grid-gap: 45px;
+    left: -5px;
+  }
+  #anchor_link {
+        left: 155px !important;
   }
 }
 
@@ -8208,6 +8505,7 @@ body {
     top: -1800px;
   }
 }
+
 /* Profile Adaptive */
 
 @media (min-width: 1501px) {
@@ -8481,7 +8779,21 @@ body {
     position: relative;
     top: -58px;
   }
-
+.nav_header_black {
+      left: 194px !important;
+}
+.downBall {
+  right: 43px !important;
+  top: 5px !important;
+}
+.downBall0 {
+  position: relative;
+  left: 10px;
+}
+.data2 {
+      left: 264px !important;
+          top: 45px !important;
+}
   .participating1 {
     position: relative;
     bottom: 48px;
@@ -8717,7 +9029,7 @@ body {
 
 @media (min-width: 576px) and (max-width: 768px) {
   .closeBurger {
-    left: -30px;
+    left: 0px;
   }
 }
 
@@ -8926,7 +9238,6 @@ body {
   }
 }
 
-
 /* Popup DB */
 @media (min-width: 577px) and (max-width: 768px) {
   .firstDb {
@@ -9120,16 +9431,19 @@ body {
 
 @media (min-width: 1001px) and (max-width: 1050px) {
   .wrap_contacts {
-    top: 80px;
-    left: -970px;
+    top: -33px;
+    left: -206px;
   }
-
+  #anchor_link {
+    left: -22px;
+    top: -84px;
+}
   #footTel {
     position: relative;
     width: 180px;
-    left: 18px;
   }
 }
+
 .header__logo {
   display: flex;
   justify-content: space-between;
@@ -9178,5 +9492,121 @@ body {
   cursor: pointer;
   width: 120px;
 }
-
+.wrap_profile_admin {
+  display: grid;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+}
+.profile_admin {
+  width: 1290px;
+}
+.admins_account {
+  font-family: 'Inter-SemiBold';
+  font-size: 41px;
+  line-height: 150%;
+}
+.common_links {
+  font-size: 22px;
+  text-align: left;
+  line-height: 140%;
+  color: black;
+  font-family: 'Inter-Regular';
+}
+.wrap_common_links{
+  width: 720px;
+  display: grid;
+  grid-template-columns: 31% 17% 52%;
+  position: relative;
+  top: -20px;
+  display: none;
+}
+.wrap_cand {
+  width: 1290px;
+  height: 356px;
+  background: #E8E8E8;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.titles_of {
+  font-size: 22px;
+  line-height: 140%;
+  font-family: 'Inter-SemiBold';
+  position: relative;
+  left: 67px;
+  top: -5px;
+}
+.each_cand {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  position: relative;
+  top: 64px;
+  font-family: 'Inter-Regular';
+  width: 1246px;
+}
+#people_admin {
+  left: -7px;
+  position: relative;
+}
+.wrapAll_cand {
+  display: grid;
+  grid-gap: 73px;
+  height: 851px;
+  overflow-y: scroll;
+  position: relative;
+  top: 20px;
+}
+.wrapAll_cand::-webkit-scrollbar {
+  width: 0;
+}
+.approve_btn {
+  position: relative;
+  top: 183px;
+  background: linear-gradient(
+  62.18deg
+  , #6B36EF -22.93%, #1EC0F4 88.82%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 55px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 140%;
+  font-family: 'Inter-LightBETA';
+}
+.info_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 249px;
+  height: 52px;
+  font-size: 18px;
+  line-height: 140%;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  top: 128px;
+  left: 155px;
+  font-family: 'Inter-LightBETA';
+}
+.reject_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid black;
+  width: 184px;
+  height: 52px;
+  color: black;
+  top: 74px;
+  left: 430px;
+  font-family: 'Inter-LightBETA';
+}
+#full_descr {
+  height: 29px;
+}
 

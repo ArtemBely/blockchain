@@ -46,4 +46,120 @@
   cursor: pointer;
   width: 120px;
 }
-
+.wrap_profile_admin {
+  display: grid;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+}
+.profile_admin {
+  width: 1290px;
+}
+.admins_account {
+  font-family: 'Inter-SemiBold';
+  font-size: 41px;
+  line-height: 150%;
+}
+.common_links {
+  font-size: 22px;
+  text-align: left;
+  line-height: 140%;
+  color: black;
+  font-family: 'Inter-Regular';
+}
+.wrap_common_links{
+  width: 720px;
+  display: grid;
+  grid-template-columns: 31% 17% 52%;
+  position: relative;
+  top: -20px;
+  display: none;
+}
+.wrap_cand {
+  width: 1290px;
+  height: 356px;
+  background: #E8E8E8;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.titles_of {
+  font-size: 22px;
+  line-height: 140%;
+  font-family: 'Inter-SemiBold';
+  position: relative;
+  left: 67px;
+  top: -5px;
+}
+.each_cand {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  position: relative;
+  top: 64px;
+  font-family: 'Inter-Regular';
+  width: 1246px;
+}
+#people_admin {
+  left: -7px;
+  position: relative;
+}
+.wrapAll_cand {
+  display: grid;
+  grid-gap: 73px;
+  height: 851px;
+  overflow-y: scroll;
+  position: relative;
+  top: 20px;
+}
+.wrapAll_cand::-webkit-scrollbar {
+  width: 0;
+}
+.approve_btn {
+  position: relative;
+  top: 183px;
+  background: linear-gradient(
+  62.18deg
+  , #6B36EF -22.93%, #1EC0F4 88.82%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 55px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 140%;
+  font-family: 'Inter-LightBETA';
+}
+.info_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 249px;
+  height: 52px;
+  font-size: 18px;
+  line-height: 140%;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  top: 128px;
+  left: 155px;
+  font-family: 'Inter-LightBETA';
+}
+.reject_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid black;
+  width: 184px;
+  height: 52px;
+  color: black;
+  top: 74px;
+  left: 430px;
+  font-family: 'Inter-LightBETA';
+}
+#full_descr {
+  height: 29px;
+}

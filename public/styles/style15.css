@@ -46,7 +46,21 @@
     position: relative;
     top: -58px;
   }
-
+.nav_header_black {
+      left: 194px !important;
+}
+.downBall {
+  right: 43px !important;
+  top: 5px !important;
+}
+.downBall0 {
+  position: relative;
+  left: 10px;
+}
+.data2 {
+      left: 264px !important;
+          top: 45px !important;
+}
   .participating1 {
     position: relative;
     bottom: 48px;
@@ -282,7 +296,7 @@
 
 @media (min-width: 576px) and (max-width: 768px) {
   .closeBurger {
-    left: -30px;
+    left: 0px;
   }
 }
 
@@ -490,4 +504,3 @@
     width: 576px;
   }
 }
-

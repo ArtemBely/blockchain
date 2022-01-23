@@ -18,6 +18,10 @@
     padding: 10px 15px 11px;
     top: -28px;
   }
+  .wrpa_admin_footer {
+    top: -2300px !important;
+    position: relative;
+  }
   .wrap_title, .companyCard, .wrap_docs {
     width: 992px;
   }
@@ -54,6 +58,33 @@
   .wrap_footer_profile {
     top: -1552px !important;
   }
+  .profile_admin, .admins_account, .profile_admin {
+    width: 982px !important;
+}
+.wrap_cand {
+  width: 982px !important;
+  height: 401px !important;
+}
+.each_cand {
+  width: 952px !important;
+      grid-template-columns: 45% 49% !important;
+}
+.each_cand, .titles_of {
+  font-size: 20px;
+}
+.approve_btn {
+      top: 203px !important;
+}
+.info_btn {
+      top: 149px !important;
+}
+.reject_btn {
+      top: 95px !important;
+}
+.common_links {
+  font-size: 20px;
+}
+
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .title_of, .companyCard, .wrap_mng, .wrap_title {
@@ -88,7 +119,6 @@
   }
   .hr2 {
     grid-column: 1 / 2;
-    width: 768px;
     padding: 0px;
     position: relative;
     top: 19px;
@@ -161,7 +191,8 @@
     padding: 4px 14px;
   }
   .wrap_footer_profile {
-    top: -1606px !important;
+    left: 12px !important;
+    position: relative;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -170,6 +201,10 @@
   }
   #compProfilesImg {
     width: 60%;
+  }
+  .wrpa_admin_footer {
+    top: -2054px !important;
+    position: relative;
   }
   .wrapOfHr {
     grid-template-columns: repeat(3, 1fr);
@@ -187,10 +222,9 @@
   }
   .hr2 {
     grid-column: 1 / 2;
-    width: 768px;
     padding: 0px;
     position: relative;
-    top: 45px;
+    top: 45px !important;
   }
   #navHr {
     font-size: 18px;
@@ -260,6 +294,39 @@
   .wrap_footer_profile {
     top: -1611px !important;
   }
+
+  .profile_admin, .admins_account, .profile_admin {
+    width: 768px !important;
+}
+.admins_account {
+  font-size: 35px;
+line-height: 52px;
+}
+.wrap_cand {
+  width: 800px !important;
+  height: 401px !important;
+}
+.each_cand {
+  width: 768px !important;
+      grid-template-columns: 45% 49% !important;
+}
+
+.approve_btn {
+      top: 233px !important;
+}
+.info_btn {
+      top: 179px !important;
+}
+.reject_btn {
+      top: 125px !important;
+}
+.common_links, .titles_of, .each_cand {
+  font-size: 18px !important;
+  line-height: 25px !important;
+}
+.wrapAll_cand {
+      width: 800px !important;
+}
 }
 @media (min-width: 1500px) and (max-width: 1717px) {
   .secondDb {
@@ -299,12 +366,60 @@
     .secondDb {
       transform: scale(0.41);
       top: -157px;
-      left: 452px; 
+      left: 452px;
     }
     .doubleInside_vacs {
       width: 756px;
       height: 700px;
     }
+    .profile_admin, .admins_account, .profile_admin {
+      width: 576px !important;
+  }
+  .admins_account {
+    font-size: 30px;
+  line-height: 45px;
+  }
+  .wrap_cand {
+    width: 600px !important;
+    height: 401px !important;
+    margin-bottom: 116px !important;
+  }
+  .each_cand {
+    width: 576px !important;
+        grid-template-columns: 45% 55% !important;
+  }
+
+  .approve_btn {
+        top: 251px !important;
+        font-size: 16px !important;
+  }
+  .info_btn {
+        top: 273px !important;
+        left: 0px !important;
+        font-size: 16px !important;
+  }
+  .reject_btn {
+        top: 141px !important;
+        left: 150px !important;
+        font-size: 16px !important;
+  }
+  .common_links, .titles_of, .each_cand {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+  .titles_of {
+    left: 45px !important;
+  }
+  .wrapAll_cand {
+        width: 600px !important;
+  }
+  .wrap_common_links {
+    width: 582px !important;
+  }
+  .profile_admin {
+    position: relative;
+    left: 100px !important;
+  }
 }
 @media (min-width: 320px) and (max-width: 576px) {
   .firstDb {

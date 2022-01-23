@@ -9,7 +9,7 @@ const router = express.Router();
 
 
 router.get('/eachCompany', async(req, res) => {
-    let user = await User.find({show: "yes"});
+    let user = await User.find({showCompany: "yes"});
 
     /*  let wthtPass = {
         name: user.name,

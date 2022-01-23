@@ -52,7 +52,7 @@ class Managment extends React.Component {
         <div className='wrapOfHr'>
                {this.state.user.hrs.map(hr => (
                       <div className='hr3'>
-                           <p className='photoHr'><img src={hr.hrPhoto ? hr.hrPhoto : userByDefault} className='eachHrPerson'/>
+                           <p className='photoHr'><img src={hr.hrPhoto ? "uploadsProfileHrs/" +  hr.hrPhoto : userByDefault} className='eachHrPerson'/>
                            <a href={'/profile/deleteHr/' + hr._id} className='cl_prof'>
                            <img src={close1} /></a></p>
                            <p className='nameHr'>{hr.fullName}</p>

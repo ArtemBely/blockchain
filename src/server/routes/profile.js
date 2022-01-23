@@ -10,6 +10,8 @@ import Profile from '../../components/Profile';
 import Vacancy from '../models/vacancy.js';
 import Hr from '../models/hr.js';
 import Docs from '../models/documents.js';
+import path from 'path';
+import fs from 'fs';
 const router = express.Router();
 
 
@@ -17,13 +19,21 @@ const router = express.Router();
 
 require('dotenv/config');
 
-aws.config.update({
-  secretAccessKey: process.env.s3_secretAccessKey,
-  accessKeyId: process.env.s3_accessKeyId,
-  region: process.env.s3_bucketRegion
+const storage = multer.diskStorage({
+  destination: './public/uploadsProfileImages/',
+  filename: function(req, file, cb) {
+    cb(null, file.fieldname + '-' + Date.now() +
+    path.extname(file.originalname));
+  }
 });
 
-const s3 = new aws.S3();
+const storage2 = multer.diskStorage({
+  destination: './public/uploadsProfileHrs/',
+  filename: function(req, file, cb) {
+    cb(null, file.fieldname + '-' + Date.now() +
+    path.extname(file.originalname));
+  }
+});
 
 const fileFilter = (req, file, cb) => {
   if( file.mimetype === 'image/png' || file.mimetype === 'image/jpg' || file.mimetype === 'image/jpeg' || file.mimetipe === 'image/svg') {
@@ -35,17 +45,13 @@ const fileFilter = (req, file, cb) => {
 var upload = multer({
   fileFilter: fileFilter,
   limits:{ fileSize: 5000000 },
-  storage: multerS3({
-    s3: s3,
-    bucket: 'websterzgbn',
-    //acl: 'public-read',  // --> требуются настройки доступа в aws s3, чтобы использовать данный параметр
-    metadata: function (req, file, cb) {
-      cb(null, {fieldName: file.fieldname});
-    },
-    key: function (req, file, cb) {
-      cb(null, Date.now().toString())
-    }
-  })
+  storage: storage
+});
+
+var upload2 = multer({
+  fileFilter: fileFilter,
+  limits:{ fileSize: 5000000 },
+  storage: storage2
 });
 
 
@@ -78,9 +84,8 @@ router.get('/', isAuth, async (req, res, next) => {
     res.send(html);
 });
 
-router.post('/uploadProfileImage', upload.single('cover'), async(req, res, next) => {
-  const fileName = req.file != null ? req.file.location : null
-
+router.post('/uploadsProfileImages', upload.single('cover'), async(req, res, next) => {
+  let fileName = req.file != null ? req.file.filename : null;
   var user = req.user;
   user.profileImage = fileName;
   console.log(req.file);
@@ -117,10 +122,10 @@ router.post('/sendVacancy', async (req, res, next) => {
     err => console.log(err);
   }
 });
-router.post('/sendHr', upload.single('hrPhoto'), async (req, res, next) => {
+router.post('/sendHr', upload2.single('hrPhoto'), async (req, res, next) => {
   let { fullName, position, professional,
      details, linkedin } = req.body;
-  let fileName = req.file != null ? req.file.location : null;
+  let fileName = req.file != null ? req.file.filename : null;
   var hr = new Hr({
     fullName: fullName,
     position: position,

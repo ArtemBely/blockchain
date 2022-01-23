@@ -46,6 +46,8 @@
   font-size: 18px;
   line-height: 18px;
   color: black;
+  display: flex;
+  justify-content: end;
   font-family: 'Inter-Regular';
   text-decoration: underline;
 }
@@ -56,6 +58,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 14px 90px;
   font-family: 'Inter-Regular';
+  width: 200px;
+  height: 50px;
+  position: relative;
+  left: 91px;
 }
 .wrap_contacts {
   display: -ms-grid;
@@ -79,7 +85,7 @@
 #mapSite {
   position: relative;
   top: 7px;
-  left: 90px;
+  display: none;
 }
 #loginFor {
   position: relative;
@@ -139,7 +145,7 @@
 #anchor_link {
   position: relative;
   grid-column: 5 / 6;
-  left: 140px;
+  left: 179px;
   top: 22px;
   cursor: pointer;
   width: 30px;

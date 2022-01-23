@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import axios from 'axios';
 
 async function getCompanies() {
-  return await axios.get('https://gbn.rocks/api/eachCompany') /*http://localhost:8080*/
+  return await axios.get('http://localhost:8080/api/eachCompany') /*http://localhost:8080*/
     .then(res => {
       let companies = res.data;
 
       console.log( 'getCompanies' );
-      console.log( companies );
+      //console.log( companies );
 
       return companies;
     })
@@ -25,7 +25,7 @@ async function getVacancies() {
       let vacancies = res.data;
 
       console.log( 'getVacancies' );
-      console.log( vacancies );
+      //console.log( vacancies );
 
       return vacancies;
     })
