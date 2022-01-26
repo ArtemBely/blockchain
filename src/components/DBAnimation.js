@@ -33,8 +33,10 @@ class DBAnimation extends React.Component {
     }
   }
 
-  componentDidMount()
-  {
+  componentDidMount() {
+  if(window.location.pathname == '/database/showpopup') {
+      this.closeModal();
+    }
     VANTA.HALO({
     el: '#your-element-selector',
     mouseControls: true,
@@ -49,11 +51,6 @@ class DBAnimation extends React.Component {
 
     this.checkAutoOpenOfModal();
   }
-  /*componentDidMount() {
-    if(window.location.pathname == '/database/showpopup') {
-      this.closeModal();
-    }
-  }*/
 
   render() {
     return (
