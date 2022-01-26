@@ -77,7 +77,7 @@ class Footer extends React.Component {
                <NavLink to='#' className='each_footer'>FAQ</NavLink> */}
             </div>
             <div className='wrap_contacts'>
-              <p className='each_footer' id='footTel'>+41 79 269 5360</p>
+              <a href="tel:+41 79 269 53 60" className='each_footer' id='footTel'>+41 79 269 5360</a>
               <a href="mailto:A.Yudina@qlstrategy.ch" className='each_footer' id='email'>A.Yudina@qlstrategy.ch</a>
               {/* <p className='each_footer' id='mrCnt'>More contacts</p> */}
               <p className='each_footer' id='mapSite'>Map site</p>

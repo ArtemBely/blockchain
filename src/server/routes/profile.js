@@ -6,7 +6,7 @@ import multerS3 from 'multer-s3';  // --> установить на рабочи
 import aws from 'aws-sdk';  // --> установить на рабочий сервер
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
-import Profile from '../../components/Profile';
+import Profile_Check from '../../components/Profile_Check';
 import Vacancy from '../models/vacancy.js';
 import Hr from '../models/hr.js';
 import Docs from '../models/documents.js';
@@ -56,13 +56,16 @@ var upload2 = multer({
 
 
 router.get('/', isAuth, async (req, res, next) => {
+  var user = req.user;
+  if(user.admin == "yes") {
+    res.redirect('/profile_check');
+  }
   const hr = renderToString(
     <StaticRouter>
-      <Profile />
+      <Profile_Check />
     </StaticRouter>
   );
   var auth = req.isAuthenticated();
-  var user = req.user;
   const html =
   `<!DOCTYPE html>
     <html>

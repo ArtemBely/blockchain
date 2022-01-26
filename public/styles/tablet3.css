@@ -866,7 +866,7 @@
       text-decoration: none;
     }
     .wrap_contacts{
-      top: 0;
+      top: 20px;
       grid-column: 2/3;
       grid-row: 2/3;
       margin-top: -18px;

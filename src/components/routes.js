@@ -4,6 +4,7 @@ import Profile from './Profile';
 import Hr from './Hr';
 import Administrator_Registration from './Administrator_Registration';
 import Profile_Admin from './Profile_Admin';
+import Profile_Check from './Profile_Check';
 import { getCompanies } from './fetchData';
 import { getVacancies } from './fetchData';
 
@@ -28,7 +29,7 @@ const routes = [
   {
     path: '/profile',
     exact: true,
-    component: Profile
+    component: Profile_Check
   },
   {
     path: '/database/admin_registration_page',

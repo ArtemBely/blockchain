@@ -53,6 +53,9 @@
   .longVariant {
     width: 220px;
   }
+  .secondDb {
+    width: auto;
+  }
   .closeComp {
     grid-column: 4 / 5;
     grid-row: 1 / 2;
@@ -972,7 +975,7 @@
       top: -32px;
     }
     #email{
-      top: 0;
+      top: -7px;
       left: 108px;
     }
     #footTel {

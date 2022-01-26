@@ -26,6 +26,7 @@ class Vacancies extends React.Component {
     this.searchBar  = React.createRef();
     this.cl3        = React.createRef();
     this.cl2        = React.createRef();
+    this.cl1         = React.createRef();
     this.cl         = React.createRef();
     this.state      = {
       vacancies     : [],
@@ -416,12 +417,12 @@ class Vacancies extends React.Component {
   {
     return (
       <div className='wrap_vac'>
-        <div className='wrap_modal1_dark' ref={this.cl} onClick={this.closeModal}>
+        <div className='wrap_modal1_dark' ref={this.cl}>
           <div className='wrap_modal1 modelAddComp2' id='modelAddComp3'>
             <div className='modal1 insideAddModal2' id='insideAddModal3'>
-              <p id='comp_reg'>HR Help</p>
+              <p id='comp_reg'>HR Help <img src={_close} id='close_1' ref={this.cl1} onClick={this.closeModal} /></p>
               <p id='fill_in'>Fill in the form details. Our manager will contact you to clarify the details.</p>
-              <form action='/database/sendRequest' method='POST' className='companyForm'>
+              <form action='/database/sendHr' method='POST' className='companyForm'> 
                 <input type='text' name='vacancy' className='com_inp' placeholder='Required vacancy'  required/>
                 <input type='text' name='phone'   className='com_inp' placeholder='Your phone number' required/>
                 <input type='text' name='email'   className='com_inp' placeholder='Your email'        required/>

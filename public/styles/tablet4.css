@@ -38,7 +38,7 @@
     left: -14px;
   }
   .wrap_contacts {
-        grid-gap: 24px;
+        grid-gap: 46px;
   }
   .nav_header_black {
         left: 85px !important;
@@ -47,7 +47,7 @@
         left: 322px !important;
   }
   .doubleInside_vacs {
-    height: 700px;
+    height: 532px;
     width: 505px;
   }
   .shortVariant, .longVariant {
@@ -147,7 +147,7 @@
   }
   #email {
     position: relative;
-    top: -19px;
+    top: -14px;
 }
 #loginFor {
    position: relative;
@@ -458,7 +458,7 @@
     grid-row: 1 / 2;
 }
   #email {
-    top: 1px;
+    top: -7px;
   }
   .each_footer {
     width: 184px;

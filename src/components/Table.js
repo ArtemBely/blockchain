@@ -110,7 +110,9 @@ class Table extends React.Component{
                      document.querySelector(`.eachProfileLong${index}`).classList.remove('dispGrid');
                    }}>
                          <p className='eachData2 fullAppearTitles'>{comp.name}
-                           <p className='wrap_compProfiles'><img src={comp.profileImage ? "uploadsProfileImages/" + comp.profileImage  : null} id='compProfilesImg' style={{
+                           <p className='wrap_compProfiles'><img src={comp.profileImage && typeof window != "undefined" && window.location.pathname == '/database' ?
+                            "uploadsProfileImages/" + comp.profileImage : comp.profileImage && typeof window != "undefined" && window.location.pathname == '/database/showpopup' ?
+                            "../uploadsProfileImages/" + comp.profileImage  : null} id='compProfilesImg' style={{
                              display: comp.profileImage ? 'block' : 'none'
                            }}/></p>
                            </p>
@@ -152,7 +154,9 @@ class Table extends React.Component{
                            <div className='manageFull'><span className='textMnFull'>Managment and representatives</span>
                                 {comp.hrs.map(hr => (
                                   <div className='eachFull'>
-                                    <p className='fullImage'><img src={hr.hrPhoto != null ? "uploadsProfileHrs/" + hr.hrPhoto : userByDefault} className='eachFullPerson' /></p>
+                                    <p className='fullImage'><img src={hr.hrPhoto && typeof window != "undefined" && window.location.pathname == '/database' ?
+                                     "uploadsProfileHrs/" + hr.hrPhoto : hr.hrPhoto && typeof window != "undefined" && window.location.pathname == '/database/showpopup' ?
+                                     "../uploadsProfileHrs/" + hr.hrPhoto  : userByDefault} className='eachFullPerson' /></p>
                                     <p className='fullName'>{hr.fullName}</p>
                                     <p className='fullDescr'>{hr.details}</p>
                                     <img src={lnk} className='lnkFull'/>

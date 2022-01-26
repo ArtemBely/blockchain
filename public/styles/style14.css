@@ -38,7 +38,7 @@
 
 @media (min-width: 993px) and (max-width: 1000px) {
   .title_of {
-    left: 30px;  
+    left: 30px;
   }
 
   .wrap_header {
@@ -136,10 +136,10 @@
   }
 
   #impComp {
-    width: 241px;
+    width: 255px;
   }
 
-  .wrap_linksProf { 
+  .wrap_linksProf {
     display: grid;
     grid-template-columns: 360px 300px;
     margin-left: 100px;
@@ -147,7 +147,7 @@
 
   .card1 {
     margin: 0 auto;
-    width: 676px;
+    width: 566px;
   }
 
   .common_Cred {

@@ -7,13 +7,19 @@ import Footer from './Footer';
 
 class Database extends React.Component {
 
+    componentDidMount() {
+        if(typeof window != 'undefined') {
+          window.scrollTo(0, 0);
+        }
+  }
+
     render() {
       return (
         <div className='wrap_database'>
             <div><Header /></div>
             <DBAnimation />
             <Table />
-            
+
         </div>
       )
     }

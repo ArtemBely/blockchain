@@ -171,6 +171,11 @@ body {
       left: 480px;
       top: 40px !important;
 }
+#close_1 {
+    position: relative;
+    left: 408px;
+    cursor: pointer;
+}
 #cont {
   left: 90px;
 }
@@ -202,6 +207,15 @@ body {
   width: 800px;
   justify-content: flex-end;
   display: flex;
+}
+.opa1 {
+  opacity: 0 !important;
+}
+.wrap_2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .wrap_header {
   position: relative;
@@ -1584,12 +1598,11 @@ bottom
   -ms-grid-column-span: 1;
   grid-column: 5 / 6;
   position: relative;
-  top: -17px;
+  top: 0px;
 }
 #email {
   position: relative;
-  top: 2px;
-  left: 2px;
+  top: 12px;
 }
 #mrCnt {
   position: relative;
@@ -4122,7 +4135,7 @@ bottom
 	}
 	.wrap_contacts {
 		justify-items:end;
-		top: -33px;
+		top: -15px;
 		left: -19px;
 	}
 	.wrap_linkes_footer {
@@ -5045,7 +5058,7 @@ bottom
       text-decoration: none;
     }
     .wrap_contacts{
-      top: 0;
+      top: 20px;
       grid-column: 2/3;
       grid-row: 2/3;
       margin-top: -18px;
@@ -5108,7 +5121,7 @@ bottom
     left: -14px;
   }
   .wrap_contacts {
-        grid-gap: 24px;
+        grid-gap: 46px;
   }
   .nav_header_black {
         left: 85px !important;
@@ -5117,7 +5130,7 @@ bottom
         left: 322px !important;
   }
   .doubleInside_vacs {
-    height: 700px;
+    height: 532px;
     width: 505px;
   }
   .shortVariant, .longVariant {
@@ -5217,7 +5230,7 @@ bottom
   }
   #email {
     position: relative;
-    top: -19px;
+    top: -14px;
 }
 #loginFor {
    position: relative;
@@ -5528,7 +5541,7 @@ bottom
     grid-row: 1 / 2;
 }
   #email {
-    top: 1px;
+    top: -7px;
   }
   .each_footer {
     width: 184px;
@@ -6085,7 +6098,7 @@ bottom
     height: 1px;
 }
 .searchBar {
-  z-index: 999;
+  z-index: 1;
 }
 .lblsFor {
   font-size: 16px;
@@ -6593,7 +6606,7 @@ line-height: 52px;
     }
     .doubleInside_vacs {
       width: 756px;
-      height: 700px;
+      height: 520px;
     }
     .profile_admin, .admins_account, .profile_admin {
       width: 576px !important;
@@ -6782,6 +6795,9 @@ line-height: 52px;
   }
   .longVariant {
     width: 220px;
+  }
+  .secondDb {
+    width: auto;
   }
   .closeComp {
     grid-column: 4 / 5;
@@ -7702,7 +7718,7 @@ line-height: 52px;
       top: -32px;
     }
     #email{
-      top: 0;
+      top: -7px;
       left: 108px;
     }
     #footTel {
@@ -7741,7 +7757,7 @@ line-height: 52px;
     top: 43px;
   }
   .title_of {
-    top: -43px;
+    top: -32px;
   }
   .circlesProfile {
     top: 5px !important;
@@ -7882,6 +7898,7 @@ line-height: 52px;
   #profEd {
     opacity: 0;
     z-index: -1000;
+    display: none;
   }
   .titOdCred {
     font-size: 16px;
@@ -8039,6 +8056,7 @@ body {
 
   .commComp {
     width: 447px;
+    overflow: hidden;
   }
 
   .com2 {
@@ -8096,6 +8114,7 @@ body {
 
   .commComp {
     width: 447px;
+    overflow: hidden;
   }
 
   .com2 {
@@ -8332,7 +8351,7 @@ body {
   }
 
   .doubleInside_vacs {
-    height: 700px;
+    height: 538px;
   }
 
   .loc1 {
@@ -8484,7 +8503,7 @@ body {
 
 @media (min-width: 322px) and (max-width: 577px) {
   .doubleInside_vacs {
-    height: 614px;
+    height: 464px !important;
   }
 
   .inside_vacs {
@@ -8546,7 +8565,7 @@ body {
 
 @media (min-width: 993px) and (max-width: 1000px) {
   .title_of {
-    left: 30px;  
+    left: 30px;
   }
 
   .wrap_header {
@@ -8644,10 +8663,10 @@ body {
   }
 
   #impComp {
-    width: 241px;
+    width: 255px;
   }
 
-  .wrap_linksProf { 
+  .wrap_linksProf {
     display: grid;
     grid-template-columns: 360px 300px;
     margin-left: 100px;
@@ -8655,7 +8674,7 @@ body {
 
   .card1 {
     margin: 0 auto;
-    width: 676px;
+    width: 566px;
   }
 
   .common_Cred {
@@ -8731,6 +8750,7 @@ body {
   position: relative;
   top: 0;
 }
+
 /* Main Page */
 
 @media (min-width: 1501px) {
@@ -8981,7 +9001,7 @@ body {
 
 @media (min-width: 1500px) {
   #wrap_hr_footer {
-    top: 360px;
+    top: 262px;
   }
 }
 
@@ -9431,7 +9451,6 @@ body {
 
 @media (min-width: 1001px) and (max-width: 1050px) {
   .wrap_contacts {
-    top: -33px;
     left: -206px;
   }
   #anchor_link {

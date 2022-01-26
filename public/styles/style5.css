@@ -70,12 +70,11 @@
   -ms-grid-column-span: 1;
   grid-column: 5 / 6;
   position: relative;
-  top: -17px;
+  top: 0px;
 }
 #email {
   position: relative;
-  top: 2px;
-  left: 2px;
+  top: 12px;
 }
 #mrCnt {
   position: relative;

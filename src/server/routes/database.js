@@ -3,6 +3,7 @@ import express from 'express';
 import serialize from 'serialize-javascript';
 import passport from 'passport';
 import mongoose from 'mongoose';
+import nodemailer from 'nodemailer';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import Database from '../../components/Database';
@@ -80,6 +81,48 @@ router.get(['/', '/sendRequest', '/showpopup'], (req, res, next) => {
         </body>
     </html>`
     res.send(html);
+});
+
+router.post('/sendHr', (req, res, done) => {
+   var { vacancy, phone, email } = req.body;
+
+   const output = `
+      <p> Данные о посетителе </p>
+      <ul>
+        <li> Vacancy: ${vacancy} </li>
+        <li> Phone: ${phone} </li>
+        <li> Email: ${email} </li>
+      </ul>
+      `;
+      async function main() {
+      let transporter = nodemailer.createTransport({
+        host: "smtp.yandex.ru",
+        port: 465,
+        secure: true, // true for 465, false for other ports
+        auth: {
+          user: 'gbnaccounnt@acorn.ws', // generated ethereal user
+          pass: 'qwertyuiop987654321' // generated ethereal password
+        },
+        tls:{
+          rejectUnauthorized:false  // только для localhost
+        }
+      });
+
+      // send mail with defined transport object
+      let info = await transporter.sendMail({
+        from: '"Order from site" <gbnaccounnt@acorn.ws>', // sender address
+        to: "belysevartem9@gmail.com", // list of receivers vn@goweb.com
+        subject: "New partner ✔", // Subject line
+        text: "Hello world?", // plain text body
+        html: output // html body
+      });
+
+      console.log("Message sent: %s", info.messageId);
+      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+      }
+
+      main().catch(console.error);
+      return res.redirect('/database');
 });
 
 router.post('/sendRequest', (req, res, done) => {

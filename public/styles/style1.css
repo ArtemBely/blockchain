@@ -171,6 +171,11 @@ body {
       left: 480px;
       top: 40px !important;
 }
+#close_1 {
+    position: relative;
+    left: 408px;
+    cursor: pointer;
+}
 #cont {
   left: 90px;
 }
@@ -202,6 +207,15 @@ body {
   width: 800px;
   justify-content: flex-end;
   display: flex;
+}
+.opa1 {
+  opacity: 0 !important;
+}
+.wrap_2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .wrap_header {
   position: relative;

@@ -18,7 +18,7 @@ class DBAnimation extends React.Component {
     this.cl.current.classList.add('disp_change');
   }
 
-  /*checkAutoOpenOfModal ()
+  checkAutoOpenOfModal ()
   {
     console.log( 'checkAutoOpenOfModal' );
 
@@ -48,12 +48,12 @@ class DBAnimation extends React.Component {
     });
 
     this.checkAutoOpenOfModal();
-  }*/
-  componentDidMount() {
+  }
+  /*componentDidMount() {
     if(window.location.pathname == '/database/showpopup') {
       this.closeModal();
     }
-  }
+  }*/
 
   render() {
     return (

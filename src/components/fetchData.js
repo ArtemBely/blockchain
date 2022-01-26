@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from 'axios';
 
 async function getCompanies() {
-  return await axios.get('http://localhost:8080/api/eachCompany') /*http://localhost:8080*/
+  return await axios.get('https://gbn.rocks/api/eachCompany') /*http://localhost:8080*/
     .then(res => {
       let companies = res.data;
 
