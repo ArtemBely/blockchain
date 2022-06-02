@@ -1,40 +1,4 @@
 @font-face {
-    font-family: 'Mont-Regular';
-    src: url('../../fonts/Mont-Regular.eot');
-    src: url('../../fonts/Mont-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/Mont-Regular.woff') format('woff'),
-    url('../../fonts/Mont-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Mont-Light';
-    src: url('../../fonts/Mont-Light.eot');
-    src: url('../../fonts/Mont-Light.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/Mont-Light.woff') format('woff'),
-    url('../../fonts/Mont-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Mont-SemiBold';
-    src: url('../../fonts/Mont-SemiBold.eot');
-    src: url('../../fonts/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/Mont-SemiBold.woff') format('woff'),
-    url('../../fonts/Mont-SemiBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Mont-Heavy';
-    src: url('../../fonts/Mont-Heavy.eot');
-    src: url('../../fonts/Mont-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/Mont-Heavy.woff') format('woff'),
-    url('../../fonts/Mont-Heavy.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'Inter-Regular';
     src: url('../../fonts/Inter-Regular.eot');
     src: url('../../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
@@ -79,26 +43,18 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Mont-DEMOExtraLight';
-    src: url('../../fonts/Mont-DEMOExtraLight.eot');
-    src: url('../../fonts/Mont-DEMOExtraLight.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/Mont-DEMOExtraLight.woff') format('woff'),
-    url('../../fonts/Mont-DEMOExtraLight.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Mont-Regular';
+  font-family: 'Inter-Regular';
   padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
 #global {
-  font-family: 'Mont-Heavy';
+  font-family: 'Inter-SemiBold';
   color: #ffffff;
   font-weight: 900;
   font-size: 20px;
@@ -113,7 +69,7 @@ body {
   height: 1px;
 }
 #global_black {
-  font-family: 'Mont-Heavy';
+  font-family: 'Inter-SemiBold';
   color: #000000;
   font-weight: 900;
   font-size: 20px;
@@ -262,7 +218,7 @@ body {
   color: #ffffff;
   font-size: 54px;
   line-height: 60px;
-  font-family: 'Mont-Heavy';
+  font-family: 'Inter-SemiBold';
   top: 200px;
   width: 600px;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
